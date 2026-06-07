@@ -1,0 +1,5014 @@
+{
+  "c01_post_open": {
+    "elements": [
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_profile_header",
+        "content_desc": "sebintel posted a video 2 days ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[0,244][1080,387]",
+        "center": [
+          540,
+          315
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,244][134,387]",
+        "center": [
+          67,
+          315
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_photo_profile_imageview",
+        "content_desc": "Profile picture of sebintel",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[41,274][124,357]",
+        "center": [
+          82,
+          315
+        ]
+      },
+      {
+        "text": "sebintel",
+        "resource_id": "com.instagram.android:id/row_feed_photo_profile_name",
+        "content_desc": "sebintel",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[134,244][958,314]",
+        "center": [
+          546,
+          279
+        ]
+      },
+      {
+        "text": " sebintel · Original audio",
+        "resource_id": "com.instagram.android:id/secondary_label",
+        "content_desc": " sebintel · Original audio",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[134,313][958,387]",
+        "center": [
+          546,
+          350
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/media_option_button",
+        "content_desc": "More actions for this post",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[958,250][1080,382]",
+        "center": [
+          1019,
+          316
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[931,1627][1080,1737]",
+        "center": [
+          1005,
+          1682
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Turn sound on",
+        "class": "android.widget.LinearLayout",
+        "clickable": false,
+        "bounds": "[970,1627][1041,1698]",
+        "center": [
+          1005,
+          1662
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/media_group",
+        "content_desc": "",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[0,387][1080,1737]",
+        "center": [
+          540,
+          1062
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[33,1737][110,1864]",
+        "center": [
+          71,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_like",
+        "content_desc": "Like",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[33,1737][99,1864]",
+        "center": [
+          66,
+          1800
+        ]
+      },
+      {
+        "text": "297",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[110,1737][177,1864]",
+        "center": [
+          143,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[177,1737][287,1864]",
+        "center": [
+          232,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_comment",
+        "content_desc": "Comment",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[210,1737][276,1864]",
+        "center": [
+          243,
+          1800
+        ]
+      },
+      {
+        "text": "543",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[287,1737][358,1864]",
+        "center": [
+          322,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[358,1737][479,1864]",
+        "center": [
+          418,
+          1800
+        ]
+      },
+      {
+        "text": "11",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[479,1737][511,1864]",
+        "center": [
+          495,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[528,1737][622,1864]",
+        "center": [
+          575,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_share",
+        "content_desc": "Send Post",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[545,1737][611,1864]",
+        "center": [
+          578,
+          1800
+        ]
+      },
+      {
+        "text": "136",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[622,1737][684,1864]",
+        "center": [
+          653,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_save",
+        "content_desc": "Add to Saved",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[952,1737][1073,1853]",
+        "center": [
+          1012,
+          1795
+        ]
+      },
+      {
+        "text": "sebintel Comment “Cartoon” and I’ll send you the link.\nCreate entire cartoon with one prompt. The AI handled the story, scenes, visuals, editing, and even content strategy automatically from a single workflow.\n#AICartoon #AIAnimation #AIForCreators #GenerativeAI #CreativeAI #DigitalContent #ContentCreationAI #AIWorkflow #AnimationTools #AutomatedContent",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "com.instagram.ui.widget.textview.IgTextLayoutView",
+        "clickable": false,
+        "bounds": "[33,1864][1080,2180]",
+        "center": [
+          556,
+          2022
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "sebintel",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,1864][177,1910]",
+        "center": [
+          105,
+          1887
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AICartoon",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,2072][244,2118]",
+        "center": [
+          138,
+          2095
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AIAnimation",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[253,2072][500,2118]",
+        "center": [
+          376,
+          2095
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AIForCreators",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[509,2072][788,2118]",
+        "center": [
+          648,
+          2095
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#GenerativeAI",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,2124][293,2170]",
+        "center": [
+          163,
+          2147
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#CreativeAI",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[302,2124][518,2170]",
+        "center": [
+          410,
+          2147
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#DigitalContent",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[527,2124][810,2170]",
+        "center": [
+          668,
+          2147
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#ContentCreationAI",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,2176][395,2180]",
+        "center": [
+          214,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AIWorkflow",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[404,2176][639,2180]",
+        "center": [
+          521,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AnimationTools",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[648,2176][951,2180]",
+        "center": [
+          799,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AutomatedContent",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,0][0,0]",
+        "center": [
+          0,
+          0
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,90][1080,244]",
+        "center": [
+          540,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_new_title_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,90][154,244]",
+        "center": [
+          77,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_button_back",
+        "content_desc": "Back",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[0,90][154,244]",
+        "center": [
+          77,
+          167
+        ]
+      }
+    ]
+  },
+  "c02_comments_sheet": {
+    "elements": [
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/background_dimmer",
+        "content_desc": "@2131955319",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,90][1080,2180]",
+        "center": [
+          540,
+          1135
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/layout_container_bottom_sheet",
+        "content_desc": "",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[0,90][1080,2180]",
+        "center": [
+          540,
+          1135
+        ]
+      },
+      {
+        "text": "Comments",
+        "resource_id": "com.instagram.android:id/title_text_view",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[275,783][805,892]",
+        "center": [
+          540,
+          837
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to _lastbornink's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[44,926][143,1025]",
+        "center": [
+          93,
+          975
+        ]
+      },
+      {
+        "text": "_lastbornink ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[179,915][377,957]",
+        "center": [
+          278,
+          936
+        ]
+      },
+      {
+        "text": "13 hours ago",
+        "resource_id": "",
+        "content_desc": "13 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[380,915][432,957]",
+        "center": [
+          406,
+          936
+        ]
+      },
+      {
+        "text": "_lastbornink said Cartoon",
+        "resource_id": "",
+        "content_desc": "_lastbornink said Cartoon",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[179,968][326,1017]",
+        "center": [
+          252,
+          992
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[179,1017][310,1100]",
+        "center": [
+          244,
+          1058
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,893][1080,1058]",
+        "center": [
+          1003,
+          975
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,893][1080,1014]",
+        "center": [
+          1003,
+          953
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,1100][1080,1159]",
+        "center": [
+          540,
+          1129
+        ]
+      },
+      {
+        "text": "View 1 more reply",
+        "resource_id": "",
+        "content_desc": "View 1 more reply",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[265,1100][535,1142]",
+        "center": [
+          400,
+          1121
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to keysersoze_uk's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[44,1192][143,1291]",
+        "center": [
+          93,
+          1241
+        ]
+      },
+      {
+        "text": "keysersoze_uk ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[179,1181][415,1223]",
+        "center": [
+          297,
+          1202
+        ]
+      },
+      {
+        "text": "7 hours ago",
+        "resource_id": "",
+        "content_desc": "7 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[418,1181][455,1223]",
+        "center": [
+          436,
+          1202
+        ]
+      },
+      {
+        "text": "keysersoze_uk said Cartoon",
+        "resource_id": "",
+        "content_desc": "keysersoze_uk said Cartoon",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[179,1234][326,1283]",
+        "center": [
+          252,
+          1258
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[179,1283][310,1366]",
+        "center": [
+          244,
+          1324
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,1159][1080,1324]",
+        "center": [
+          1003,
+          1241
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,1159][1080,1280]",
+        "center": [
+          1003,
+          1219
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to sebintel's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[156,1395][233,1472]",
+        "center": [
+          194,
+          1433
+        ]
+      },
+      {
+        "text": "sebintel   ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[265,1388][446,1432]",
+        "center": [
+          355,
+          1410
+        ]
+      },
+      {
+        "text": "7 hours ago",
+        "resource_id": "",
+        "content_desc": "7 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[449,1388][486,1432]",
+        "center": [
+          467,
+          1410
+        ]
+      },
+      {
+        "text": "•",
+        "resource_id": "",
+        "content_desc": "•",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[497,1388][508,1432]",
+        "center": [
+          502,
+          1410
+        ]
+      },
+      {
+        "text": "Author",
+        "resource_id": "",
+        "content_desc": "Author",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[519,1388][628,1432]",
+        "center": [
+          573,
+          1410
+        ]
+      },
+      {
+        "text": "sebintel said Sent! Link is in your DMs 📧",
+        "resource_id": "",
+        "content_desc": "sebintel said Sent! Link is in your DMs 📧",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[265,1443][765,1492]",
+        "center": [
+          515,
+          1467
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[265,1492][396,1575]",
+        "center": [
+          330,
+          1533
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,1366][1080,1531]",
+        "center": [
+          1003,
+          1448
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,1366][1080,1487]",
+        "center": [
+          1003,
+          1426
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to armandol9's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[44,1608][143,1707]",
+        "center": [
+          93,
+          1657
+        ]
+      },
+      {
+        "text": "armandol9 ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[179,1597][353,1639]",
+        "center": [
+          266,
+          1618
+        ]
+      },
+      {
+        "text": "16 hours ago",
+        "resource_id": "",
+        "content_desc": "16 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[356,1597][409,1639]",
+        "center": [
+          382,
+          1618
+        ]
+      },
+      {
+        "text": "armandol9 said Cartoon",
+        "resource_id": "",
+        "content_desc": "armandol9 said Cartoon",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[179,1650][326,1699]",
+        "center": [
+          252,
+          1674
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[179,1699][310,1782]",
+        "center": [
+          244,
+          1740
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,1575][1080,1740]",
+        "center": [
+          1003,
+          1657
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,1575][1080,1696]",
+        "center": [
+          1003,
+          1635
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to sebintel's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[156,1811][233,1888]",
+        "center": [
+          194,
+          1849
+        ]
+      },
+      {
+        "text": "sebintel   ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[265,1804][446,1848]",
+        "center": [
+          355,
+          1826
+        ]
+      },
+      {
+        "text": "16 hours ago",
+        "resource_id": "",
+        "content_desc": "16 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[449,1804][502,1848]",
+        "center": [
+          475,
+          1826
+        ]
+      },
+      {
+        "text": "•",
+        "resource_id": "",
+        "content_desc": "•",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[513,1804][524,1848]",
+        "center": [
+          518,
+          1826
+        ]
+      },
+      {
+        "text": "Author",
+        "resource_id": "",
+        "content_desc": "Author",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[535,1804][644,1848]",
+        "center": [
+          589,
+          1826
+        ]
+      },
+      {
+        "text": "sebintel said Sent! Link is in your DMs 📧",
+        "resource_id": "",
+        "content_desc": "sebintel said Sent! Link is in your DMs 📧",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[265,1859][765,1908]",
+        "center": [
+          515,
+          1883
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[265,1908][396,1991]",
+        "center": [
+          330,
+          1949
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,1782][1080,1947]",
+        "center": [
+          1003,
+          1864
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,1782][1080,1903]",
+        "center": [
+          1003,
+          1842
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to merelyanatom's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[44,2024][143,2026]",
+        "center": [
+          93,
+          2025
+        ]
+      },
+      {
+        "text": "merelyanatom ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[179,2013][409,2026]",
+        "center": [
+          294,
+          2019
+        ]
+      },
+      {
+        "text": "23 hours ago",
+        "resource_id": "",
+        "content_desc": "23 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[412,2013][469,2026]",
+        "center": [
+          440,
+          2019
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,1991][1080,2026]",
+        "center": [
+          1003,
+          2008
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,1991][1080,2026]",
+        "center": [
+          1003,
+          2008
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/above_composer_views",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[0,2027][1080,2138]",
+        "center": [
+          540,
+          2082
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "❤️",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[32,2039][131,2138]",
+        "center": [
+          81,
+          2088
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "🙌",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[163,2039][262,2138]",
+        "center": [
+          212,
+          2088
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "🔥",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[294,2039][393,2138]",
+        "center": [
+          343,
+          2088
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "👏",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[425,2039][524,2138]",
+        "center": [
+          474,
+          2088
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "😢",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[556,2039][655,2138]",
+        "center": [
+          605,
+          2088
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "😍",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[687,2039][786,2138]",
+        "center": [
+          736,
+          2088
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "😮",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[818,2039][917,2138]",
+        "center": [
+          867,
+          2088
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "😂",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[949,2039][1048,2138]",
+        "center": [
+          998,
+          2088
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/comment_composer_left_image_view",
+        "content_desc": "Profile picture",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[33,2160][132,2180]",
+        "center": [
+          82,
+          2170
+        ]
+      },
+      {
+        "text": "Join the conversation…",
+        "resource_id": "com.instagram.android:id/layout_comment_thread_edittext_multiline",
+        "content_desc": "",
+        "class": "android.widget.EditText",
+        "clickable": true,
+        "bounds": "[154,2160][821,2180]",
+        "center": [
+          487,
+          2170
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/comment_composer_animated_image_picker_button",
+        "content_desc": "GIF",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[821,2177][931,2180]",
+        "center": [
+          876,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/comment_composer_appreciation_gift_button",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[970,2177][1080,2180]",
+        "center": [
+          1025,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_profile_header",
+        "content_desc": "sebintel posted a video 2 days ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[0,244][1080,387]",
+        "center": [
+          540,
+          315
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,244][134,387]",
+        "center": [
+          67,
+          315
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_photo_profile_imageview",
+        "content_desc": "Profile picture of sebintel",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[41,274][124,357]",
+        "center": [
+          82,
+          315
+        ]
+      },
+      {
+        "text": "sebintel",
+        "resource_id": "com.instagram.android:id/row_feed_photo_profile_name",
+        "content_desc": "sebintel",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[134,244][958,314]",
+        "center": [
+          546,
+          279
+        ]
+      },
+      {
+        "text": " sebintel · Original audio",
+        "resource_id": "com.instagram.android:id/secondary_label",
+        "content_desc": " sebintel · Original audio",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[134,313][958,387]",
+        "center": [
+          546,
+          350
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/media_option_button",
+        "content_desc": "More actions for this post",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[958,250][1080,382]",
+        "center": [
+          1019,
+          316
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[931,1627][1080,1737]",
+        "center": [
+          1005,
+          1682
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Turn sound on",
+        "class": "android.widget.LinearLayout",
+        "clickable": false,
+        "bounds": "[970,1627][1041,1698]",
+        "center": [
+          1005,
+          1662
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/media_group",
+        "content_desc": "",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[0,387][1080,1737]",
+        "center": [
+          540,
+          1062
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[33,1737][110,1864]",
+        "center": [
+          71,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_like",
+        "content_desc": "Like",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[33,1737][99,1864]",
+        "center": [
+          66,
+          1800
+        ]
+      },
+      {
+        "text": "297",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[110,1737][177,1864]",
+        "center": [
+          143,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[177,1737][287,1864]",
+        "center": [
+          232,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_comment",
+        "content_desc": "Comment",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[210,1737][276,1864]",
+        "center": [
+          243,
+          1800
+        ]
+      },
+      {
+        "text": "543",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[287,1737][358,1864]",
+        "center": [
+          322,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[358,1737][479,1864]",
+        "center": [
+          418,
+          1800
+        ]
+      },
+      {
+        "text": "11",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[479,1737][511,1864]",
+        "center": [
+          495,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[528,1737][622,1864]",
+        "center": [
+          575,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_share",
+        "content_desc": "Send Post",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[545,1737][611,1864]",
+        "center": [
+          578,
+          1800
+        ]
+      },
+      {
+        "text": "136",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[622,1737][684,1864]",
+        "center": [
+          653,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_save",
+        "content_desc": "Add to Saved",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[952,1737][1073,1853]",
+        "center": [
+          1012,
+          1795
+        ]
+      },
+      {
+        "text": "sebintel Comment “Cartoon” and I’ll send you the link.\nCreate entire cartoon with one prompt. The AI handled the story, scenes, visuals, editing, and even content strategy automatically from a single workflow.\n#AICartoon #AIAnimation #AIForCreators #GenerativeAI #CreativeAI #DigitalContent #ContentCreationAI #AIWorkflow #AnimationTools #AutomatedContent",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "com.instagram.ui.widget.textview.IgTextLayoutView",
+        "clickable": false,
+        "bounds": "[33,1864][1080,2180]",
+        "center": [
+          556,
+          2022
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "sebintel",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,1864][177,1910]",
+        "center": [
+          105,
+          1887
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AICartoon",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,2072][244,2118]",
+        "center": [
+          138,
+          2095
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AIAnimation",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[253,2072][500,2118]",
+        "center": [
+          376,
+          2095
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AIForCreators",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[509,2072][788,2118]",
+        "center": [
+          648,
+          2095
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#GenerativeAI",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,2124][293,2170]",
+        "center": [
+          163,
+          2147
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#CreativeAI",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[302,2124][518,2170]",
+        "center": [
+          410,
+          2147
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#DigitalContent",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[527,2124][810,2170]",
+        "center": [
+          668,
+          2147
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#ContentCreationAI",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,2176][395,2180]",
+        "center": [
+          214,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AIWorkflow",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[404,2176][639,2180]",
+        "center": [
+          521,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AnimationTools",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[648,2176][951,2180]",
+        "center": [
+          799,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AutomatedContent",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,0][0,0]",
+        "center": [
+          0,
+          0
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,90][1080,244]",
+        "center": [
+          540,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_new_title_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,90][154,244]",
+        "center": [
+          77,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_button_back",
+        "content_desc": "Back",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[0,90][154,244]",
+        "center": [
+          77,
+          167
+        ]
+      }
+    ]
+  },
+  "c03_input_focused": {
+    "elements": [
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/background_dimmer",
+        "content_desc": "@2131955319",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,90][1080,2180]",
+        "center": [
+          540,
+          1135
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/layout_container_bottom_sheet",
+        "content_desc": "",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[0,90][1080,2180]",
+        "center": [
+          540,
+          1135
+        ]
+      },
+      {
+        "text": "Comments",
+        "resource_id": "com.instagram.android:id/title_text_view",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[275,129][805,238]",
+        "center": [
+          540,
+          183
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to _lastbornink's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[44,272][143,371]",
+        "center": [
+          93,
+          321
+        ]
+      },
+      {
+        "text": "_lastbornink ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[179,261][377,303]",
+        "center": [
+          278,
+          282
+        ]
+      },
+      {
+        "text": "13 hours ago",
+        "resource_id": "",
+        "content_desc": "13 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[380,261][432,303]",
+        "center": [
+          406,
+          282
+        ]
+      },
+      {
+        "text": "_lastbornink said Cartoon",
+        "resource_id": "",
+        "content_desc": "_lastbornink said Cartoon",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[179,314][326,363]",
+        "center": [
+          252,
+          338
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[179,363][310,446]",
+        "center": [
+          244,
+          404
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,239][1080,404]",
+        "center": [
+          1003,
+          321
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,239][1080,360]",
+        "center": [
+          1003,
+          299
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,446][1080,505]",
+        "center": [
+          540,
+          475
+        ]
+      },
+      {
+        "text": "View 1 more reply",
+        "resource_id": "",
+        "content_desc": "View 1 more reply",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[265,446][535,488]",
+        "center": [
+          400,
+          467
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to keysersoze_uk's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[44,538][143,637]",
+        "center": [
+          93,
+          587
+        ]
+      },
+      {
+        "text": "keysersoze_uk ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[179,527][415,569]",
+        "center": [
+          297,
+          548
+        ]
+      },
+      {
+        "text": "7 hours ago",
+        "resource_id": "",
+        "content_desc": "7 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[418,527][455,569]",
+        "center": [
+          436,
+          548
+        ]
+      },
+      {
+        "text": "keysersoze_uk said Cartoon",
+        "resource_id": "",
+        "content_desc": "keysersoze_uk said Cartoon",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[179,580][326,629]",
+        "center": [
+          252,
+          604
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[179,629][310,712]",
+        "center": [
+          244,
+          670
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,505][1080,670]",
+        "center": [
+          1003,
+          587
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,505][1080,626]",
+        "center": [
+          1003,
+          565
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to sebintel's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[156,741][233,818]",
+        "center": [
+          194,
+          779
+        ]
+      },
+      {
+        "text": "sebintel   ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[265,734][446,778]",
+        "center": [
+          355,
+          756
+        ]
+      },
+      {
+        "text": "7 hours ago",
+        "resource_id": "",
+        "content_desc": "7 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[449,734][486,778]",
+        "center": [
+          467,
+          756
+        ]
+      },
+      {
+        "text": "•",
+        "resource_id": "",
+        "content_desc": "•",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[497,734][508,778]",
+        "center": [
+          502,
+          756
+        ]
+      },
+      {
+        "text": "Author",
+        "resource_id": "",
+        "content_desc": "Author",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[519,734][628,778]",
+        "center": [
+          573,
+          756
+        ]
+      },
+      {
+        "text": "sebintel said Sent! Link is in your DMs 📧",
+        "resource_id": "",
+        "content_desc": "sebintel said Sent! Link is in your DMs 📧",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[265,789][765,838]",
+        "center": [
+          515,
+          813
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[265,838][396,921]",
+        "center": [
+          330,
+          879
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,712][1080,877]",
+        "center": [
+          1003,
+          794
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,712][1080,833]",
+        "center": [
+          1003,
+          772
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to armandol9's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[44,954][143,1053]",
+        "center": [
+          93,
+          1003
+        ]
+      },
+      {
+        "text": "armandol9 ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[179,943][353,985]",
+        "center": [
+          266,
+          964
+        ]
+      },
+      {
+        "text": "16 hours ago",
+        "resource_id": "",
+        "content_desc": "16 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[356,943][409,985]",
+        "center": [
+          382,
+          964
+        ]
+      },
+      {
+        "text": "armandol9 said Cartoon",
+        "resource_id": "",
+        "content_desc": "armandol9 said Cartoon",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[179,996][326,1045]",
+        "center": [
+          252,
+          1020
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[179,1045][310,1128]",
+        "center": [
+          244,
+          1086
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,921][1080,1086]",
+        "center": [
+          1003,
+          1003
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,921][1080,1042]",
+        "center": [
+          1003,
+          981
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to sebintel's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[156,1157][233,1234]",
+        "center": [
+          194,
+          1195
+        ]
+      },
+      {
+        "text": "sebintel   ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[265,1150][446,1194]",
+        "center": [
+          355,
+          1172
+        ]
+      },
+      {
+        "text": "16 hours ago",
+        "resource_id": "",
+        "content_desc": "16 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[449,1150][502,1194]",
+        "center": [
+          475,
+          1172
+        ]
+      },
+      {
+        "text": "•",
+        "resource_id": "",
+        "content_desc": "•",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[513,1150][524,1194]",
+        "center": [
+          518,
+          1172
+        ]
+      },
+      {
+        "text": "Author",
+        "resource_id": "",
+        "content_desc": "Author",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[535,1150][644,1194]",
+        "center": [
+          589,
+          1172
+        ]
+      },
+      {
+        "text": "sebintel said Sent! Link is in your DMs 📧",
+        "resource_id": "",
+        "content_desc": "sebintel said Sent! Link is in your DMs 📧",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[265,1205][765,1245]",
+        "center": [
+          515,
+          1225
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,1128][1080,1245]",
+        "center": [
+          1003,
+          1186
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,1128][1080,1245]",
+        "center": [
+          1003,
+          1186
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/above_composer_views",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[0,1246][1080,1357]",
+        "center": [
+          540,
+          1301
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "❤️",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[32,1258][131,1357]",
+        "center": [
+          81,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "🙌",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[163,1258][262,1357]",
+        "center": [
+          212,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "🔥",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[294,1258][393,1357]",
+        "center": [
+          343,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "👏",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[425,1258][524,1357]",
+        "center": [
+          474,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "😢",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[556,1258][655,1357]",
+        "center": [
+          605,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "😍",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[687,1258][786,1357]",
+        "center": [
+          736,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "😮",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[818,1258][917,1357]",
+        "center": [
+          867,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "😂",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[949,1258][1048,1357]",
+        "center": [
+          998,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/comment_composer_left_image_view",
+        "content_desc": "Profile picture",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[33,1379][132,1478]",
+        "center": [
+          82,
+          1428
+        ]
+      },
+      {
+        "text": "Join the conversation…",
+        "resource_id": "com.instagram.android:id/layout_comment_thread_edittext_multiline",
+        "content_desc": "",
+        "class": "android.widget.EditText",
+        "clickable": true,
+        "bounds": "[154,1379][821,1478]",
+        "center": [
+          487,
+          1428
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/comment_composer_animated_image_picker_button",
+        "content_desc": "GIF",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[821,1396][931,1462]",
+        "center": [
+          876,
+          1429
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/comment_composer_appreciation_gift_button",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[970,1396][1080,1462]",
+        "center": [
+          1025,
+          1429
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_profile_header",
+        "content_desc": "sebintel posted a video 2 days ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[0,244][1080,387]",
+        "center": [
+          540,
+          315
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,244][134,387]",
+        "center": [
+          67,
+          315
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_photo_profile_imageview",
+        "content_desc": "Profile picture of sebintel",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[41,274][124,357]",
+        "center": [
+          82,
+          315
+        ]
+      },
+      {
+        "text": "sebintel",
+        "resource_id": "com.instagram.android:id/row_feed_photo_profile_name",
+        "content_desc": "sebintel",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[134,244][958,314]",
+        "center": [
+          546,
+          279
+        ]
+      },
+      {
+        "text": " sebintel · Original audio",
+        "resource_id": "com.instagram.android:id/secondary_label",
+        "content_desc": " sebintel · Original audio",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[134,313][958,387]",
+        "center": [
+          546,
+          350
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/media_option_button",
+        "content_desc": "More actions for this post",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[958,250][1080,382]",
+        "center": [
+          1019,
+          316
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[931,1627][1080,1737]",
+        "center": [
+          1005,
+          1682
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Turn sound on",
+        "class": "android.widget.LinearLayout",
+        "clickable": false,
+        "bounds": "[970,1627][1041,1698]",
+        "center": [
+          1005,
+          1662
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/media_group",
+        "content_desc": "",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[0,387][1080,1737]",
+        "center": [
+          540,
+          1062
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[33,1737][110,1864]",
+        "center": [
+          71,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_like",
+        "content_desc": "Like",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[33,1737][99,1864]",
+        "center": [
+          66,
+          1800
+        ]
+      },
+      {
+        "text": "297",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[110,1737][177,1864]",
+        "center": [
+          143,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[177,1737][287,1864]",
+        "center": [
+          232,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_comment",
+        "content_desc": "Comment",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[210,1737][276,1864]",
+        "center": [
+          243,
+          1800
+        ]
+      },
+      {
+        "text": "543",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[287,1737][358,1864]",
+        "center": [
+          322,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[358,1737][479,1864]",
+        "center": [
+          418,
+          1800
+        ]
+      },
+      {
+        "text": "11",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[479,1737][511,1864]",
+        "center": [
+          495,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[528,1737][622,1864]",
+        "center": [
+          575,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_share",
+        "content_desc": "Send Post",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[545,1737][611,1864]",
+        "center": [
+          578,
+          1800
+        ]
+      },
+      {
+        "text": "136",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[622,1737][684,1864]",
+        "center": [
+          653,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_save",
+        "content_desc": "Add to Saved",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[952,1737][1073,1853]",
+        "center": [
+          1012,
+          1795
+        ]
+      },
+      {
+        "text": "sebintel Comment “Cartoon” and I’ll send you the link.\nCreate entire cartoon with one prompt. The AI handled the story, scenes, visuals, editing, and even content strategy automatically from a single workflow.\n#AICartoon #AIAnimation #AIForCreators #GenerativeAI #CreativeAI #DigitalContent #ContentCreationAI #AIWorkflow #AnimationTools #AutomatedContent",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "com.instagram.ui.widget.textview.IgTextLayoutView",
+        "clickable": false,
+        "bounds": "[33,1864][1080,2180]",
+        "center": [
+          556,
+          2022
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "sebintel",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,1864][177,1910]",
+        "center": [
+          105,
+          1887
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AICartoon",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,2072][244,2118]",
+        "center": [
+          138,
+          2095
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AIAnimation",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[253,2072][500,2118]",
+        "center": [
+          376,
+          2095
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AIForCreators",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[509,2072][788,2118]",
+        "center": [
+          648,
+          2095
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#GenerativeAI",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,2124][293,2170]",
+        "center": [
+          163,
+          2147
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#CreativeAI",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[302,2124][518,2170]",
+        "center": [
+          410,
+          2147
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#DigitalContent",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[527,2124][810,2170]",
+        "center": [
+          668,
+          2147
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#ContentCreationAI",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,2176][395,2180]",
+        "center": [
+          214,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AIWorkflow",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[404,2176][639,2180]",
+        "center": [
+          521,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AnimationTools",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[648,2176][951,2180]",
+        "center": [
+          799,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AutomatedContent",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,0][0,0]",
+        "center": [
+          0,
+          0
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,90][1080,244]",
+        "center": [
+          540,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_new_title_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,90][154,244]",
+        "center": [
+          77,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_button_back",
+        "content_desc": "Back",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[0,90][154,244]",
+        "center": [
+          77,
+          167
+        ]
+      }
+    ]
+  },
+  "c04_text_entered": {
+    "elements": [
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/background_dimmer",
+        "content_desc": "@2131955319",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,90][1080,2180]",
+        "center": [
+          540,
+          1135
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/layout_container_bottom_sheet",
+        "content_desc": "",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[0,90][1080,2180]",
+        "center": [
+          540,
+          1135
+        ]
+      },
+      {
+        "text": "Comments",
+        "resource_id": "com.instagram.android:id/title_text_view",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[275,129][805,238]",
+        "center": [
+          540,
+          183
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to _lastbornink's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[44,272][143,371]",
+        "center": [
+          93,
+          321
+        ]
+      },
+      {
+        "text": "_lastbornink ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[179,261][377,303]",
+        "center": [
+          278,
+          282
+        ]
+      },
+      {
+        "text": "13 hours ago",
+        "resource_id": "",
+        "content_desc": "13 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[380,261][432,303]",
+        "center": [
+          406,
+          282
+        ]
+      },
+      {
+        "text": "_lastbornink said Cartoon",
+        "resource_id": "",
+        "content_desc": "_lastbornink said Cartoon",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[179,314][326,363]",
+        "center": [
+          252,
+          338
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[179,363][310,446]",
+        "center": [
+          244,
+          404
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,239][1080,404]",
+        "center": [
+          1003,
+          321
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,239][1080,360]",
+        "center": [
+          1003,
+          299
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,446][1080,505]",
+        "center": [
+          540,
+          475
+        ]
+      },
+      {
+        "text": "View 1 more reply",
+        "resource_id": "",
+        "content_desc": "View 1 more reply",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[265,446][535,488]",
+        "center": [
+          400,
+          467
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to keysersoze_uk's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[44,538][143,637]",
+        "center": [
+          93,
+          587
+        ]
+      },
+      {
+        "text": "keysersoze_uk ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[179,527][415,569]",
+        "center": [
+          297,
+          548
+        ]
+      },
+      {
+        "text": "7 hours ago",
+        "resource_id": "",
+        "content_desc": "7 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[418,527][455,569]",
+        "center": [
+          436,
+          548
+        ]
+      },
+      {
+        "text": "keysersoze_uk said Cartoon",
+        "resource_id": "",
+        "content_desc": "keysersoze_uk said Cartoon",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[179,580][326,629]",
+        "center": [
+          252,
+          604
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[179,629][310,712]",
+        "center": [
+          244,
+          670
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,505][1080,670]",
+        "center": [
+          1003,
+          587
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,505][1080,626]",
+        "center": [
+          1003,
+          565
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to sebintel's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[156,741][233,818]",
+        "center": [
+          194,
+          779
+        ]
+      },
+      {
+        "text": "sebintel   ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[265,734][446,778]",
+        "center": [
+          355,
+          756
+        ]
+      },
+      {
+        "text": "7 hours ago",
+        "resource_id": "",
+        "content_desc": "7 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[449,734][486,778]",
+        "center": [
+          467,
+          756
+        ]
+      },
+      {
+        "text": "•",
+        "resource_id": "",
+        "content_desc": "•",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[497,734][508,778]",
+        "center": [
+          502,
+          756
+        ]
+      },
+      {
+        "text": "Author",
+        "resource_id": "",
+        "content_desc": "Author",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[519,734][628,778]",
+        "center": [
+          573,
+          756
+        ]
+      },
+      {
+        "text": "sebintel said Sent! Link is in your DMs 📧",
+        "resource_id": "",
+        "content_desc": "sebintel said Sent! Link is in your DMs 📧",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[265,789][765,838]",
+        "center": [
+          515,
+          813
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[265,838][396,921]",
+        "center": [
+          330,
+          879
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,712][1080,877]",
+        "center": [
+          1003,
+          794
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,712][1080,833]",
+        "center": [
+          1003,
+          772
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to armandol9's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[44,954][143,1053]",
+        "center": [
+          93,
+          1003
+        ]
+      },
+      {
+        "text": "armandol9 ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[179,943][353,985]",
+        "center": [
+          266,
+          964
+        ]
+      },
+      {
+        "text": "16 hours ago",
+        "resource_id": "",
+        "content_desc": "16 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[356,943][409,985]",
+        "center": [
+          382,
+          964
+        ]
+      },
+      {
+        "text": "armandol9 said Cartoon",
+        "resource_id": "",
+        "content_desc": "armandol9 said Cartoon",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[179,996][326,1045]",
+        "center": [
+          252,
+          1020
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[179,1045][310,1128]",
+        "center": [
+          244,
+          1086
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,921][1080,1086]",
+        "center": [
+          1003,
+          1003
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,921][1080,1042]",
+        "center": [
+          1003,
+          981
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to sebintel's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[156,1157][233,1234]",
+        "center": [
+          194,
+          1195
+        ]
+      },
+      {
+        "text": "sebintel   ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[265,1150][446,1194]",
+        "center": [
+          355,
+          1172
+        ]
+      },
+      {
+        "text": "16 hours ago",
+        "resource_id": "",
+        "content_desc": "16 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[449,1150][502,1194]",
+        "center": [
+          475,
+          1172
+        ]
+      },
+      {
+        "text": "•",
+        "resource_id": "",
+        "content_desc": "•",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[513,1150][524,1194]",
+        "center": [
+          518,
+          1172
+        ]
+      },
+      {
+        "text": "Author",
+        "resource_id": "",
+        "content_desc": "Author",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[535,1150][644,1194]",
+        "center": [
+          589,
+          1172
+        ]
+      },
+      {
+        "text": "sebintel said Sent! Link is in your DMs 📧",
+        "resource_id": "",
+        "content_desc": "sebintel said Sent! Link is in your DMs 📧",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[265,1205][765,1245]",
+        "center": [
+          515,
+          1225
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,1128][1080,1245]",
+        "center": [
+          1003,
+          1186
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,1128][1080,1245]",
+        "center": [
+          1003,
+          1186
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/above_composer_views",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[0,1246][1080,1357]",
+        "center": [
+          540,
+          1301
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "❤️",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[32,1258][131,1357]",
+        "center": [
+          81,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "🙌",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[163,1258][262,1357]",
+        "center": [
+          212,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "🔥",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[294,1258][393,1357]",
+        "center": [
+          343,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "👏",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[425,1258][524,1357]",
+        "center": [
+          474,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "😢",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[556,1258][655,1357]",
+        "center": [
+          605,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "😍",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[687,1258][786,1357]",
+        "center": [
+          736,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "😮",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[818,1258][917,1357]",
+        "center": [
+          867,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "😂",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[949,1258][1048,1357]",
+        "center": [
+          998,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/comment_composer_left_image_view",
+        "content_desc": "Profile picture",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[33,1379][132,1478]",
+        "center": [
+          82,
+          1428
+        ]
+      },
+      {
+        "text": "So cool",
+        "resource_id": "com.instagram.android:id/layout_comment_thread_edittext_multiline",
+        "content_desc": "",
+        "class": "android.widget.EditText",
+        "clickable": true,
+        "bounds": "[154,1379][903,1478]",
+        "center": [
+          528,
+          1428
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/layout_comment_thread_post_button_icon",
+        "content_desc": "Post",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[903,1390][1030,1467]",
+        "center": [
+          966,
+          1428
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_profile_header",
+        "content_desc": "sebintel posted a video 2 days ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[0,244][1080,387]",
+        "center": [
+          540,
+          315
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,244][134,387]",
+        "center": [
+          67,
+          315
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_photo_profile_imageview",
+        "content_desc": "Profile picture of sebintel",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[41,274][124,357]",
+        "center": [
+          82,
+          315
+        ]
+      },
+      {
+        "text": "sebintel",
+        "resource_id": "com.instagram.android:id/row_feed_photo_profile_name",
+        "content_desc": "sebintel",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[134,244][958,314]",
+        "center": [
+          546,
+          279
+        ]
+      },
+      {
+        "text": " sebintel · Original audio",
+        "resource_id": "com.instagram.android:id/secondary_label",
+        "content_desc": " sebintel · Original audio",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[134,313][958,387]",
+        "center": [
+          546,
+          350
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/media_option_button",
+        "content_desc": "More actions for this post",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[958,250][1080,382]",
+        "center": [
+          1019,
+          316
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/media_group",
+        "content_desc": "",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[0,387][1080,1737]",
+        "center": [
+          540,
+          1062
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/feed_preview_keep_watching_backdrop",
+        "content_desc": "",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[0,387][1080,1737]",
+        "center": [
+          540,
+          1062
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/feed_preview_keep_watching_button",
+        "content_desc": "Tap to watch more reels",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[293,996][787,1128]",
+        "center": [
+          540,
+          1062
+        ]
+      },
+      {
+        "text": "Watch more reels",
+        "resource_id": "com.instagram.android:id/feed_preview_keep_watching_text",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[351,1037][729,1087]",
+        "center": [
+          540,
+          1062
+        ]
+      },
+      {
+        "text": "Watch Again",
+        "resource_id": "com.instagram.android:id/feed_preview_watch_again_text",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[381,1128][699,1266]",
+        "center": [
+          540,
+          1197
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[931,1627][1080,1737]",
+        "center": [
+          1005,
+          1682
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Turn sound on",
+        "class": "android.widget.LinearLayout",
+        "clickable": false,
+        "bounds": "[970,1627][1041,1698]",
+        "center": [
+          1005,
+          1662
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[33,1737][110,1864]",
+        "center": [
+          71,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_like",
+        "content_desc": "Like",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[33,1737][99,1864]",
+        "center": [
+          66,
+          1800
+        ]
+      },
+      {
+        "text": "297",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[110,1737][177,1864]",
+        "center": [
+          143,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[177,1737][287,1864]",
+        "center": [
+          232,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_comment",
+        "content_desc": "Comment",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[210,1737][276,1864]",
+        "center": [
+          243,
+          1800
+        ]
+      },
+      {
+        "text": "543",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[287,1737][358,1864]",
+        "center": [
+          322,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[358,1737][479,1864]",
+        "center": [
+          418,
+          1800
+        ]
+      },
+      {
+        "text": "11",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[479,1737][511,1864]",
+        "center": [
+          495,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[528,1737][622,1864]",
+        "center": [
+          575,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_share",
+        "content_desc": "Send Post",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[545,1737][611,1864]",
+        "center": [
+          578,
+          1800
+        ]
+      },
+      {
+        "text": "136",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[622,1737][684,1864]",
+        "center": [
+          653,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_save",
+        "content_desc": "Add to Saved",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[952,1737][1073,1853]",
+        "center": [
+          1012,
+          1795
+        ]
+      },
+      {
+        "text": "sebintel Comment “Cartoon” and I’ll send you the link.\nCreate entire cartoon with one prompt. The AI handled the story, scenes, visuals, editing, and even content strategy automatically from a single workflow.\n#AICartoon #AIAnimation #AIForCreators #GenerativeAI #CreativeAI #DigitalContent #ContentCreationAI #AIWorkflow #AnimationTools #AutomatedContent",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "com.instagram.ui.widget.textview.IgTextLayoutView",
+        "clickable": false,
+        "bounds": "[33,1864][1080,2180]",
+        "center": [
+          556,
+          2022
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "sebintel",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,1864][177,1910]",
+        "center": [
+          105,
+          1887
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AICartoon",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,2072][244,2118]",
+        "center": [
+          138,
+          2095
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AIAnimation",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[253,2072][500,2118]",
+        "center": [
+          376,
+          2095
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AIForCreators",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[509,2072][788,2118]",
+        "center": [
+          648,
+          2095
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#GenerativeAI",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,2124][293,2170]",
+        "center": [
+          163,
+          2147
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#CreativeAI",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[302,2124][518,2170]",
+        "center": [
+          410,
+          2147
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#DigitalContent",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[527,2124][810,2170]",
+        "center": [
+          668,
+          2147
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#ContentCreationAI",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,2176][395,2180]",
+        "center": [
+          214,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AIWorkflow",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[404,2176][639,2180]",
+        "center": [
+          521,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AnimationTools",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[648,2176][951,2180]",
+        "center": [
+          799,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AutomatedContent",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,0][0,0]",
+        "center": [
+          0,
+          0
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,90][1080,244]",
+        "center": [
+          540,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_new_title_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,90][154,244]",
+        "center": [
+          77,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_button_back",
+        "content_desc": "Back",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[0,90][154,244]",
+        "center": [
+          77,
+          167
+        ]
+      }
+    ]
+  },
+  "c05_after_post": {
+    "elements": [
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/background_dimmer",
+        "content_desc": "@2131955319",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,90][1080,2180]",
+        "center": [
+          540,
+          1135
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/layout_container_bottom_sheet",
+        "content_desc": "",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[0,90][1080,2180]",
+        "center": [
+          540,
+          1135
+        ]
+      },
+      {
+        "text": "Comments",
+        "resource_id": "com.instagram.android:id/title_text_view",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[275,129][805,238]",
+        "center": [
+          540,
+          183
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to likklemyself's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[44,272][143,371]",
+        "center": [
+          93,
+          321
+        ]
+      },
+      {
+        "text": "likklemyself ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[179,261][367,303]",
+        "center": [
+          273,
+          282
+        ]
+      },
+      {
+        "text": "1 second ago",
+        "resource_id": "",
+        "content_desc": "1 second ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[370,261][401,303]",
+        "center": [
+          385,
+          282
+        ]
+      },
+      {
+        "text": "likklemyself said So cool",
+        "resource_id": "",
+        "content_desc": "likklemyself said So cool",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[179,314][315,363]",
+        "center": [
+          247,
+          338
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[179,363][310,446]",
+        "center": [
+          244,
+          404
+        ]
+      },
+      {
+        "text": "Edit",
+        "resource_id": "",
+        "content_desc": "Edit",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[310,363][416,446]",
+        "center": [
+          363,
+          404
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,239][1080,404]",
+        "center": [
+          1003,
+          321
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,239][1080,360]",
+        "center": [
+          1003,
+          299
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to _lastbornink's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[44,479][143,578]",
+        "center": [
+          93,
+          528
+        ]
+      },
+      {
+        "text": "_lastbornink ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[179,468][377,510]",
+        "center": [
+          278,
+          489
+        ]
+      },
+      {
+        "text": "13 hours ago",
+        "resource_id": "",
+        "content_desc": "13 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[380,468][432,510]",
+        "center": [
+          406,
+          489
+        ]
+      },
+      {
+        "text": "_lastbornink said Cartoon",
+        "resource_id": "",
+        "content_desc": "_lastbornink said Cartoon",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[179,521][326,570]",
+        "center": [
+          252,
+          545
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[179,570][310,653]",
+        "center": [
+          244,
+          611
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,446][1080,611]",
+        "center": [
+          1003,
+          528
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,446][1080,567]",
+        "center": [
+          1003,
+          506
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,653][1080,712]",
+        "center": [
+          540,
+          682
+        ]
+      },
+      {
+        "text": "View 1 more reply",
+        "resource_id": "",
+        "content_desc": "View 1 more reply",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[265,653][535,695]",
+        "center": [
+          400,
+          674
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to keysersoze_uk's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[44,745][143,844]",
+        "center": [
+          93,
+          794
+        ]
+      },
+      {
+        "text": "keysersoze_uk ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[179,734][415,776]",
+        "center": [
+          297,
+          755
+        ]
+      },
+      {
+        "text": "7 hours ago",
+        "resource_id": "",
+        "content_desc": "7 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[418,734][455,776]",
+        "center": [
+          436,
+          755
+        ]
+      },
+      {
+        "text": "keysersoze_uk said Cartoon",
+        "resource_id": "",
+        "content_desc": "keysersoze_uk said Cartoon",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[179,787][326,836]",
+        "center": [
+          252,
+          811
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[179,836][310,919]",
+        "center": [
+          244,
+          877
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,712][1080,877]",
+        "center": [
+          1003,
+          794
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,712][1080,833]",
+        "center": [
+          1003,
+          772
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to sebintel's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[156,948][233,1025]",
+        "center": [
+          194,
+          986
+        ]
+      },
+      {
+        "text": "sebintel   ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[265,941][446,985]",
+        "center": [
+          355,
+          963
+        ]
+      },
+      {
+        "text": "7 hours ago",
+        "resource_id": "",
+        "content_desc": "7 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[449,941][486,985]",
+        "center": [
+          467,
+          963
+        ]
+      },
+      {
+        "text": "•",
+        "resource_id": "",
+        "content_desc": "•",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[497,941][508,985]",
+        "center": [
+          502,
+          963
+        ]
+      },
+      {
+        "text": "Author",
+        "resource_id": "",
+        "content_desc": "Author",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[519,941][628,985]",
+        "center": [
+          573,
+          963
+        ]
+      },
+      {
+        "text": "sebintel said Sent! Link is in your DMs 📧",
+        "resource_id": "",
+        "content_desc": "sebintel said Sent! Link is in your DMs 📧",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[265,996][765,1045]",
+        "center": [
+          515,
+          1020
+        ]
+      },
+      {
+        "text": "Reply",
+        "resource_id": "",
+        "content_desc": "Reply",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[265,1045][396,1128]",
+        "center": [
+          330,
+          1086
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,919][1080,1084]",
+        "center": [
+          1003,
+          1001
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,919][1080,1040]",
+        "center": [
+          1003,
+          979
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Go to armandol9's profile",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[44,1161][143,1245]",
+        "center": [
+          93,
+          1203
+        ]
+      },
+      {
+        "text": "armandol9 ",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[179,1150][353,1192]",
+        "center": [
+          266,
+          1171
+        ]
+      },
+      {
+        "text": "16 hours ago",
+        "resource_id": "",
+        "content_desc": "16 hours ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[356,1150][409,1192]",
+        "center": [
+          382,
+          1171
+        ]
+      },
+      {
+        "text": "armandol9 said Cartoon",
+        "resource_id": "",
+        "content_desc": "armandol9 said Cartoon",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[179,1203][326,1245]",
+        "center": [
+          252,
+          1224
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Tap to Like Comment",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[926,1128][1080,1245]",
+        "center": [
+          1003,
+          1186
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Like",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[926,1128][1080,1245]",
+        "center": [
+          1003,
+          1186
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/above_composer_views",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[0,1246][1080,1357]",
+        "center": [
+          540,
+          1301
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "❤️",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[32,1258][131,1357]",
+        "center": [
+          81,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "🙌",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[163,1258][262,1357]",
+        "center": [
+          212,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "🔥",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[294,1258][393,1357]",
+        "center": [
+          343,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "👏",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[425,1258][524,1357]",
+        "center": [
+          474,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "😢",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[556,1258][655,1357]",
+        "center": [
+          605,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "😍",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[687,1258][786,1357]",
+        "center": [
+          736,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "😮",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[818,1258][917,1357]",
+        "center": [
+          867,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/item_emoji",
+        "content_desc": "😂",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[949,1258][1048,1357]",
+        "center": [
+          998,
+          1307
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/comment_composer_left_image_view",
+        "content_desc": "Profile picture",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[33,1379][132,1478]",
+        "center": [
+          82,
+          1428
+        ]
+      },
+      {
+        "text": "Join the conversation…",
+        "resource_id": "com.instagram.android:id/layout_comment_thread_edittext_multiline",
+        "content_desc": "",
+        "class": "android.widget.EditText",
+        "clickable": true,
+        "bounds": "[154,1379][821,1478]",
+        "center": [
+          487,
+          1428
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/comment_composer_animated_image_picker_button",
+        "content_desc": "GIF",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[821,1396][931,1462]",
+        "center": [
+          876,
+          1429
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/comment_composer_appreciation_gift_button",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[970,1396][1080,1462]",
+        "center": [
+          1025,
+          1429
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_profile_header",
+        "content_desc": "sebintel posted a video 2 days ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[0,244][1080,387]",
+        "center": [
+          540,
+          315
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,244][134,387]",
+        "center": [
+          67,
+          315
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_photo_profile_imageview",
+        "content_desc": "Profile picture of sebintel",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[41,274][124,357]",
+        "center": [
+          82,
+          315
+        ]
+      },
+      {
+        "text": "sebintel",
+        "resource_id": "com.instagram.android:id/row_feed_photo_profile_name",
+        "content_desc": "sebintel",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[134,244][958,314]",
+        "center": [
+          546,
+          279
+        ]
+      },
+      {
+        "text": " sebintel · Original audio",
+        "resource_id": "com.instagram.android:id/secondary_label",
+        "content_desc": " sebintel · Original audio",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[134,313][958,387]",
+        "center": [
+          546,
+          350
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/media_option_button",
+        "content_desc": "More actions for this post",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[958,250][1080,382]",
+        "center": [
+          1019,
+          316
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/media_group",
+        "content_desc": "",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[0,387][1080,1737]",
+        "center": [
+          540,
+          1062
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/feed_preview_keep_watching_backdrop",
+        "content_desc": "",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[0,387][1080,1737]",
+        "center": [
+          540,
+          1062
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/feed_preview_keep_watching_button",
+        "content_desc": "Tap to watch more reels",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[293,996][787,1128]",
+        "center": [
+          540,
+          1062
+        ]
+      },
+      {
+        "text": "Watch more reels",
+        "resource_id": "com.instagram.android:id/feed_preview_keep_watching_text",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[351,1037][729,1087]",
+        "center": [
+          540,
+          1062
+        ]
+      },
+      {
+        "text": "Watch Again",
+        "resource_id": "com.instagram.android:id/feed_preview_watch_again_text",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[381,1128][699,1266]",
+        "center": [
+          540,
+          1197
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[931,1627][1080,1737]",
+        "center": [
+          1005,
+          1682
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Turn sound on",
+        "class": "android.widget.LinearLayout",
+        "clickable": false,
+        "bounds": "[970,1627][1041,1698]",
+        "center": [
+          1005,
+          1662
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[33,1737][110,1864]",
+        "center": [
+          71,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_like",
+        "content_desc": "Like",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[33,1737][99,1864]",
+        "center": [
+          66,
+          1800
+        ]
+      },
+      {
+        "text": "297",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[110,1737][177,1864]",
+        "center": [
+          143,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[177,1737][287,1864]",
+        "center": [
+          232,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_comment",
+        "content_desc": "Comment",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[210,1737][276,1864]",
+        "center": [
+          243,
+          1800
+        ]
+      },
+      {
+        "text": "544",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[287,1737][359,1864]",
+        "center": [
+          323,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[359,1737][480,1864]",
+        "center": [
+          419,
+          1800
+        ]
+      },
+      {
+        "text": "11",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[480,1737][512,1864]",
+        "center": [
+          496,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[529,1737][623,1864]",
+        "center": [
+          576,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_share",
+        "content_desc": "Send Post",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[546,1737][612,1864]",
+        "center": [
+          579,
+          1800
+        ]
+      },
+      {
+        "text": "136",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[623,1737][685,1864]",
+        "center": [
+          654,
+          1800
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_save",
+        "content_desc": "Add to Saved",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[953,1737][1074,1853]",
+        "center": [
+          1013,
+          1795
+        ]
+      },
+      {
+        "text": "sebintel Comment “Cartoon” and I’ll send you the link.\nCreate entire cartoon with one prompt. The AI handled the story, scenes, visuals, editing, and even content strategy automatically from a single workflow.\n#AICartoon #AIAnimation #AIForCreators #GenerativeAI #CreativeAI #DigitalContent #ContentCreationAI #AIWorkflow #AnimationTools #AutomatedContent",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "com.instagram.ui.widget.textview.IgTextLayoutView",
+        "clickable": false,
+        "bounds": "[33,1864][1080,2180]",
+        "center": [
+          556,
+          2022
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "sebintel",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,1864][177,1910]",
+        "center": [
+          105,
+          1887
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AICartoon",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,2072][244,2118]",
+        "center": [
+          138,
+          2095
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AIAnimation",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[253,2072][500,2118]",
+        "center": [
+          376,
+          2095
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AIForCreators",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[509,2072][788,2118]",
+        "center": [
+          648,
+          2095
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#GenerativeAI",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,2124][293,2170]",
+        "center": [
+          163,
+          2147
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#CreativeAI",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[302,2124][518,2170]",
+        "center": [
+          410,
+          2147
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#DigitalContent",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[527,2124][810,2170]",
+        "center": [
+          668,
+          2147
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#ContentCreationAI",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,2176][395,2180]",
+        "center": [
+          214,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AIWorkflow",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[404,2176][639,2180]",
+        "center": [
+          521,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AnimationTools",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[648,2176][951,2180]",
+        "center": [
+          799,
+          2178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "#AutomatedContent",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,0][0,0]",
+        "center": [
+          0,
+          0
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,90][1080,244]",
+        "center": [
+          540,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_new_title_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,90][154,244]",
+        "center": [
+          77,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_button_back",
+        "content_desc": "Back",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[0,90][154,244]",
+        "center": [
+          77,
+          167
+        ]
+      }
+    ]
+  }
+}

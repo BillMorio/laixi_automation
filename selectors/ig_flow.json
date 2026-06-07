@@ -1,0 +1,3537 @@
+{
+  "01_home": {
+    "signature": [
+      " Dave, Tems · Raindance",
+      "1,598",
+      "16.4K",
+      "4,882",
+      "705",
+      "Add to Saved",
+      "Follow",
+      "Home",
+      "Message",
+      "More actions for this post",
+      "Profile",
+      "Reels",
+      "Search and explore",
+      "calovalaxo's story, 3 of 4, Unseen.",
+      "likklemyself's story, 0 of 4, Unseen.",
+      "radish271",
+      "seriously_mr_bag's story, 1 of 4, Unseen.",
+      "seriously_mr_bag's story, 2 of 4, Unseen."
+    ],
+    "elements": [
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "reels tray container",
+        "class": "androidx.recyclerview.widget.RecyclerView",
+        "clickable": false,
+        "bounds": "[0,244][1080,591]",
+        "center": [
+          540,
+          417
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/outer_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,244][294,591]",
+        "center": [
+          147,
+          417
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "likklemyself's story, 0 of 4, Unseen.",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,244][294,527]",
+        "center": [
+          147,
+          385
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/avatar_image_view",
+        "content_desc": "likklemyself's story, 0 of 4, Unseen.",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[37,281][256,500]",
+        "center": [
+          146,
+          390
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/reel_empty_badge",
+        "content_desc": "Add to story",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[193,437][271,515]",
+        "center": [
+          232,
+          476
+        ]
+      },
+      {
+        "text": "Your story",
+        "resource_id": "com.instagram.android:id/username",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[67,527][227,569]",
+        "center": [
+          147,
+          548
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/outer_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[294,244][588,591]",
+        "center": [
+          441,
+          417
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "seriously_mr_bag's story, 1 of 4, Unseen.",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[294,244][588,527]",
+        "center": [
+          441,
+          385
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/avatar_image_view",
+        "content_desc": "seriously_mr_bag's story, 1 of 4, Unseen.",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[331,281][550,500]",
+        "center": [
+          440,
+          390
+        ]
+      },
+      {
+        "text": "seriously_mr_bag",
+        "resource_id": "com.instagram.android:id/username",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[307,527][575,569]",
+        "center": [
+          441,
+          548
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/outer_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[654,244][948,591]",
+        "center": [
+          801,
+          417
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "seriously_mr_bag's story, 2 of 4, Unseen.",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[654,244][948,527]",
+        "center": [
+          801,
+          385
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/avatar_image_view",
+        "content_desc": "seriously_mr_bag's story, 2 of 4, Unseen.",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[691,281][910,500]",
+        "center": [
+          800,
+          390
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/reel_empty_badge",
+        "content_desc": "Add to story",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[847,437][925,515]",
+        "center": [
+          886,
+          476
+        ]
+      },
+      {
+        "text": "seriously_mr_bag",
+        "resource_id": "com.instagram.android:id/username",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[667,527][935,569]",
+        "center": [
+          801,
+          548
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/outer_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[948,244][1080,591]",
+        "center": [
+          1014,
+          417
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "calovalaxo's story, 3 of 4, Unseen.",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[948,244][1080,527]",
+        "center": [
+          1014,
+          385
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/avatar_image_view",
+        "content_desc": "calovalaxo's story, 3 of 4, Unseen.",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[985,281][1080,500]",
+        "center": [
+          1032,
+          390
+        ]
+      },
+      {
+        "text": "calovalaxo",
+        "resource_id": "com.instagram.android:id/username",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[1014,527][1080,569]",
+        "center": [
+          1047,
+          548
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_profile_header",
+        "content_desc": "radish271 posted a photo 1 day ago",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "bounds": "[0,591][1080,734]",
+        "center": [
+          540,
+          662
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,591][134,734]",
+        "center": [
+          67,
+          662
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_photo_profile_imageview",
+        "content_desc": "Profile picture of radish271",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[41,621][124,704]",
+        "center": [
+          82,
+          662
+        ]
+      },
+      {
+        "text": "radish271",
+        "resource_id": "com.instagram.android:id/row_feed_photo_profile_name",
+        "content_desc": "radish271",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[134,591][750,661]",
+        "center": [
+          442,
+          626
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[134,661][750,734]",
+        "center": [
+          442,
+          697
+        ]
+      },
+      {
+        "text": "Suggested for you",
+        "resource_id": "com.instagram.android:id/secondary_label",
+        "content_desc": "Suggested for you",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[134,661][750,723]",
+        "center": [
+          442,
+          692
+        ]
+      },
+      {
+        "text": "Follow",
+        "resource_id": "com.instagram.android:id/inline_follow_button",
+        "content_desc": "Follow radish",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[750,619][958,707]",
+        "center": [
+          854,
+          663
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/media_option_button",
+        "content_desc": "More actions for this post",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[958,597][1080,729]",
+        "center": [
+          1019,
+          663
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/secondary_label",
+        "content_desc": " Dave, Tems · Raindance",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[134,663][750,734]",
+        "center": [
+          442,
+          698
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/media_group",
+        "content_desc": "",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[0,734][1080,1814]",
+        "center": [
+          540,
+          1274
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_photo_imageview",
+        "content_desc": "Suggested Photo by radish, 16,433 likes, 1,598 comments",
+        "class": "android.widget.FrameLayout",
+        "clickable": false,
+        "bounds": "[0,734][1080,1814]",
+        "center": [
+          540,
+          1274
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[931,1704][1080,1814]",
+        "center": [
+          1005,
+          1759
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Turn sound on",
+        "class": "android.widget.LinearLayout",
+        "clickable": false,
+        "bounds": "[970,1704][1041,1775]",
+        "center": [
+          1005,
+          1739
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[33,1814][110,1941]",
+        "center": [
+          71,
+          1877
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_like",
+        "content_desc": "Like",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[33,1814][99,1941]",
+        "center": [
+          66,
+          1877
+        ]
+      },
+      {
+        "text": "16.4K",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[110,1814][210,1941]",
+        "center": [
+          160,
+          1877
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[210,1814][320,1941]",
+        "center": [
+          265,
+          1877
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_comment",
+        "content_desc": "Comment",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[243,1814][309,1941]",
+        "center": [
+          276,
+          1877
+        ]
+      },
+      {
+        "text": "1,598",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[320,1814][417,1941]",
+        "center": [
+          368,
+          1877
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[417,1814][538,1941]",
+        "center": [
+          477,
+          1877
+        ]
+      },
+      {
+        "text": "705",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[538,1814][607,1941]",
+        "center": [
+          572,
+          1877
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[624,1814][718,1941]",
+        "center": [
+          671,
+          1877
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_share",
+        "content_desc": "Send Post",
+        "class": "android.widget.Button",
+        "clickable": false,
+        "bounds": "[641,1814][707,1941]",
+        "center": [
+          674,
+          1877
+        ]
+      },
+      {
+        "text": "4,882",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[718,1814][822,1941]",
+        "center": [
+          770,
+          1877
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_feed_button_save",
+        "content_desc": "Add to Saved",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[952,1814][1073,1930]",
+        "center": [
+          1012,
+          1872
+        ]
+      },
+      {
+        "text": "1 day ago",
+        "resource_id": "",
+        "content_desc": "1 day ago",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[0,1941][1080,1983]",
+        "center": [
+          540,
+          1962
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[143,2048][970,2138]",
+        "center": [
+          556,
+          2093
+        ]
+      },
+      {
+        "text": "Threads",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[143,2048][970,2100]",
+        "center": [
+          556,
+          2074
+        ]
+      },
+      {
+        "text": "_v.u.v.a_ and 3 others joined",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[261,2100][948,2138]",
+        "center": [
+          604,
+          2119
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[970,2060][1036,2126]",
+        "center": [
+          1003,
+          2093
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[0,90][132,244]",
+        "center": [
+          66,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_title_view",
+        "content_desc": "",
+        "class": "android.widget.ViewAnimator",
+        "clickable": true,
+        "bounds": "[132,124][948,209]",
+        "center": [
+          540,
+          166
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/title_logo",
+        "content_desc": "Instagram Home feed",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[391,124][688,209]",
+        "center": [
+          539,
+          166
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/notification",
+        "content_desc": "",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[948,90][1080,244]",
+        "center": [
+          1014,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/feed_tab",
+        "content_desc": "Home",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[0,2138][216,2180]",
+        "center": [
+          108,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_tab",
+        "content_desc": "Reels",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[216,2138][432,2180]",
+        "center": [
+          324,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/direct_tab",
+        "content_desc": "Message",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[432,2138][648,2180]",
+        "center": [
+          540,
+          2159
+        ]
+      },
+      {
+        "text": "3",
+        "resource_id": "com.instagram.android:id/notification",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[0,0][0,0]",
+        "center": [
+          0,
+          0
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/search_tab",
+        "content_desc": "Search and explore",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[648,2138][864,2180]",
+        "center": [
+          756,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/profile_tab",
+        "content_desc": "Profile",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[864,2138][1080,2180]",
+        "center": [
+          972,
+          2159
+        ]
+      }
+    ]
+  },
+  "02_composer": {
+    "signature": [
+      "Cancel",
+      "LIVE",
+      "Next",
+      "POST",
+      "REEL",
+      "Recents",
+      "STORY",
+      "Select multiple button",
+      "Selected Video thumbnail created on 28 May 2026 14:48",
+      "Unselected Photo thumbnail created on 28 May 2026 11:23",
+      "Unselected Photo thumbnail created on 28 May 2026 11:24",
+      "Unselected Photo thumbnail created on 28 May 2026 11:43",
+      "Unselected Photo thumbnail created on 28 May 2026 11:51",
+      "Unselected Photo thumbnail created on 28 May 2026 11:58",
+      "Unselected Photo thumbnail created on 28 May 2026 12:02",
+      "Unselected Video thumbnail created on 28 May 2026 11:41",
+      "Unselected Video thumbnail created on 28 May 2026 11:50",
+      "Unselected Video thumbnail created on 28 May 2026 12:00",
+      "Unselected Video thumbnail created on 28 May 2026 12:11",
+      "Video preview thumbnail"
+    ],
+    "elements": [
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_cancel",
+        "content_desc": "Cancel",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[0,90][154,244]",
+        "center": [
+          77,
+          167
+        ]
+      },
+      {
+        "text": "New post",
+        "resource_id": "com.instagram.android:id/new_post_title",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[154,90][913,244]",
+        "center": [
+          533,
+          167
+        ]
+      },
+      {
+        "text": "Next",
+        "resource_id": "com.instagram.android:id/next_button_textview",
+        "content_desc": "Next",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[913,90][1080,244]",
+        "center": [
+          996,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/video_preview_view",
+        "content_desc": "Video preview thumbnail",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[0,244][1080,1324]",
+        "center": [
+          540,
+          784
+        ]
+      },
+      {
+        "text": "Recents",
+        "resource_id": "com.instagram.android:id/gallery_folder_menu_tv",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,1363][337,1427]",
+        "center": [
+          168,
+          1395
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/multi_select_slide_button_alt",
+        "content_desc": "Select multiple button",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[655,1351][1047,1439]",
+        "center": [
+          851,
+          1395
+        ]
+      },
+      {
+        "text": "SELECT MULTIPLE",
+        "resource_id": "com.instagram.android:id/slideout_iconview_text",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[721,1375][1025,1414]",
+        "center": [
+          873,
+          1394
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_picker_grid_item_container",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[4,1471][269,1736]",
+        "center": [
+          136,
+          1603
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[273,1471][538,1736]",
+        "center": [
+          405,
+          1603
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Selected Video thumbnail created on 28 May 2026 14:48",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[273,1471][538,1736]",
+        "center": [
+          405,
+          1603
+        ]
+      },
+      {
+        "text": "0:26",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_label",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[458,1676][516,1717]",
+        "center": [
+          487,
+          1696
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[542,1471][807,1736]",
+        "center": [
+          674,
+          1603
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Video thumbnail created on 28 May 2026 12:11",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[542,1471][807,1736]",
+        "center": [
+          674,
+          1603
+        ]
+      },
+      {
+        "text": "0:26",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_label",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[727,1676][785,1717]",
+        "center": [
+          756,
+          1696
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[811,1471][1076,1736]",
+        "center": [
+          943,
+          1603
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Photo thumbnail created on 28 May 2026 12:02",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[811,1471][1076,1736]",
+        "center": [
+          943,
+          1603
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[4,1740][269,2005]",
+        "center": [
+          136,
+          1872
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Video thumbnail created on 28 May 2026 12:00",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[4,1740][269,2005]",
+        "center": [
+          136,
+          1872
+        ]
+      },
+      {
+        "text": "0:26",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_label",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[189,1945][247,1986]",
+        "center": [
+          218,
+          1965
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[273,1740][538,2005]",
+        "center": [
+          405,
+          1872
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Photo thumbnail created on 28 May 2026 11:58",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[273,1740][538,2005]",
+        "center": [
+          405,
+          1872
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[542,1740][807,2005]",
+        "center": [
+          674,
+          1872
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Photo thumbnail created on 28 May 2026 11:51",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[542,1740][807,2005]",
+        "center": [
+          674,
+          1872
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[811,1740][1076,2005]",
+        "center": [
+          943,
+          1872
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Video thumbnail created on 28 May 2026 11:50",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[811,1740][1076,2005]",
+        "center": [
+          943,
+          1872
+        ]
+      },
+      {
+        "text": "0:26",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_label",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[996,1945][1054,1986]",
+        "center": [
+          1025,
+          1965
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[4,2009][269,2180]",
+        "center": [
+          136,
+          2094
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Photo thumbnail created on 28 May 2026 11:43",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[4,2009][269,2180]",
+        "center": [
+          136,
+          2094
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[273,2009][538,2180]",
+        "center": [
+          405,
+          2094
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Video thumbnail created on 28 May 2026 11:41",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[273,2009][538,2180]",
+        "center": [
+          405,
+          2094
+        ]
+      },
+      {
+        "text": "0:26",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_label",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[0,0][0,0]",
+        "center": [
+          0,
+          0
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[542,2009][807,2180]",
+        "center": [
+          674,
+          2094
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Photo thumbnail created on 28 May 2026 11:24",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[542,2009][807,2180]",
+        "center": [
+          674,
+          2094
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[811,2009][1076,2180]",
+        "center": [
+          943,
+          2094
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Photo thumbnail created on 28 May 2026 11:23",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[811,2009][1076,2180]",
+        "center": [
+          943,
+          2094
+        ]
+      },
+      {
+        "text": "POST",
+        "resource_id": "com.instagram.android:id/cam_dest_feed",
+        "content_desc": "POST",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[454,2140][625,2180]",
+        "center": [
+          539,
+          2160
+        ]
+      },
+      {
+        "text": "STORY",
+        "resource_id": "com.instagram.android:id/cam_dest_story",
+        "content_desc": "STORY",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[625,2141][824,2180]",
+        "center": [
+          724,
+          2160
+        ]
+      },
+      {
+        "text": "REEL",
+        "resource_id": "com.instagram.android:id/cam_dest_clips",
+        "content_desc": "REEL",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[824,2141][986,2180]",
+        "center": [
+          905,
+          2160
+        ]
+      },
+      {
+        "text": "LIVE",
+        "resource_id": "com.instagram.android:id/cam_dest_live",
+        "content_desc": "LIVE",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[986,2141][1080,2180]",
+        "center": [
+          1033,
+          2160
+        ]
+      }
+    ]
+  },
+  "03_media_selected": {
+    "signature": [
+      "Cancel",
+      "LIVE",
+      "Next",
+      "POST",
+      "REEL",
+      "Recents",
+      "STORY",
+      "Select multiple button",
+      "Selected Video thumbnail created on 28 May 2026 14:48",
+      "Unselected Photo thumbnail created on 28 May 2026 11:23",
+      "Unselected Photo thumbnail created on 28 May 2026 11:24",
+      "Unselected Photo thumbnail created on 28 May 2026 11:43",
+      "Unselected Photo thumbnail created on 28 May 2026 11:51",
+      "Unselected Photo thumbnail created on 28 May 2026 11:58",
+      "Unselected Photo thumbnail created on 28 May 2026 12:02",
+      "Unselected Video thumbnail created on 28 May 2026 11:41",
+      "Unselected Video thumbnail created on 28 May 2026 11:50",
+      "Unselected Video thumbnail created on 28 May 2026 12:00",
+      "Unselected Video thumbnail created on 28 May 2026 12:11",
+      "Video preview thumbnail"
+    ],
+    "elements": [
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_cancel",
+        "content_desc": "Cancel",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[0,90][154,244]",
+        "center": [
+          77,
+          167
+        ]
+      },
+      {
+        "text": "New post",
+        "resource_id": "com.instagram.android:id/new_post_title",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[154,90][913,244]",
+        "center": [
+          533,
+          167
+        ]
+      },
+      {
+        "text": "Next",
+        "resource_id": "com.instagram.android:id/next_button_textview",
+        "content_desc": "Next",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[913,90][1080,244]",
+        "center": [
+          996,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/video_preview_view",
+        "content_desc": "Video preview thumbnail",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[0,244][1080,1324]",
+        "center": [
+          540,
+          784
+        ]
+      },
+      {
+        "text": "Recents",
+        "resource_id": "com.instagram.android:id/gallery_folder_menu_tv",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,1363][337,1427]",
+        "center": [
+          168,
+          1395
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/multi_select_slide_button_alt",
+        "content_desc": "Select multiple button",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[655,1351][1047,1439]",
+        "center": [
+          851,
+          1395
+        ]
+      },
+      {
+        "text": "SELECT MULTIPLE",
+        "resource_id": "com.instagram.android:id/slideout_iconview_text",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[721,1375][1025,1414]",
+        "center": [
+          873,
+          1394
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_picker_grid_item_container",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[4,1471][269,1736]",
+        "center": [
+          136,
+          1603
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[273,1471][538,1736]",
+        "center": [
+          405,
+          1603
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Selected Video thumbnail created on 28 May 2026 14:48",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[273,1471][538,1736]",
+        "center": [
+          405,
+          1603
+        ]
+      },
+      {
+        "text": "0:26",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_label",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[458,1676][516,1717]",
+        "center": [
+          487,
+          1696
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[542,1471][807,1736]",
+        "center": [
+          674,
+          1603
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Video thumbnail created on 28 May 2026 12:11",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[542,1471][807,1736]",
+        "center": [
+          674,
+          1603
+        ]
+      },
+      {
+        "text": "0:26",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_label",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[727,1676][785,1717]",
+        "center": [
+          756,
+          1696
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[811,1471][1076,1736]",
+        "center": [
+          943,
+          1603
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Photo thumbnail created on 28 May 2026 12:02",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[811,1471][1076,1736]",
+        "center": [
+          943,
+          1603
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[4,1740][269,2005]",
+        "center": [
+          136,
+          1872
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Video thumbnail created on 28 May 2026 12:00",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[4,1740][269,2005]",
+        "center": [
+          136,
+          1872
+        ]
+      },
+      {
+        "text": "0:26",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_label",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[189,1945][247,1986]",
+        "center": [
+          218,
+          1965
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[273,1740][538,2005]",
+        "center": [
+          405,
+          1872
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Photo thumbnail created on 28 May 2026 11:58",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[273,1740][538,2005]",
+        "center": [
+          405,
+          1872
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[542,1740][807,2005]",
+        "center": [
+          674,
+          1872
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Photo thumbnail created on 28 May 2026 11:51",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[542,1740][807,2005]",
+        "center": [
+          674,
+          1872
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[811,1740][1076,2005]",
+        "center": [
+          943,
+          1872
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Video thumbnail created on 28 May 2026 11:50",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[811,1740][1076,2005]",
+        "center": [
+          943,
+          1872
+        ]
+      },
+      {
+        "text": "0:26",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_label",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[996,1945][1054,1986]",
+        "center": [
+          1025,
+          1965
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[4,2009][269,2180]",
+        "center": [
+          136,
+          2094
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Photo thumbnail created on 28 May 2026 11:43",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[4,2009][269,2180]",
+        "center": [
+          136,
+          2094
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[273,2009][538,2180]",
+        "center": [
+          405,
+          2094
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Video thumbnail created on 28 May 2026 11:41",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[273,2009][538,2180]",
+        "center": [
+          405,
+          2094
+        ]
+      },
+      {
+        "text": "0:26",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_label",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[0,0][0,0]",
+        "center": [
+          0,
+          0
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[542,2009][807,2180]",
+        "center": [
+          674,
+          2094
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Photo thumbnail created on 28 May 2026 11:24",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[542,2009][807,2180]",
+        "center": [
+          674,
+          2094
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "bounds": "[811,2009][1076,2180]",
+        "center": [
+          943,
+          2094
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/gallery_grid_item_thumbnail",
+        "content_desc": "Unselected Photo thumbnail created on 28 May 2026 11:23",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[811,2009][1076,2180]",
+        "center": [
+          943,
+          2094
+        ]
+      },
+      {
+        "text": "POST",
+        "resource_id": "com.instagram.android:id/cam_dest_feed",
+        "content_desc": "POST",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[454,2140][625,2180]",
+        "center": [
+          539,
+          2160
+        ]
+      },
+      {
+        "text": "STORY",
+        "resource_id": "com.instagram.android:id/cam_dest_story",
+        "content_desc": "STORY",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[625,2141][824,2180]",
+        "center": [
+          724,
+          2160
+        ]
+      },
+      {
+        "text": "REEL",
+        "resource_id": "com.instagram.android:id/cam_dest_clips",
+        "content_desc": "REEL",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[824,2141][986,2180]",
+        "center": [
+          905,
+          2160
+        ]
+      },
+      {
+        "text": "LIVE",
+        "resource_id": "com.instagram.android:id/cam_dest_live",
+        "content_desc": "LIVE",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[986,2141][1080,2180]",
+        "center": [
+          1033,
+          2160
+        ]
+      }
+    ]
+  },
+  "04_editor": {
+    "signature": [
+      "\"Double-tap for tools that edit your video clips.\"",
+      "Add audio",
+      "Add clips",
+      "Add sticker",
+      "Add text",
+      "Cancel",
+      "Captions",
+      "Effects",
+      "Next",
+      "Voice-over",
+      "Volume"
+    ],
+    "elements": [
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/quick_capture_root_container",
+        "content_desc": "",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[0,0][1080,2180]",
+        "center": [
+          540,
+          1090
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_left_action_button",
+        "content_desc": "\"Double-tap for tools that edit your video clips.\"",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,2152][276,2180]",
+        "center": [
+          154,
+          2166
+        ]
+      },
+      {
+        "text": "Edit video",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[0,0][0,0]",
+        "center": [
+          0,
+          0
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_right_action_button",
+        "content_desc": "Next",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[846,2152][1047,2180]",
+        "center": [
+          946,
+          2166
+        ]
+      },
+      {
+        "text": "Next",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[0,0][0,0]",
+        "center": [
+          0,
+          0
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_action_bar_volume_controls_button",
+        "content_desc": "Add audio",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[23,1859][144,1980]",
+        "center": [
+          83,
+          1919
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_action_bar_add_text_button",
+        "content_desc": "Add text",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[167,1859][288,1980]",
+        "center": [
+          227,
+          1919
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_action_bar_add_sticker_button",
+        "content_desc": "Add sticker",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[311,1859][432,1980]",
+        "center": [
+          371,
+          1919
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_action_bar_ar_effects_button",
+        "content_desc": "Effects",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[455,1859][576,1980]",
+        "center": [
+          515,
+          1919
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_action_bar_voiceover_button",
+        "content_desc": "Voice-over",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[599,1859][720,1980]",
+        "center": [
+          659,
+          1919
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_action_bar_add_clips_button",
+        "content_desc": "Add clips",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[743,1859][864,1980]",
+        "center": [
+          803,
+          1919
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_action_bar_captions_button",
+        "content_desc": "Captions",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[887,1859][1008,1980]",
+        "center": [
+          947,
+          1919
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_action_bar_volume_controls_button",
+        "content_desc": "Volume",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[1031,1859][1080,1980]",
+        "center": [
+          1055,
+          1919
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/cancel_button",
+        "content_desc": "Cancel",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[19,134][140,255]",
+        "center": [
+          79,
+          194
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/capture_interactive_drawable_container",
+        "content_desc": "Reel preview playing",
+        "class": "android.widget.FrameLayout",
+        "clickable": false,
+        "bounds": "[0,90][1080,2010]",
+        "center": [
+          540,
+          1050
+        ]
+      }
+    ]
+  },
+  "05_caption": {
+    "signature": [
+      "Back",
+      "Double-tap to edit cover photo",
+      "New reel",
+      "Save Draft",
+      "Share",
+      "Write a caption and add hashtags…"
+    ],
+    "elements": [
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/content_view",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,244][1080,2054]",
+        "center": [
+          540,
+          1149
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/cover_photo_preview",
+        "content_desc": "",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[336,283][743,1009]",
+        "center": [
+          539,
+          646
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clip_thumbnail_image",
+        "content_desc": "Double-tap to edit cover photo",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[336,283][743,1009]",
+        "center": [
+          539,
+          646
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clip_thumbnail_layout",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[362,905][587,981]",
+        "center": [
+          474,
+          943
+        ]
+      },
+      {
+        "text": "Edit cover",
+        "resource_id": "com.instagram.android:id/clip_thumbnail_text",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[395,922][554,964]",
+        "center": [
+          474,
+          943
+        ]
+      },
+      {
+        "text": "Write a caption and add hashtags…",
+        "resource_id": "com.instagram.android:id/caption_input_text_view",
+        "content_desc": "Write a caption",
+        "class": "android.widget.EditText",
+        "clickable": true,
+        "bounds": "[44,1098][1036,1230]",
+        "center": [
+          540,
+          1164
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[44,1252][277,1366]",
+        "center": [
+          160,
+          1309
+        ]
+      },
+      {
+        "text": "Hashtags",
+        "resource_id": "com.instagram.android:id/suggestion_text",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[110,1302][255,1344]",
+        "center": [
+          182,
+          1323
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[299,1252][445,1366]",
+        "center": [
+          372,
+          1309
+        ]
+      },
+      {
+        "text": "Poll",
+        "resource_id": "com.instagram.android:id/suggestion_text",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[365,1302][423,1344]",
+        "center": [
+          394,
+          1323
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[467,1252][671,1366]",
+        "center": [
+          569,
+          1309
+        ]
+      },
+      {
+        "text": "Prompt",
+        "resource_id": "com.instagram.android:id/suggestion_text",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[533,1302][649,1344]",
+        "center": [
+          591,
+          1323
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,1388][1080,1520]",
+        "center": [
+          540,
+          1454
+        ]
+      },
+      {
+        "text": "Tag people",
+        "resource_id": "com.instagram.android:id/title",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[143,1426][401,1482]",
+        "center": [
+          272,
+          1454
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,1520][1080,1775]",
+        "center": [
+          540,
+          1647
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/metadata_location_row",
+        "content_desc": "Add location",
+        "class": "android.widget.LinearLayout",
+        "clickable": false,
+        "bounds": "[0,1520][1080,1775]",
+        "center": [
+          540,
+          1647
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/metadata_location_first_row",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,1520][1080,1652]",
+        "center": [
+          540,
+          1586
+        ]
+      },
+      {
+        "text": "Add location",
+        "resource_id": "com.instagram.android:id/location_label",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[143,1520][970,1652]",
+        "center": [
+          556,
+          1586
+        ]
+      },
+      {
+        "text": "People that you share this content with can see the location that you tag and view this content on the map.",
+        "resource_id": "com.instagram.android:id/map_content_education",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[0,1652][1080,1742]",
+        "center": [
+          540,
+          1697
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,1775][1080,1907]",
+        "center": [
+          540,
+          1841
+        ]
+      },
+      {
+        "text": "Rename audio",
+        "resource_id": "com.instagram.android:id/title",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[143,1813][464,1869]",
+        "center": [
+          303,
+          1841
+        ]
+      },
+      {
+        "text": "Original audio",
+        "resource_id": "com.instagram.android:id/inline_subtitle",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[464,1816][948,1865]",
+        "center": [
+          706,
+          1840
+        ]
+      },
+      {
+        "text": "Add AI label",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[143,1940][893,1993]",
+        "center": [
+          518,
+          1966
+        ]
+      },
+      {
+        "text": "We require you to label certain realistic content that's made with AI. Learn more",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[143,2004][849,2150]",
+        "center": [
+          496,
+          2077
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[893,1927][1036,2059]",
+        "center": [
+          964,
+          1993
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/share_button_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,2054][1080,2180]",
+        "center": [
+          540,
+          2117
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/save_draft_button",
+        "content_desc": "Save Draft",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[44,2094][518,2180]",
+        "center": [
+          281,
+          2137
+        ]
+      },
+      {
+        "text": "Save Draft",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[182,2129][380,2179]",
+        "center": [
+          281,
+          2154
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/share_button",
+        "content_desc": "Share",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[562,2094][1036,2180]",
+        "center": [
+          799,
+          2137
+        ]
+      },
+      {
+        "text": "Share",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[744,2129][854,2179]",
+        "center": [
+          799,
+          2154
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,90][1080,244]",
+        "center": [
+          540,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_new_title_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,90][1003,244]",
+        "center": [
+          501,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_button_back",
+        "content_desc": "Back",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[0,90][154,244]",
+        "center": [
+          77,
+          167
+        ]
+      },
+      {
+        "text": "New reel",
+        "resource_id": "com.instagram.android:id/action_bar_title",
+        "content_desc": "New reel",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[198,134][428,199]",
+        "center": [
+          313,
+          166
+        ]
+      }
+    ]
+  },
+  "06b_about_reels": {
+    "signature": [
+      "Back",
+      "Double-tap to edit cover photo",
+      "New reel",
+      "Save Draft",
+      "Share",
+      "Write a caption and add hashtags…"
+    ],
+    "elements": [
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/content_view",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,244][1080,2054]",
+        "center": [
+          540,
+          1149
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/cover_photo_preview",
+        "content_desc": "",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[336,283][743,1009]",
+        "center": [
+          539,
+          646
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clip_thumbnail_image",
+        "content_desc": "Double-tap to edit cover photo",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[336,283][743,1009]",
+        "center": [
+          539,
+          646
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clip_thumbnail_layout",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[362,905][587,981]",
+        "center": [
+          474,
+          943
+        ]
+      },
+      {
+        "text": "Edit cover",
+        "resource_id": "com.instagram.android:id/clip_thumbnail_text",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[395,922][554,964]",
+        "center": [
+          474,
+          943
+        ]
+      },
+      {
+        "text": "Write a caption and add hashtags…",
+        "resource_id": "com.instagram.android:id/caption_input_text_view",
+        "content_desc": "Write a caption",
+        "class": "android.widget.EditText",
+        "clickable": true,
+        "bounds": "[44,1098][1036,1230]",
+        "center": [
+          540,
+          1164
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[44,1252][277,1366]",
+        "center": [
+          160,
+          1309
+        ]
+      },
+      {
+        "text": "Hashtags",
+        "resource_id": "com.instagram.android:id/suggestion_text",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[110,1302][255,1344]",
+        "center": [
+          182,
+          1323
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[299,1252][445,1366]",
+        "center": [
+          372,
+          1309
+        ]
+      },
+      {
+        "text": "Poll",
+        "resource_id": "com.instagram.android:id/suggestion_text",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[365,1302][423,1344]",
+        "center": [
+          394,
+          1323
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[467,1252][671,1366]",
+        "center": [
+          569,
+          1309
+        ]
+      },
+      {
+        "text": "Prompt",
+        "resource_id": "com.instagram.android:id/suggestion_text",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[533,1302][649,1344]",
+        "center": [
+          591,
+          1323
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,1388][1080,1520]",
+        "center": [
+          540,
+          1454
+        ]
+      },
+      {
+        "text": "Tag people",
+        "resource_id": "com.instagram.android:id/title",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[143,1426][401,1482]",
+        "center": [
+          272,
+          1454
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,1520][1080,1775]",
+        "center": [
+          540,
+          1647
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/metadata_location_row",
+        "content_desc": "Add location",
+        "class": "android.widget.LinearLayout",
+        "clickable": false,
+        "bounds": "[0,1520][1080,1775]",
+        "center": [
+          540,
+          1647
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/metadata_location_first_row",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,1520][1080,1652]",
+        "center": [
+          540,
+          1586
+        ]
+      },
+      {
+        "text": "Add location",
+        "resource_id": "com.instagram.android:id/location_label",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[143,1520][970,1652]",
+        "center": [
+          556,
+          1586
+        ]
+      },
+      {
+        "text": "People that you share this content with can see the location that you tag and view this content on the map.",
+        "resource_id": "com.instagram.android:id/map_content_education",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[0,1652][1080,1742]",
+        "center": [
+          540,
+          1697
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[0,1775][1080,1907]",
+        "center": [
+          540,
+          1841
+        ]
+      },
+      {
+        "text": "Rename audio",
+        "resource_id": "com.instagram.android:id/title",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[143,1813][464,1869]",
+        "center": [
+          303,
+          1841
+        ]
+      },
+      {
+        "text": "Original audio",
+        "resource_id": "com.instagram.android:id/inline_subtitle",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[464,1816][948,1865]",
+        "center": [
+          706,
+          1840
+        ]
+      },
+      {
+        "text": "Add AI label",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[143,1940][893,1993]",
+        "center": [
+          518,
+          1966
+        ]
+      },
+      {
+        "text": "We require you to label certain realistic content that's made with AI. Learn more",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[143,2004][849,2150]",
+        "center": [
+          496,
+          2077
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[893,1927][1036,2059]",
+        "center": [
+          964,
+          1993
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/share_button_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,2054][1080,2180]",
+        "center": [
+          540,
+          2117
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/save_draft_button",
+        "content_desc": "Save Draft",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[44,2094][518,2180]",
+        "center": [
+          281,
+          2137
+        ]
+      },
+      {
+        "text": "Save Draft",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[182,2129][380,2179]",
+        "center": [
+          281,
+          2154
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/share_button",
+        "content_desc": "Share",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[562,2094][1036,2180]",
+        "center": [
+          799,
+          2137
+        ]
+      },
+      {
+        "text": "Share",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[744,2129][854,2179]",
+        "center": [
+          799,
+          2154
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,90][1080,244]",
+        "center": [
+          540,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_new_title_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,90][1003,244]",
+        "center": [
+          501,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_button_back",
+        "content_desc": "Back",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[0,90][154,244]",
+        "center": [
+          77,
+          167
+        ]
+      },
+      {
+        "text": "New reel",
+        "resource_id": "com.instagram.android:id/action_bar_title",
+        "content_desc": "New reel",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[198,134][428,199]",
+        "center": [
+          313,
+          166
+        ]
+      }
+    ]
+  },
+  "09_profile": {
+    "signature": [
+      "0posts",
+      "5followers",
+      "7following",
+      "Add to story",
+      "Create new",
+      "Discover people",
+      "Dismiss",
+      "Edit profile",
+      "Follow",
+      "Grid View",
+      "Home",
+      "Message",
+      "Options",
+      "Profile",
+      "Reels",
+      "Search and explore",
+      "See All",
+      "Share profile",
+      "View profile on Threads"
+    ],
+    "elements": [
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/pog_note_bubble_view",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[44,244][286,425]",
+        "center": [
+          165,
+          334
+        ]
+      },
+      {
+        "text": "Ask friends anything...",
+        "resource_id": "com.instagram.android:id/pog_bubble_text",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[66,277][264,381]",
+        "center": [
+          165,
+          329
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_profile_header_imageview_frame_layout",
+        "content_desc": "",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[63,335][267,539]",
+        "center": [
+          165,
+          437
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_profile_header_imageview",
+        "content_desc": "Your profile. Seen story",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[63,335][267,539]",
+        "center": [
+          165,
+          437
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/reel_empty_badge",
+        "content_desc": "Add to story",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[206,478][267,539]",
+        "center": [
+          236,
+          508
+        ]
+      },
+      {
+        "text": "📿Lyn💠",
+        "resource_id": "com.instagram.android:id/profile_header_full_name_above_vanity",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[330,314][494,361]",
+        "center": [
+          412,
+          337
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/profile_header_post_count_front_familiar",
+        "content_desc": "0posts",
+        "class": "",
+        "clickable": true,
+        "bounds": "[330,361][518,510]",
+        "center": [
+          424,
+          435
+        ]
+      },
+      {
+        "text": "0",
+        "resource_id": "com.instagram.android:id/profile_header_familiar_post_count_value",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[330,383][357,439]",
+        "center": [
+          343,
+          411
+        ]
+      },
+      {
+        "text": "posts",
+        "resource_id": "com.instagram.android:id/profile_header_familiar_post_count_label",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[330,439][432,488]",
+        "center": [
+          381,
+          463
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/profile_header_followers_stacked_familiar",
+        "content_desc": "5followers",
+        "class": "",
+        "clickable": true,
+        "bounds": "[518,361][786,510]",
+        "center": [
+          652,
+          435
+        ]
+      },
+      {
+        "text": "5",
+        "resource_id": "com.instagram.android:id/profile_header_familiar_followers_value",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[535,383][562,439]",
+        "center": [
+          548,
+          411
+        ]
+      },
+      {
+        "text": "followers",
+        "resource_id": "com.instagram.android:id/profile_header_familiar_followers_label",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[535,439][700,488]",
+        "center": [
+          617,
+          463
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/profile_header_following_stacked_familiar",
+        "content_desc": "7following",
+        "class": "",
+        "clickable": true,
+        "bounds": "[786,361][1036,510]",
+        "center": [
+          911,
+          435
+        ]
+      },
+      {
+        "text": "7",
+        "resource_id": "com.instagram.android:id/profile_header_familiar_following_value",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[803,383][827,439]",
+        "center": [
+          815,
+          411
+        ]
+      },
+      {
+        "text": "following",
+        "resource_id": "com.instagram.android:id/profile_header_familiar_following_label",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[803,439][967,488]",
+        "center": [
+          885,
+          463
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.view.View",
+        "clickable": true,
+        "bounds": "[44,558][1036,695]",
+        "center": [
+          540,
+          626
+        ]
+      },
+      {
+        "text": "🐈witch\nperfectly imperfect\n\"il faut cultiver notre jardin\"💃🥵",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[44,558][1036,695]",
+        "center": [
+          540,
+          626
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[44,717][347,783]",
+        "center": [
+          195,
+          750
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/igds_prism_chip_icon",
+        "content_desc": "",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[66,733][99,766]",
+        "center": [
+          82,
+          749
+        ]
+      },
+      {
+        "text": "Add banners",
+        "resource_id": "com.instagram.android:id/igds_prism_chip_label",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[116,728][314,772]",
+        "center": [
+          215,
+          750
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/button_container",
+        "content_desc": "Edit profile",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[33,838][480,926]",
+        "center": [
+          256,
+          882
+        ]
+      },
+      {
+        "text": "Edit profile",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[155,857][358,907]",
+        "center": [
+          256,
+          882
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/button_container",
+        "content_desc": "Share profile",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[496,838][943,926]",
+        "center": [
+          719,
+          882
+        ]
+      },
+      {
+        "text": "Share profile",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[600,857][839,907]",
+        "center": [
+          719,
+          882
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/row_profile_header_button_chaining",
+        "content_desc": "Discover people",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[959,838][1047,926]",
+        "center": [
+          1003,
+          882
+        ]
+      },
+      {
+        "text": "Discover people",
+        "resource_id": "com.instagram.android:id/similar_accounts_carousel_title",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[44,984][343,1034]",
+        "center": [
+          193,
+          1009
+        ]
+      },
+      {
+        "text": "See All",
+        "resource_id": "com.instagram.android:id/netego_carousel_cta",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[873,984][1036,1034]",
+        "center": [
+          954,
+          1009
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/suggested_entity_card_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[33,1069][462,1624]",
+        "center": [
+          247,
+          1346
+        ]
+      },
+      {
+        "text": "why me",
+        "resource_id": "com.instagram.android:id/suggested_entity_card_name",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[176,1377][319,1423]",
+        "center": [
+          247,
+          1400
+        ]
+      },
+      {
+        "text": "1 mutual",
+        "resource_id": "com.instagram.android:id/suggested_entity_card_context",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[183,1431][311,1470]",
+        "center": [
+          247,
+          1450
+        ]
+      },
+      {
+        "text": "Follow",
+        "resource_id": "com.instagram.android:id/suggested_user_card_follow_button",
+        "content_desc": "Follow why me",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[66,1503][429,1591]",
+        "center": [
+          247,
+          1547
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/dismiss_button_prism_style",
+        "content_desc": "Dismiss",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[379,1069][462,1152]",
+        "center": [
+          420,
+          1110
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/suggested_entity_card_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[473,1069][902,1624]",
+        "center": [
+          687,
+          1346
+        ]
+      },
+      {
+        "text": "Muchiri",
+        "resource_id": "com.instagram.android:id/suggested_entity_card_name",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[618,1377][757,1423]",
+        "center": [
+          687,
+          1400
+        ]
+      },
+      {
+        "text": "3 mutuals",
+        "resource_id": "com.instagram.android:id/suggested_entity_card_context",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[612,1431][762,1470]",
+        "center": [
+          687,
+          1450
+        ]
+      },
+      {
+        "text": "Follow",
+        "resource_id": "com.instagram.android:id/suggested_user_card_follow_button",
+        "content_desc": "Follow Muchiri",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[506,1503][869,1591]",
+        "center": [
+          687,
+          1547
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/dismiss_button_prism_style",
+        "content_desc": "Dismiss",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[819,1069][902,1152]",
+        "center": [
+          860,
+          1110
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/suggested_entity_card_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[913,1069][1080,1624]",
+        "center": [
+          996,
+          1346
+        ]
+      },
+      {
+        "text": "Suggested for you",
+        "resource_id": "com.instagram.android:id/suggested_entity_card_context",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[985,1431][1080,1470]",
+        "center": [
+          1032,
+          1450
+        ]
+      },
+      {
+        "text": "Follow",
+        "resource_id": "com.instagram.android:id/suggested_user_card_follow_button",
+        "content_desc": "Follow Njeri",
+        "class": "android.widget.TextView",
+        "clickable": true,
+        "bounds": "[946,1503][1080,1591]",
+        "center": [
+          1013,
+          1547
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/profile_tab_icon_view",
+        "content_desc": "Grid View",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[0,1646][540,1778]",
+        "center": [
+          270,
+          1712
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[540,1646][1080,1778]",
+        "center": [
+          810,
+          1712
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[540,1646][1080,1778]",
+        "center": [
+          810,
+          1712
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/profile_tab_icon_view",
+        "content_desc": "Photos of You",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[777,1679][843,1745]",
+        "center": [
+          810,
+          1712
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/empty_state_view_root",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[0,1779][1080,2138]",
+        "center": [
+          540,
+          1958
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Create new",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[0,90][132,244]",
+        "center": [
+          66,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_username_container",
+        "content_desc": "",
+        "class": "android.widget.LinearLayout",
+        "clickable": true,
+        "bounds": "[176,90][794,244]",
+        "center": [
+          485,
+          167
+        ]
+      },
+      {
+        "text": "likklemyself",
+        "resource_id": "com.instagram.android:id/action_bar_title",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[333,90][680,244]",
+        "center": [
+          506,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/action_bar_title_red_dot",
+        "content_desc": "Unread notifications",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "bounds": "[747,156][769,178]",
+        "center": [
+          758,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "View profile on Threads",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[794,90][926,244]",
+        "center": [
+          860,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Options",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "bounds": "[926,90][1058,244]",
+        "center": [
+          992,
+          167
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/feed_tab",
+        "content_desc": "Home",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[0,2138][216,2180]",
+        "center": [
+          108,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_tab",
+        "content_desc": "Reels",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[216,2138][432,2180]",
+        "center": [
+          324,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/direct_tab",
+        "content_desc": "Message",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[432,2138][648,2180]",
+        "center": [
+          540,
+          2159
+        ]
+      },
+      {
+        "text": "3",
+        "resource_id": "com.instagram.android:id/notification",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[0,0][0,0]",
+        "center": [
+          0,
+          0
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/search_tab",
+        "content_desc": "Search and explore",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[648,2138][864,2180]",
+        "center": [
+          756,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/profile_tab",
+        "content_desc": "Profile",
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "bounds": "[864,2138][1080,2180]",
+        "center": [
+          972,
+          2159
+        ]
+      }
+    ]
+  },
+  "10_profile_refreshed": {
+    "signature": [
+      "Cancel",
+      "Delete from Instagram only",
+      "Delete from both"
+    ],
+    "elements": [
+      {
+        "text": "Delete from Instagram and Facebook?",
+        "resource_id": "com.instagram.android:id/igds_alert_dialog_headline",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[290,631][790,724]",
+        "center": [
+          540,
+          677
+        ]
+      },
+      {
+        "text": "Instagram reels can be restored from Recently deleted in Your activity within 30 days. After that, it will be permanently deleted. Facebook reels cannot be restored.\n\nAny content using your original audio will be muted. If you restore your reel, this content will be unmuted.",
+        "resource_id": "com.instagram.android:id/igds_alert_dialog_subtext",
+        "content_desc": "",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "[290,724][790,1323]",
+        "center": [
+          540,
+          1023
+        ]
+      },
+      {
+        "text": "Delete from both",
+        "resource_id": "com.instagram.android:id/igds_alert_dialog_primary_button",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[224,1412][856,1546]",
+        "center": [
+          540,
+          1479
+        ]
+      },
+      {
+        "text": "Delete from Instagram only",
+        "resource_id": "com.instagram.android:id/igds_alert_dialog_secondary_button",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[224,1547][856,1681]",
+        "center": [
+          540,
+          1614
+        ]
+      },
+      {
+        "text": "Cancel",
+        "resource_id": "com.instagram.android:id/igds_alert_dialog_cancel_button",
+        "content_desc": "",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "bounds": "[224,1682][856,1816]",
+        "center": [
+          540,
+          1749
+        ]
+      }
+    ]
+  }
+}

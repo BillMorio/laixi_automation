@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proxy Local Times</title>
+  <style>
+    body { font-family: monospace; margin: 20px; color: #222; }
+    h1 { font-size: 18px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+    th { background: #f0f0f0; }
+    .time { font-weight: bold; }
+    .updated { margin-top: 10px; font-size: 12px; color: #666; }
+    button.copy { font-family: monospace; font-size: 11px; padding: 2px 8px; cursor: pointer; }
+    button.copy.done { background: #d4f7d4; }
+  </style>
+</head>
+<body>
+  <h1>Proxy Local Times</h1>
+  <table id="grid">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>IP</th>
+        <th>SSID</th>
+        <th>City</th>
+        <th>Timezone</th>
+        <th>Local Time</th>
+        <th>UTC Offset</th>
+        <th>Copy</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <div class="updated" id="updated"></div>
+
+  <script>
+    const rows = [
+      ["38.30.228.234", "LA", "Los Angeles", "America/Los_Angeles"],
+      ["149.119.188.239", "NewY", "Houston", "America/Chicago"],
+      ["152.32.141.138", "lagos", "Lagos", "Africa/Lagos"],
+      ["66.80.133.165", "los A2", "Champaign", "America/Chicago"],
+      ["66.80.132.145", "sk5-Ohq3pr5-5", "Chicago", "America/Chicago"],
+      ["66.80.132.109", "sk5-BegUSbD-6", "Chicago", "America/Chicago"],
+      ["66.80.132.55", "sk5-cF1ftq4-7", "Chicago", "America/Chicago"],
+      ["167.148.11.249", "sk5-Gutkfm7-8", "Los Angeles", "America/Los_Angeles"],
+      ["167.148.11.178", "sk5-HoOhuE1-9", "Los Angeles", "America/Los_Angeles"],
+      ["216.151.247.177", "sk5-XV5CGO0-10", "Miami", "America/New_York"],
+      ["216.151.247.151", "sk5-dwkt6p6-11", "Miami", "America/New_York"],
+      ["216.151.247.86", "sk5-Wnmgx21-12", "Miami", "America/New_York"],
+      ["64.50.132.179", "sk5-zTIahi6-13", "New York", "America/New_York"],
+      ["204.1.124.138", "sk5-mQBMsz2-14", "Los Angeles", "America/Los_Angeles"],
+      ["205.214.51.120", "sk5-jy8Pdh5-15", "Washington DC", "America/New_York"],
+      ["66.17.71.32", "sk5-tJK40M9-16", "Ashburn", "America/New_York"],
+      ["66.17.66.219", "sk5-YmDA275-17", "Ashburn", "America/New_York"],
+      ["192.220.248.48", "sk5-1RVFIIF-18", "Los Angeles", "America/Los_Angeles"],
+      ["207.97.145.247", "sk5-D5opjcE-19", "Los Angeles", "America/Los_Angeles"],
+      ["38.111.18.0", "sk5-AIGjr84-20", "Washington DC", "America/New_York"],
+      ["149.119.154.142", "sk5-PB91yo2-21", "New York", "America/New_York"],
+      ["38.248.251.248", "sk5-sKxqM93-22", "Salt Lake City", "America/Denver"],
+      ["213.177.252.14", "sk5-K7STXW3-23", "London", "Europe/London"],
+      ["66.17.67.142", "sk5-IpNz1a4-24", "Ashburn", "America/New_York"],
+      ["86.53.88.107", "sk5-es6sLyF-25", "London", "Europe/London"],
+      ["204.0.11.89", "sk5-TXzbYfA-26", "New York", "America/New_York"],
+      ["38.248.238.235", "sk5-y8PRJvA-27", "Salt Lake City", "America/Denver"],
+      ["38.244.106.96", "sk5-RdwmFLA-28", "Washington DC", "America/New_York"],
+      ["207.251.15.30", "sk5-0cUX8gC-29", "Denver", "America/Denver"],
+      ["66.17.68.99", "sk5-FZsQZD3-30", "Ashburn", "America/New_York"],
+      ["66.17.67.142", "sk5-2r7rm5E-31", "Ashburn", "America/New_York"]
+    ];
+
+    function formatTime(tz) {
+      return new Intl.DateTimeFormat("en-CA", {
+        timeZone: tz,
+        year: "numeric", month: "2-digit", day: "2-digit",
+        hour: "2-digit", minute: "2-digit", second: "2-digit",
+        hour12: false
+      }).format(new Date());
+    }
+
+    function getOffset(tz) {
+      const parts = new Intl.DateTimeFormat("en-US", {
+        timeZone: tz, timeZoneName: "shortOffset"
+      }).formatToParts(new Date());
+      const tzn = parts.find(p => p.type === "timeZoneName");
+      return tzn ? tzn.value.replace("GMT", "UTC") : "";
+    }
+
+    function render() {
+      const tbody = document.querySelector("#grid tbody");
+      tbody.innerHTML = "";
+      rows.forEach(([ip, ssid, city, tz], i) => {
+        const tr = document.createElement("tr");
+        tr.innerHTML =
+          "<td>" + (i + 1) + "</td>" +
+          "<td>" + ip + "</td>" +
+          "<td>" + ssid + "</td>" +
+          "<td>" + city + "</td>" +
+          "<td>" + tz + "</td>" +
+          "<td class='time'>" + formatTime(tz) + "</td>" +
+          "<td>" + getOffset(tz) + "</td>" +
+          "<td><button class='copy' data-ip=\"" + ip + "\">copy</button></td>";
+        tbody.appendChild(tr);
+      });
+      document.getElementById("updated").textContent =
+        "Updated: " + new Date().toLocaleTimeString();
+    }
+
+    document.querySelector("#grid tbody").addEventListener("click", function (e) {
+      const btn = e.target.closest("button.copy");
+      if (!btn) return;
+      navigator.clipboard.writeText(btn.dataset.ip).then(function () {
+        btn.textContent = "copied!";
+        btn.classList.add("done");
+        setTimeout(function () {
+          btn.textContent = "copy";
+          btn.classList.remove("done");
+        }, 1200);
+      });
+    });
+
+    render();
+    setInterval(render, 1000);
+  </script>
+</body>
+</html>

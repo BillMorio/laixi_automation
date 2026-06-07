@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Laixi Dashboard</title>
+  <style>
+    :root {
+      --bg:#09090b; --surface:#131316; --surface-2:#18181b; --elevated:#1f1f23;
+      --border:#27272a; --text:#fafafa; --muted:#a1a1aa; --faint:#52525b;
+      --accent:#6366f1; --accent-hover:#7679f2;
+      --green:#22c55e; --amber:#f59e0b; --red:#ef4444;
+      --radius:8px; --radius-sm:6px;
+      --mono: ui-monospace, "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Inter", -apple-system, "Segoe UI", system-ui, sans-serif;
+      background: var(--bg); color: var(--text); margin: 0; font-size: 14px;
+      -webkit-font-smoothing: antialiased;
+    }
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-thumb { background: #2a2a2e; border-radius: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+
+    .app { display: flex; height: 100vh; overflow: hidden; }
+    .sidebar {
+      width: 220px; flex-shrink: 0; background: var(--surface);
+      border-right: 1px solid var(--border); display: flex; flex-direction: column; padding: 16px 12px;
+    }
+    .brand { display:flex; align-items:center; gap:9px; padding:6px 8px 20px; font-weight:600; font-size:15px; }
+    .brand .mark { width:18px; height:18px; border-radius:5px; background:linear-gradient(135deg,var(--accent),#3b82f6); }
+    .nav { display:flex; flex-direction:column; gap:2px; flex:1; }
+    .nav a {
+      display:flex; align-items:center; gap:10px; padding:8px 10px; border-radius:var(--radius-sm);
+      color:var(--muted); text-decoration:none; font-size:13.5px; cursor:pointer; user-select:none;
+    }
+    .nav a:hover { background:var(--surface-2); color:var(--text); }
+    .nav a.active { background:var(--elevated); color:var(--text); }
+    .nav a.disabled { color:var(--faint); cursor:not-allowed; }
+    .nav a .ic { width:16px; text-align:center; opacity:.75; }
+    .nav a .soon { margin-left:auto; font-size:9px; color:var(--faint); border:1px solid var(--border); padding:1px 5px; border-radius:6px; letter-spacing:.5px; }
+    .sidebar-footer { border-top:1px solid var(--border); padding-top:14px; }
+
+    .main { flex:1; overflow-y:auto; }
+    .topbar {
+      position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between;
+      padding:14px 24px; border-bottom:1px solid var(--border); background:rgba(9,9,11,.8); backdrop-filter:blur(8px);
+    }
+    .topbar h1 { margin:0; font-size:16px; font-weight:600; }
+    .content { padding:24px; }
+    .view { display:none; }
+    .view.active { display:block; }
+
+    .pill { display:inline-flex; align-items:center; gap:6px; padding:5px 11px; border-radius:999px; font-size:12px; }
+    .pill .dot { width:7px; height:7px; border-radius:50%; }
+    .pill.on  { background:rgba(34,197,94,.12); color:#5ee0a0; }
+    .pill.on .dot { background:var(--green); }
+    .pill.off { background:rgba(239,68,68,.12); color:#ff8585; }
+    .pill.off .dot { background:var(--red); }
+
+    button {
+      background:var(--accent); color:#fff; border:0; padding:8px 14px; border-radius:var(--radius-sm);
+      cursor:pointer; font-size:13px; font-family:inherit; transition:background .12s;
+    }
+    button:hover { background:var(--accent-hover); }
+    button:disabled { background:var(--elevated); color:var(--faint); cursor:not-allowed; }
+    button.ghost { background:var(--surface-2); color:var(--text); border:1px solid var(--border); }
+    button.ghost:hover { background:var(--elevated); }
+
+    input[type=text], textarea {
+      background:#0c0c0e; color:var(--text); border:1px solid var(--border);
+      padding:8px 10px; border-radius:var(--radius-sm); font:inherit; font-size:13px; outline:none;
+    }
+    input[type=text]:focus, textarea:focus { border-color:var(--accent); }
+    input[type=file] { font-size:12px; color:var(--muted); }
+    label { display:block; font-size:11px; color:var(--muted); margin-bottom:8px; text-transform:uppercase; letter-spacing:.6px; }
+    .placeholder { color:var(--faint); font-size:14px; }
+
+    .card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:16px; }
+    .stat-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:14px; margin-bottom:24px; }
+    .stat { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:18px; }
+    .stat .v { font-size:30px; font-weight:600; letter-spacing:-.5px; }
+    .stat .l { font-size:12px; color:var(--muted); margin-top:5px; }
+
+    .devices-layout { display:flex; gap:20px; align-items:flex-start; }
+    .devices-main { flex:1; min-width:0; }
+    .section-label { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.6px; margin-bottom:14px; }
+    .device-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(205px,1fr)); gap:12px; }
+    .device-card {
+      position:relative; padding:14px; border:1px solid var(--border); border-radius:var(--radius);
+      cursor:pointer; background:var(--surface); transition:border-color .12s, background .12s;
+    }
+    .device-card:hover { background:var(--surface-2); }
+    .device-card.active { border-color:var(--accent); background:var(--surface-2); }
+    .device-card .dname { font-weight:600; font-size:14px; margin-bottom:3px; padding-right:16px; padding-left:34px; }
+    .device-card .did { font-size:11px; color:var(--faint); font-family:var(--mono); margin-bottom:12px; word-break:break-all; padding-left:34px; }
+    .device-card .dot { position:absolute; top:15px; right:14px; width:8px; height:8px; border-radius:50%; background:var(--green); box-shadow:0 0 0 3px rgba(34,197,94,.12); }
+    .device-card .devnum { position:absolute; top:12px; left:12px; font-family:var(--mono); font-size:11px; font-weight:700; color:#93c5fd; background:#1e293b; border:1px solid #334155; border-radius:5px; padding:2px 6px; letter-spacing:.5px; }
+    .device-card.active .devnum { color:#bfdbfe; background:#1e40af; border-color:#3b82f6; }
+    .badge { display:inline-block; font-size:11px; padding:3px 9px; border-radius:999px; }
+    .badge.idle    { background:rgba(82,82,91,.25); color:#a1a1aa; }
+    .badge.running { background:rgba(245,158,11,.14); color:#fbbf24; }
+    .badge.done    { background:rgba(34,197,94,.14); color:#5ee0a0; }
+    .badge.failed  { background:rgba(239,68,68,.14); color:#ff8585; }
+    .badge.offline { background:rgba(82,82,91,.2); color:#71717a; }
+
+    .control-panel { width:340px; flex-shrink:0; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:16px; max-height:calc(100vh - 132px); overflow-y:auto; }
+    .group { margin-bottom:22px; }
+    .group:last-child { margin-bottom:0; }
+    .ig-steps { font-size:12px; line-height:1.8; margin:10px 0 0; padding:10px; background:#0c0c0e; border:1px solid var(--border); border-radius:var(--radius-sm); }
+    .quick-actions { display:flex; flex-direction:column; gap:6px; }
+    .hw-buttons { display:flex; flex-wrap:wrap; gap:6px; }
+    .hw-buttons button { padding:8px 10px; flex:1; min-width:56px; }
+    .form-row { display:flex; gap:8px; }
+    .form-row input { flex:1; }
+    .btn-primary-ig { width:100%; background:#c13584; padding:10px; }
+    .btn-primary-ig:hover { background:#d2469a; }
+
+    pre { background:#0c0c0e; border:1px solid var(--border); padding:12px; border-radius:var(--radius-sm); font-family:var(--mono); font-size:12px; margin:0; white-space:pre-wrap; word-break:break-all; color:var(--muted); }
+    .log-pre { max-height:calc(100vh - 170px); overflow:auto; }
+    .out-pre { max-height:140px; overflow:auto; margin-top:8px; }
+
+    /* Action tiles */
+    .action-list { display:flex; flex-direction:column; gap:10px; }
+    .action-tile {
+      display:flex; align-items:center; justify-content:space-between; width:100%;
+      padding:15px 16px; border-radius:10px; text-align:left; cursor:pointer;
+      background:linear-gradient(180deg,#1c1c20,#141417); border:1px solid var(--border);
+      color:var(--text); transition:transform .1s, border-color .12s, background .12s;
+    }
+    .action-tile:hover { border-color:#3f3f46; background:linear-gradient(180deg,#232329,#161619); transform:translateY(-1px); }
+    .at-left { display:flex; align-items:center; }
+    .action-tile .accent { width:8px; height:8px; border-radius:50%; margin-right:12px; flex-shrink:0; }
+    .action-tile .at-main { display:flex; flex-direction:column; gap:3px; }
+    .action-tile .at-name { font-size:14px; font-weight:600; }
+    .action-tile .at-sub { font-size:11px; color:var(--muted); }
+    .action-tile .chev { color:var(--faint); font-size:18px; }
+
+    /* Modal */
+    .modal-overlay { position:fixed; inset:0; z-index:50; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.6); backdrop-filter:blur(6px); padding:20px; }
+    .modal-overlay[hidden] { display:none; }
+    .modal-card { width:100%; max-width:440px; max-height:86vh; overflow-y:auto; background:linear-gradient(180deg,#17171b,#0e0e11); border:1px solid var(--border); border-radius:14px; box-shadow:0 24px 70px rgba(0,0,0,.55); }
+    .modal-header { display:flex; align-items:center; justify-content:space-between; padding:16px 18px; border-bottom:1px solid var(--border); position:sticky; top:0; background:#17171b; }
+    .modal-header h3 { margin:0; font-size:15px; font-weight:600; }
+    .modal-close { background:transparent; border:0; color:var(--muted); font-size:16px; cursor:pointer; padding:4px 8px; }
+    .modal-close:hover { color:var(--text); }
+    .modal-body { padding:18px; }
+    .action-form[hidden] { display:none; }
+    .smart-toggle { display:flex; align-items:center; gap:9px; padding:10px 12px; margin-bottom:8px; border:1px solid var(--border); border-radius:9px; background:linear-gradient(180deg,#1b1b20,#141417); font-size:13px; cursor:pointer; user-select:none; }
+    .smart-toggle:hover { border-color:#3f3f46; }
+    .smart-toggle input { accent-color:#0ea5e9; width:15px; height:15px; flex-shrink:0; cursor:pointer; }
+    .smart-sub { color:var(--muted); font-size:11px; }
+    .sel-pill { display:inline-block; margin-left:10px; padding:2px 9px; border-radius:999px; background:#1e293b; color:#93c5fd; border:1px solid #334155; font-size:10.5px; font-weight:600; letter-spacing:.3px; text-transform:none; }
+    .sel-pill.empty { background:transparent; color:var(--faint); border-color:var(--border); }
+    /* Settings -> .env editor */
+    .env-editor { max-width:760px; }
+    .env-editor code { font-family:var(--mono); font-size:12px; color:var(--text); background:var(--surface-2); padding:1px 6px; border-radius:4px; }
+    .env-hint { color:var(--muted); font-size:12.5px; line-height:1.5; margin:10px 0 20px 0; }
+    .env-rows { display:flex; flex-direction:column; gap:8px; margin-bottom:10px; }
+    .env-row { display:flex; gap:8px; align-items:center; }
+    .env-row input { padding:8px 10px; border:1px solid var(--border); background:var(--surface); color:var(--text); border-radius:6px; font-family:var(--mono); font-size:12.5px; outline:none; }
+    .env-row input:focus { border-color:var(--accent); }
+    .env-row input.env-key { flex:0 0 240px; font-weight:600; }
+    .env-row input.env-val { flex:1; min-width:0; }
+    .env-row .env-mask, .env-row .env-del { background:transparent; border:1px solid var(--border); border-radius:6px; padding:5px 9px; color:var(--muted); cursor:pointer; font-size:13px; line-height:1; }
+    .env-row .env-mask:hover { color:var(--text); border-color:#3f3f46; }
+    .env-row .env-del:hover { color:var(--red); border-color:var(--red); }
+    .env-add { margin-bottom:18px; }
+    .env-actions { display:flex; gap:14px; align-items:center; }
+    .env-actions button { padding:8px 16px; border:0; border-radius:6px; color:#fff; cursor:pointer; font-weight:600; }
+    .env-status { font-size:12px; color:var(--muted); }
+    .env-status.ok { color:var(--green); }
+    .env-status.fail { color:var(--red); }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><span class="mark"></span> FarmOps</div>
+      <nav class="nav">
+        <a data-view="overview"><span class="ic">▦</span> Overview</a>
+        <a data-view="devices" class="active"><span class="ic">▢</span> Devices</a>
+        <a data-view="activity"><span class="ic">≡</span> Activity</a>
+        <a class="disabled"><span class="ic">◷</span> Schedule <span class="soon">SOON</span></a>
+        <a class="disabled"><span class="ic">▤</span> Content <span class="soon">SOON</span></a>
+        <a class="disabled"><span class="ic">◎</span> Accounts <span class="soon">SOON</span></a>
+        <a data-view="settings"><span class="ic">⚙</span> Settings</a>
+      </nav>
+      <div class="sidebar-footer">
+        <span id="status" class="pill off"><span class="dot"></span>Disconnected</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <h1 id="pageTitle">Devices</h1>
+        <button id="refresh" class="ghost">Refresh</button>
+      </div>
+      <div class="content">
+
+        <section class="view" data-view="overview">
+          <div class="stat-grid">
+            <div class="stat"><div class="v" id="statDevices">0</div><div class="l">Devices connected</div></div>
+            <div class="stat"><div class="v" id="statRunning">0</div><div class="l">Running now</div></div>
+            <div class="stat"><div class="v" id="statDone">0</div><div class="l">Completed (session)</div></div>
+            <div class="stat"><div class="v" id="statFailed">0</div><div class="l">Failed (session)</div></div>
+          </div>
+          <div class="card">
+            <label>Recent activity</label>
+            <pre id="activityFeed" class="log-pre">No activity yet.</pre>
+          </div>
+        </section>
+
+        <section class="view active" data-view="devices">
+          <div class="devices-layout">
+            <div class="devices-main">
+              <div class="section-label">
+                <span id="deviceCount">0</span> connected — click to select
+                <span id="selectionCount" class="sel-pill empty">0 selected</span>
+              </div>
+              <div id="devices" class="device-grid"><div class="placeholder">No devices yet.</div></div>
+            </div>
+            <div class="control-panel">
+              <div class="section-label" style="margin-bottom:14px;">Actions — run on the selected device</div>
+              <div class="action-list">
+                <button class="action-tile" data-action="post" data-title="Instagram Post">
+                  <span class="at-left"><span class="accent" style="background:#c13584;"></span>
+                    <span class="at-main"><span class="at-name">Instagram Post</span><span class="at-sub">Upload a video & publish a reel</span></span></span>
+                  <span class="chev">›</span>
+                </button>
+                <button class="action-tile" data-action="warm" data-title="Account Warming">
+                  <span class="at-left"><span class="accent" style="background:#7c3aed;"></span>
+                    <span class="at-main"><span class="at-name">Account Warming</span><span class="at-sub">Scroll, watch, like for N minutes</span></span></span>
+                  <span class="chev">›</span>
+                </button>
+                <button class="action-tile" data-action="comment" data-title="Comment on Post">
+                  <span class="at-left"><span class="accent" style="background:#0ea5e9;"></span>
+                    <span class="at-main"><span class="at-name">Comment on Post</span><span class="at-sub">Comment on a post / reel URL</span></span></span>
+                  <span class="chev">›</span>
+                </button>
+                <button class="action-tile" data-action="device" data-title="Device Controls">
+                  <span class="at-left"><span class="accent" style="background:#52525b;"></span>
+                    <span class="at-main"><span class="at-name">Device Controls</span><span class="at-sub">Home, Back, volume, launch apps</span></span></span>
+                  <span class="chev">›</span>
+                </button>
+                <button class="action-tile" data-action="console" data-title="Console">
+                  <span class="at-left"><span class="accent" style="background:#52525b;"></span>
+                    <span class="at-main"><span class="at-name">Console</span><span class="at-sub">Clipboard & raw ADB</span></span></span>
+                  <span class="chev">›</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="view" data-view="activity">
+          <label>Event Log</label>
+          <pre id="log" class="log-pre"></pre>
+        </section>
+
+        <section class="view" data-view="settings">
+          <div class="env-editor">
+            <div class="section-label">Environment variables &mdash; saved to <code>.env</code></div>
+            <p class="env-hint">
+              Subprocesses (smart_comment, comment_on_post, &hellip;) read this file at startup,
+              so new values take effect on the next action run &mdash; no server restart needed.
+              Values are masked; click the eye to reveal.
+            </p>
+            <div id="envRows" class="env-rows"></div>
+            <button id="envAdd" class="ghost env-add">+ Add variable</button>
+            <div class="env-actions">
+              <button id="envSave" style="background:var(--accent);">Save changes</button>
+              <span id="envStatus" class="env-status"></span>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Action modal: holds each action's inputs + run + live log -->
+  <div id="modal" class="modal-overlay" hidden>
+    <div class="modal-card">
+      <div class="modal-header"><h3 id="modalTitle">Action</h3><button id="modalClose" class="modal-close">✕</button></div>
+      <div class="modal-body">
+
+        <div data-form="post" class="action-form" hidden>
+          <input type="file" id="videoFile" accept="video/*" style="width:100%; margin-bottom:8px;" />
+          <div style="display:flex; gap:6px; margin-bottom:8px;">
+            <button id="uploadBtn" class="ghost" style="flex:1;">1. Upload</button>
+            <button id="pushBtn" class="ghost" style="flex:1;" disabled>2. Push</button>
+          </div>
+          <button id="postIgBtn" class="btn-primary-ig" disabled>3. Post to Instagram</button>
+          <div id="igSteps" class="ig-steps">
+            <div id="stUpload" style="color:#52525b;">&#9675; Upload to PC</div>
+            <div id="stPush" style="color:#52525b;">&#9675; Push to phone</div>
+            <div id="stReady" style="color:#52525b;">&#9675; Ready to post</div>
+          </div>
+        </div>
+
+        <div data-form="warm" class="action-form" hidden>
+          <div class="form-row" style="margin-bottom:6px;">
+            <input id="warmMinutes" type="text" value="5" style="flex:0 0 70px;" />
+            <span style="align-self:center; font-size:12px; color:var(--muted);">minutes</span>
+            <button id="warmRun" style="flex:1; background:#7c3aed;">Warm</button>
+          </div>
+          <div id="warmStatus" class="badge idle" style="margin-bottom:6px;">idle</div>
+          <pre id="warmLog" class="out-pre">(no run yet)</pre>
+        </div>
+
+        <div data-form="comment" class="action-form" hidden>
+          <input id="cmtUrl" type="text" placeholder="https://www.instagram.com/p/..." style="width:100%; margin-bottom:8px;" />
+          <label class="smart-toggle">
+            <input type="checkbox" id="cmtSmart" />
+            <span>&#10024; Smart comment <span class="smart-sub">— read the caption & auto-generate</span></span>
+          </label>
+          <input id="cmtText" type="text" placeholder="Comment text..." style="width:100%; margin-bottom:6px;" />
+          <button id="cmtRun" style="width:100%; background:#0ea5e9;">Post Comment</button>
+          <div id="cmtStatus" class="badge idle" style="margin:6px 0;">idle</div>
+          <pre id="cmtLog" class="out-pre">(no run yet)</pre>
+        </div>
+
+        <div data-form="device" class="action-form" hidden>
+          <div class="hw-buttons" style="margin-bottom:12px;">
+            <button class="ghost" data-key="3">Home</button>
+            <button class="ghost" data-key="4">Back</button>
+            <button class="ghost" data-key="187">Recent</button>
+            <button class="ghost" data-key="24">Vol +</button>
+            <button class="ghost" data-key="25">Vol -</button>
+            <button class="ghost" data-key="26">Power</button>
+          </div>
+          <div class="quick-actions">
+            <button class="ghost" data-cmd="monkey -p com.instagram.android -c android.intent.category.LAUNCHER 1">Open Instagram</button>
+          </div>
+        </div>
+
+        <div data-form="console" class="action-form" hidden>
+          <div class="form-row" style="margin-bottom:8px;">
+            <input id="clipText" type="text" placeholder="Write to clipboard..." />
+            <button id="clipBtn" class="ghost">Set</button>
+          </div>
+          <div class="form-row">
+            <input id="adbCmd" type="text" placeholder="adb shell command..." />
+            <button id="adbBtn" class="ghost">Run</button>
+          </div>
+          <pre id="adbOut" class="out-pre">(no output yet)</pre>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+
+    let ws;
+    let activeDevice = null;       // most-recently-clicked card; used by single-shot actions (console, hw buttons, IG post)
+    const selectedDevices = new Set(); // every card the user has toggled on; fan-out actions (Warm, Comment) target the whole set
+    let lastAction = null;
+    const deviceStatus = {}; // deviceId -> { state: idle|running|done|failed, label }
+
+    const recentActivity = [];
+    function log(msg) {
+      const line = `[${new Date().toLocaleTimeString()}] ${msg}`;
+      const el = $("log");
+      el.textContent += line + "\n";
+      el.scrollTop = el.scrollHeight;
+      recentActivity.push(line);
+      if (recentActivity.length > 80) recentActivity.shift();
+      const feed = $("activityFeed");
+      if (feed) { feed.textContent = recentActivity.slice(-40).join("\n"); feed.scrollTop = feed.scrollHeight; }
+    }
+
+    function setStatus(on) {
+      const el = $("status");
+      el.className = "pill " + (on ? "on" : "off");
+      el.innerHTML = `<span class="dot"></span>${on ? "Connected" : "Disconnected"}`;
+    }
+
+    // Session counters for the Overview stat cards
+    let sessionDone = 0, sessionFailed = 0;
+    function updateStats() {
+      const running = Object.values(deviceStatus).filter((s) => s.state === "running").length;
+      const r = $("statRunning"); if (r) r.textContent = running;
+      const d = $("statDone");    if (d) d.textContent = sessionDone;
+      const f = $("statFailed");  if (f) f.textContent = sessionFailed;
+    }
+
+    // Sidebar view switching
+    document.querySelectorAll(".nav a[data-view]").forEach((a) => {
+      a.addEventListener("click", () => {
+        const view = a.dataset.view;
+        document.querySelectorAll(".nav a").forEach((n) => n.classList.remove("active"));
+        a.classList.add("active");
+        document.querySelectorAll(".view").forEach((v) => v.classList.toggle("active", v.dataset.view === view));
+        $("pageTitle").textContent = a.textContent.trim();
+      });
+    });
+
+    function connect() {
+      ws = new WebSocket("ws://127.0.0.1:22221/");
+      ws.onopen = () => {
+        setStatus(true);
+        log("Connected to Laixi");
+        send({ action: "List" });
+      };
+      ws.onmessage = (e) => handleMessage(e.data);
+      ws.onerror = () => log("WebSocket error");
+      ws.onclose = () => {
+        setStatus(false);
+        log("Disconnected — retrying in 2s");
+        setTimeout(connect, 2000);
+      };
+    }
+
+    function send(payload) {
+      lastAction = payload.action;
+      const msg = JSON.stringify(payload);
+      log(`-> ${msg}`);
+      ws.send(msg);
+    }
+
+    function handleMessage(data) {
+      log(`<- ${data}`);
+      let parsed;
+      try { parsed = JSON.parse(data); } catch { return; }
+      if (typeof parsed.result !== "string") return;
+
+      let inner;
+      try { inner = JSON.parse(parsed.result); } catch { return; }
+
+      // Device list
+      if (Array.isArray(inner) && inner[0]?.deviceId) {
+        renderDevices(inner);
+        return;
+      }
+
+      // ADB output: { deviceId: [lines] }
+      if (inner && typeof inner === "object") {
+        const key = Object.keys(inner)[0];
+        if (Array.isArray(inner[key])) {
+          const out = inner[key].join("\n");
+          $("adbOut").textContent = out || "(empty output)";
+          if (queryResolver) {
+            const r = queryResolver; queryResolver = null; r(out);
+          }
+        }
+      }
+    }
+
+    function renderDevices(list) {
+      const container = $("devices");
+      $("deviceCount").textContent = list.length;
+      const sd = $("statDevices"); if (sd) sd.textContent = list.length;
+      updateStats();
+      container.innerHTML = "";
+      if (!list.length) {
+        container.innerHTML = '<div class="placeholder">No devices connected.</div>';
+        return;
+      }
+      list.forEach((d, i) => {
+        const st = deviceStatus[d.deviceId] || { state: "idle", label: "Idle" };
+        const card = document.createElement("div");
+        const isSelected = selectedDevices.has(d.deviceId);
+        card.className = "device-card" + (isSelected ? " active" : "");
+        card.dataset.id = d.deviceId;
+        const num = String(i + 1).padStart(2, "0");
+        card.innerHTML =
+          `<div class="devnum">${num}</div>` +
+          `<div class="dot"></div>` +
+          `<div class="dname">${d.name}</div>` +
+          `<div class="did">${d.deviceId}</div>` +
+          `<span class="badge ${st.state}">${st.label}</span>`;
+        // Click to TOGGLE. Multiple selected cards => fan-out for Warm/Comment.
+        card.onclick = () => {
+          if (selectedDevices.has(d.deviceId)) {
+            selectedDevices.delete(d.deviceId);
+            card.classList.remove("active");
+            if (activeDevice === d.deviceId) {
+              // Hand the "primary" baton to whichever card is still selected (last one in insertion order), or null
+              const remaining = [...selectedDevices];
+              activeDevice = remaining.length ? remaining[remaining.length - 1] : null;
+            }
+          } else {
+            selectedDevices.add(d.deviceId);
+            card.classList.add("active");
+            activeDevice = d.deviceId;
+          }
+          updateSelectionCount();
+        };
+        container.appendChild(card);
+        if (i === 0 && !activeDevice && !selectedDevices.size) {
+          selectedDevices.add(d.deviceId);
+          activeDevice = d.deviceId;
+          card.classList.add("active");
+        }
+      });
+      updateSelectionCount();
+    }
+
+    function updateSelectionCount() {
+      const pill = $("selectionCount");
+      if (!pill) return;
+      const n = selectedDevices.size;
+      pill.textContent = n + " selected";
+      pill.classList.toggle("empty", n === 0);
+    }
+
+    // Update a device's live status badge (idle | running | done | failed | offline)
+    function setDeviceStatus(deviceId, state, label) {
+      const prev = deviceStatus[deviceId]?.state;
+      deviceStatus[deviceId] = { state, label };
+      if (state === "done" && prev !== "done") sessionDone++;
+      if (state === "failed" && prev !== "failed") sessionFailed++;
+      const badge = document.querySelector(`.device-card[data-id="${deviceId}"] .badge`);
+      if (badge) { badge.className = "badge " + state; badge.textContent = label; }
+      updateStats();
+    }
+
+    // Hardware buttons (ADB keyevents)
+    document.querySelectorAll(".hw-buttons button").forEach((b) => {
+      b.addEventListener("click", () => {
+        if (!activeDevice) return alert("Pick a device first");
+        const keycode = b.dataset.key;
+        send({ action: "adb", comm: {
+          deviceIds: activeDevice,
+          command: `input keyevent ${keycode}`
+        }});
+      });
+    });
+
+    // Quick Actions (arbitrary ADB commands)
+    document.querySelectorAll(".quick-actions button").forEach((b) => {
+      b.addEventListener("click", () => {
+        if (!activeDevice) return alert("Pick a device first");
+        send({ action: "adb", comm: {
+          deviceIds: activeDevice,
+          command: b.dataset.cmd
+        }});
+      });
+    });
+
+    // Fire-and-forget ADB shell command on the active device.
+    function adbCmd(command) {
+      send({ action: "adb", comm: { deviceIds: activeDevice, command }});
+    }
+
+    // ---- Organic timing helpers (human-like jitter + pauses) ----
+    const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+    const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+    // Tap with positional jitter, then a human-like pause
+    async function oTap(x, y, pauseMin = 500, pauseMax = 1100) {
+      const jx = x + rand(-6, 6);
+      const jy = y + rand(-6, 6);
+      adbCmd(`input tap ${jx} ${jy}`);
+      await sleep(rand(pauseMin, pauseMax));
+    }
+
+    // Swipe with variable duration + endpoint jitter, then a pause
+    async function oSwipe(x1, y1, x2, y2, pauseMin = 600, pauseMax = 1200) {
+      const dur = rand(280, 520);
+      adbCmd(`input swipe ${x1} ${y1} ${x2 + rand(-10, 10)} ${y2 + rand(-10, 10)} ${dur}`);
+      await sleep(rand(pauseMin, pauseMax));
+    }
+
+    // ---- Video upload + push to phone (staged, gated, verified) ----
+    let uploadedVideoPath = null;
+    let pushedFilename = null;
+    let uploadedSize = 0;
+
+    // Stage status indicator: state = pending | active | done | fail
+    function setStep(id, state, text) {
+      const colors = { pending: "#777", active: "#d4a72c", done: "#2ec27e", fail: "#e25555" };
+      const marks = { pending: "○", active: "◑", done: "✓", fail: "✗" };
+      const el = $(id);
+      el.style.color = colors[state];
+      el.innerHTML = `${marks[state]} ${text}`;
+    }
+
+    function resetIgState() {
+      uploadedVideoPath = null;
+      pushedFilename = null;
+      $("pushBtn").disabled = true;
+      $("postIgBtn").disabled = true;
+      setStep("stUpload", "pending", "Upload to PC");
+      setStep("stPush", "pending", "Push to phone");
+      setStep("stReady", "pending", "Ready to post");
+    }
+
+    // Choosing a new file resets the whole pipeline
+    $("videoFile").addEventListener("change", () => {
+      resetIgState();
+      const f = $("videoFile").files[0];
+      if (f) setStep("stUpload", "pending", `Ready to upload: ${f.name}`);
+    });
+
+    $("uploadBtn").onclick = async () => {
+      const file = $("videoFile").files[0];
+      if (!file) return alert("Choose a video first");
+      uploadedSize = file.size;
+      // Sanitize to a unique, space-free name so paths/commands/verification stay robust
+      const ext = (file.name.split(".").pop() || "mp4").toLowerCase().replace(/[^a-z0-9]/g, "");
+      const safeName = `laixi_${Date.now()}.${ext}`;
+      const mb = (file.size / 1048576).toFixed(1);
+      setStep("stUpload", "active", `Uploading + fixing header (${mb} MB)...`);
+      try {
+        const res = await fetch(`/upload?name=${encodeURIComponent(safeName)}`, {
+          method: "POST", body: file
+        });
+        const data = await res.json();
+        uploadedVideoPath = data.path;
+        uploadedSize = data.size; // normalized size — push poll compares against this
+        if (!data.duration) {
+          setStep("stUpload", "fail", `Processed but duration is 0 — bad file? (mode: ${data.mode})`);
+        } else {
+          setStep("stUpload", "done", `On PC: ${data.duration}s, ${(data.size / 1048576).toFixed(1)} MB (${data.mode})`);
+          $("pushBtn").disabled = false;
+        }
+      } catch (e) {
+        setStep("stUpload", "fail", "Upload failed: " + e);
+      }
+    };
+
+    // Parse the size column from `ls -l <file>` output (null if file missing)
+    function parseLsSize(out) {
+      if (!out || out.includes("No such")) return null;
+      const parts = out.trim().split(/\s+/);
+      const n = parseInt(parts[4], 10);
+      return Number.isNaN(n) ? null : n;
+    }
+
+    $("pushBtn").onclick = async () => {
+      if (!activeDevice) return alert("Pick a device first");
+      if (!uploadedVideoPath) return alert("Upload a video first");
+      pushedFilename = uploadedVideoPath.split(/[\\/]/).pop();
+      const phonePath = `/storage/emulated/0/DCIM/Camera/${pushedFilename}`;
+      send({ action: "beginfilesend", comm: {
+        deviceIds: activeDevice,
+        filePaths: uploadedVideoPath,
+        isAutoInstall: "0"
+      }});
+      $("postIgBtn").disabled = true;
+      setStep("stPush", "active", "Transferring...");
+
+      // beginfilesend is async + slow. CRITICAL: do not media-scan until the file is
+      // FULLY written, or Android records 0:00 duration and Instagram rejects it.
+      // Poll the file size and only scan once it reaches the full upload size.
+      let waited = 0, lastSize = -1;
+      while (waited < 300) {
+        await sleep(3000);
+        waited += 3;
+        const size = parseLsSize(await adbQuery(`ls -l ${phonePath}`));
+        if (size === null) {
+          setStep("stPush", "active", `Waiting for transfer to start... ${waited}s`);
+          continue;
+        }
+        const mb = (size / 1048576).toFixed(1);
+        setStep("stPush", "active", `Transferring... ${mb} MB (${waited}s)`);
+        // Complete when size reaches the expected upload size (or, if unknown, stops growing)
+        const complete = uploadedSize ? (size >= uploadedSize) : (size > 0 && size === lastSize);
+        lastSize = size;
+        if (complete) {
+          await sleep(1500); // let the final write flush to disk
+          await adbQuery(`am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d file://${phonePath}`);
+          setStep("stPush", "done", `On phone: ${pushedFilename} (${mb} MB)`);
+          setStep("stReady", "done", "Ready (verified before posting)");
+          $("postIgBtn").disabled = false;
+          return;
+        }
+      }
+      setStep("stPush", "fail", `Timed out (last size ${(lastSize / 1048576).toFixed(1)} MB)`);
+    };
+
+    // Promise-based ADB query (resolves with the command's stdout) for verification.
+    let queryResolver = null;
+    function adbQuery(command, timeout = 6000) {
+      return new Promise((resolve) => {
+        queryResolver = resolve;
+        adbCmd(command);
+        setTimeout(() => {
+          if (queryResolver) { const r = queryResolver; queryResolver = null; r(null); }
+        }, timeout);
+      });
+    }
+
+    // ---- Screen-awareness helpers (read the screen, act on what's actually there) ----
+
+    // Dump the current UI tree and return it as an XML string.
+    async function uiDump() {
+      await adbQuery("uiautomator dump /sdcard/window_dump.xml", 8000);
+      return (await adbQuery("cat /sdcard/window_dump.xml", 8000)) || "";
+    }
+
+    // Find the tap-center of a node whose visible text / description matches `label`.
+    // exact=true requires an exact (case-insensitive) match — used for buttons so
+    // "Allow" doesn't accidentally match "Don't Allow".
+    function findCenter(xml, label, exact = true) {
+      let doc;
+      try { doc = new DOMParser().parseFromString(xml, "text/xml"); }
+      catch { return null; }
+      const want = label.toLowerCase();
+      for (const n of doc.querySelectorAll("node")) {
+        const t = (n.getAttribute("text") || "").toLowerCase();
+        const d = (n.getAttribute("content-desc") || "").toLowerCase();
+        const hit = exact ? (t === want || d === want) : (t.includes(want) || d.includes(want));
+        if (!hit) continue;
+        const m = (n.getAttribute("bounds") || "").match(/\[(\d+),(\d+)\]\[(\d+),(\d+)\]/);
+        if (m) return { cx: Math.round((+m[1] + +m[3]) / 2), cy: Math.round((+m[2] + +m[4]) / 2) };
+      }
+      return null;
+    }
+
+    // Tap a button found by its label. Returns true if found+tapped.
+    async function tapByText(label, exact = true) {
+      const c = findCenter(await uiDump(), label, exact);
+      if (c) { await oTap(c.cx, c.cy); return true; }
+      return false;
+    }
+
+    // Clear known conditional pop-ups (permission prompts, "what's new" notices).
+    // Only taps safe dismiss/continue buttons — never Next/Share/Cancel/Don't Allow.
+    async function dismissNotices(rounds = 2) {
+      const safe = ["While using the app", "Continue", "OK", "Not now", "Done", "Allow access"];
+      for (let i = 0; i < rounds; i++) {
+        const xml = await uiDump();
+        let tapped = false;
+        for (const lbl of safe) {
+          const c = findCenter(xml, lbl, true);
+          if (c) { await oTap(c.cx, c.cy); tapped = true; break; }
+        }
+        if (!tapped) break;
+        await sleep(rand(900, 1500));
+      }
+    }
+
+    // Pre-grant IG's permissions so the camera/photos system dialogs never appear.
+    function grantIgPermissions() {
+      const perms = ["CAMERA", "RECORD_AUDIO", "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE", "READ_MEDIA_VIDEO", "READ_MEDIA_IMAGES", "READ_MEDIA_AUDIO"];
+      perms.forEach((p) => adbCmd(`pm grant com.instagram.android android.permission.${p}`));
+    }
+
+    // After Share, IG shows a "Sharing to Reels…/Posting…" progress banner, then it
+    // clears when the upload finishes. Watch that lifecycle to confirm success.
+    async function confirmPosted() {
+      const PROGRESS = ["sharing to", "uploading", "posting"];
+      const FAILURE = ["couldn't share", "couldn't post", "failed to", "try again", "not posted"];
+      let sawProgress = false;
+      for (let i = 0; i < 14; i++) {
+        const xml = (await uiDump()).toLowerCase();
+        if (FAILURE.some((s) => xml.includes(s))) return "failed";
+        const inProgress = PROGRESS.some((s) => xml.includes(s));
+        if (inProgress) sawProgress = true;
+        else if (sawProgress) return "done"; // banner appeared then cleared = uploaded
+        await sleep(2500);
+      }
+      return sawProgress ? "uploading" : "unknown";
+    }
+
+    // ---- Instagram posting flow ----
+    // Icon buttons (+, thumbnail) have no text, so they stay as pixel coords.
+    // Text buttons (Next, Share) are found on-screen by label — robust to layout shifts.
+    const IG = {
+      plus:   [55, 175],    // home: + (top-left)
+      thumb2: [405, 1656],  // composer: 2nd media cell (newest video; cell 1 = camera)
+      next1:  [994, 173],   // composer: Next (top-right) — fallback if text not found
+      next2:  [956, 2208],  // edit screen: Next (bottom-right) — fallback
+      share:  [540, 2208],  // Share — fallback
+    };
+
+    async function postToInstagram() {
+      if (!activeDevice) return alert("Pick a device first");
+      if (!pushedFilename) return alert("Push a video to the phone first");
+      const dev = activeDevice; // snapshot — user may click another card mid-run
+      const step = (n, label) => {
+        setStep("stReady", "active", `Posting ${n}/7: ${label}`);
+        setDeviceStatus(dev, "running", label);
+      };
+
+      await sleep(300);
+
+      // SAFETY CHECK: the video we're about to select (newest in the grid) must be
+      // the one we pushed. If something newer landed in DCIM/Camera, abort.
+      step(0, "verifying newest media");
+      const out = await adbQuery("ls -t /storage/emulated/0/DCIM/Camera/");
+      const newest = (out || "").trim().split(/\s+/)[0];
+      if (newest !== pushedFilename) {
+        setStep("stReady", "fail", `STOP: newest is "${newest}", not "${pushedFilename}"`);
+        setDeviceStatus(dev, "failed", "Wrong media — re-push");
+        alert(`SAFETY STOP\n\nThe newest video in the gallery is:\n  ${newest || "(unknown)"}\n\nbut you pushed:\n  ${pushedFilename}\n\nSomething newer landed in DCIM/Camera (a screenshot or another file). Re-push your video, then post again.`);
+        return;
+      }
+
+      // Pre-grant permissions so camera/photos system dialogs never appear
+      step(1, "granting permissions");
+      grantIgPermissions();
+      await sleep(800);
+
+      // Cold-start: kill IG first so it ALWAYS opens to the same screen (home feed).
+      step(2, "cold-starting Instagram");
+      adbCmd("am force-stop com.instagram.android");
+      await sleep(rand(1200, 1800));
+      adbCmd("monkey -p com.instagram.android -c android.intent.category.LAUNCHER 1");
+      await sleep(rand(5500, 7000)); // cold start is slower than resume
+      await dismissNotices();
+
+      step(3, "tap + (new post)");
+      await oTap(...IG.plus);
+      await sleep(rand(2500, 3500));
+      await dismissNotices(); // catch the camera/photos permission prompt if it appears
+
+      step(4, "select newest video");
+      await oTap(...IG.thumb2);
+      await sleep(rand(1800, 2600));
+      await dismissNotices();
+
+      // Adaptive advance: IG inserts a variable number of "Next" screens before the
+      // final "Share". So on each screen: Share if present (publish), else Next
+      // (advance), dismissing any notice in between. No fixed step count.
+      let shared = false;
+      for (let i = 0; i < 7 && !shared; i++) {
+        await dismissNotices();
+        await sleep(rand(1200, 2000));
+        const xml = await uiDump();
+        if (findCenter(xml, "Share")) {
+          step(i, "Share (publishing)");
+          await tapByText("Share");
+          shared = true;
+          // Post-share cascade: the FB cross-post prompt, "About Reels" confirm,
+          // and "Sharing posts" notice appear with delays. Poll several rounds and
+          // clear each — declining Facebook ("Not now") and confirming any Share.
+          for (let j = 0; j < 7; j++) {
+            await sleep(rand(2000, 3000));
+            const x = await uiDump();
+            if (findCenter(x, "Not now"))  { step(i, "decline FB cross-post"); await tapByText("Not now"); continue; }
+            if (findCenter(x, "Share"))    { step(i, "confirm Share"); await tapByText("Share"); continue; }
+            if (findCenter(x, "OK"))       { await tapByText("OK"); continue; }
+            if (findCenter(x, "Continue")) { await tapByText("Continue"); continue; }
+            break; // no more prompts — posted
+          }
+        } else if (findCenter(xml, "Next")) {
+          step(i, "Next (advancing)");
+          await tapByText("Next");
+          await sleep(rand(3000, 4500));
+        } else {
+          step(i, "waiting for next screen");
+          await sleep(rand(2000, 3000)); // still loading? retry
+        }
+      }
+      if (shared) {
+        setStep("stReady", "active", "confirming upload...");
+        setDeviceStatus(dev, "running", "confirming upload");
+        const result = await confirmPosted();
+        const outcomes = {
+          done:      ["done", "Posted — upload complete"],
+          uploading: ["done", "Submitted — still uploading on the phone"],
+          failed:    ["fail", "Instagram reported a failure — NOT posted"],
+          unknown:   ["done", "Submitted (couldn't see the upload banner to confirm)"],
+        };
+        const [state, text] = outcomes[result];
+        setStep("stReady", state, text);
+        setDeviceStatus(dev, result === "failed" ? "failed" : "done",
+          result === "failed" ? "Post failed" : "Posted");
+      } else {
+        setStep("stReady", "fail", "Stopped before Share — check the phone");
+        setDeviceStatus(dev, "failed", "Stopped before Share");
+      }
+    }
+    $("postIgBtn").onclick = postToInstagram;
+
+    $("refresh").onclick = () => send({ action: "List" });
+
+    $("clipBtn").onclick = () => {
+      if (!activeDevice) return alert("Pick a device first");
+      const content = $("clipText").value;
+      if (!content) return;
+      send({ action: "writeclipboard", comm: { deviceIds: activeDevice, content } });
+    };
+
+    $("adbBtn").onclick = () => {
+      if (!activeDevice) return alert("Pick a device first");
+      const command = $("adbCmd").value;
+      if (!command) return;
+      $("adbOut").textContent = "Running...";
+      send({ action: "adb", comm: { deviceIds: activeDevice, command } });
+    };
+
+    // Enter key submits the field it's in
+    $("clipText").addEventListener("keydown", (e) => { if (e.key === "Enter") $("clipBtn").click(); });
+    $("adbCmd").addEventListener("keydown", (e) => { if (e.key === "Enter") $("adbBtn").click(); });
+
+    // ---- Trigger server-run automations (warming, commenting) with live logs ----
+    // Fan out one subprocess per selected device. Each job has its own poll loop;
+    // the modal log multiplexes per-device sections. The modal badge rolls them up.
+    async function runAction(action, params, logEl, statusEl, deviceLabel) {
+      const devs = [...selectedDevices];
+      if (!devs.length) {
+        alert("Pick at least one device first");
+        return;
+      }
+      const jobs = devs.map((dev) => ({
+        dev, jobId: null, log: "(starting…)", finished: false, ok: false,
+      }));
+
+      // Modal badge + per-card status
+      statusEl.className = "badge running";
+      statusEl.textContent = devs.length === 1 ? "running" : `running on ${devs.length}`;
+      devs.forEach((d) => setDeviceStatus(d, "running", deviceLabel || "running"));
+
+      const repaint = () => {
+        logEl.textContent = jobs.map((j) => {
+          const tag = j.finished ? (j.ok ? " — DONE ✓" : " — finished") : "";
+          const jid = j.jobId ? ` (job ${j.jobId})` : "";
+          return `=== ${j.dev}${jid}${tag} ===\n${j.log}`;
+        }).join("\n\n");
+        logEl.scrollTop = logEl.scrollHeight;
+      };
+      repaint();
+
+      // Roll-up: when every job has reported done, finalize the modal badge.
+      const maybeRollup = () => {
+        if (!jobs.every((j) => j.finished)) return;
+        const allOk = jobs.every((j) => j.ok);
+        const okCount = jobs.filter((j) => j.ok).length;
+        statusEl.className = "badge " + (allOk ? "done" : "failed");
+        statusEl.textContent = devs.length === 1
+          ? (allOk ? "done" : "finished")
+          : `${okCount}/${devs.length} done`;
+      };
+
+      // Fan-out POSTs in parallel — Promise.all so a slow one doesn't block the others
+      await Promise.all(jobs.map(async (j) => {
+        try {
+          const res = await fetch(`/run/${action}`, {
+            method: "POST", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ ...params, device: j.dev }),
+          });
+          const data = await res.json();
+          if (!data.ok) throw new Error(data.error || "failed to start");
+          j.jobId = data.job_id;
+        } catch (e) {
+          j.finished = true;
+          j.ok = false;
+          j.log = "could not start: " + String(e);
+          setDeviceStatus(j.dev, "failed", "Couldn't start");
+        }
+      }));
+      repaint();
+      maybeRollup();
+
+      // Independent poll loops — each device's log file is its own; only that
+      // device's card status changes when its job ends.
+      jobs.forEach((j) => {
+        if (!j.jobId) return;
+        const poll = setInterval(async () => {
+          try {
+            const d = await (await fetch(`/runlog?job=${j.jobId}`)).json();
+            if (d.log) j.log = d.log;
+            if (!d.running) {
+              clearInterval(poll);
+              j.finished = true;
+              j.ok = /WARMING DONE|COMMENT POSTED/.test(d.log || "");
+              setDeviceStatus(j.dev, j.ok ? "done" : "failed", j.ok ? "Done" : "Finished");
+              maybeRollup();
+            }
+            repaint();
+          } catch (e) { /* transient — keep polling */ }
+        }, 2000);
+      });
+    }
+
+    $("warmRun").onclick = () => {
+      const minutes = parseFloat($("warmMinutes").value) || 5;
+      runAction("warm", { minutes }, $("warmLog"), $("warmStatus"), "Warming");
+    };
+    $("cmtSmart").onchange = () => {
+      const on = $("cmtSmart").checked;
+      $("cmtText").disabled = on;
+      $("cmtText").placeholder = on ? "Auto-generated from the caption…" : "Comment text...";
+    };
+    $("cmtRun").onclick = () => {
+      const url = $("cmtUrl").value.trim();
+      const smart = $("cmtSmart").checked;
+      const text = $("cmtText").value.trim();
+      if (!url) return alert("Need a post URL");
+      if (!smart && !text) return alert("Type a comment, or turn on Smart comment");
+      runAction("comment", smart ? { url, smart: true } : { url, text },
+                $("cmtLog"), $("cmtStatus"), "Commenting");
+    };
+
+    // ---- Action modal ----
+    function openModal(action, title) {
+      $("modalTitle").textContent = title;
+      document.querySelectorAll(".action-form").forEach((f) => { f.hidden = f.dataset.form !== action; });
+      $("modal").hidden = false;
+    }
+    function closeModal() { $("modal").hidden = true; }
+    document.querySelectorAll(".action-tile").forEach((t) => {
+      t.onclick = () => openModal(t.dataset.action, t.dataset.title);
+    });
+    $("modalClose").onclick = closeModal;
+    $("modal").addEventListener("click", (e) => { if (e.target.id === "modal") closeModal(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
+
+    // ---- Settings: .env editor ----
+    let envEntries = []; // [{key, value}, ...] — mirror of server state
+
+    async function envLoad() {
+      envStatus("Loading…", null);
+      try {
+        const r = await fetch("/settings/env");
+        const data = await r.json();
+        if (!data.ok) throw new Error(data.error || "load failed");
+        envEntries = (data.entries || []).map((e) => ({ key: e.key, value: e.value }));
+        envRender();
+        envStatus("", null);
+      } catch (e) {
+        envEntries = [];
+        envRender();
+        envStatus("Couldn't load: " + e, false);
+      }
+    }
+
+    function envEscape(s) { return String(s ?? "").replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;"); }
+
+    function envRender() {
+      const root = $("envRows");
+      root.innerHTML = "";
+      if (!envEntries.length) {
+        root.innerHTML = '<div style="color:var(--faint);font-size:12.5px;padding:6px 2px;">No variables yet — click "Add variable" to add one.</div>';
+        return;
+      }
+      envEntries.forEach((entry, idx) => {
+        const row = document.createElement("div");
+        row.className = "env-row";
+        row.innerHTML =
+          `<input class="env-key" placeholder="KEY" value="${envEscape(entry.key)}" data-idx="${idx}" data-field="key" spellcheck="false" autocapitalize="characters" />` +
+          `<input class="env-val" placeholder="value" type="password" value="${envEscape(entry.value)}" data-idx="${idx}" data-field="value" spellcheck="false" />` +
+          `<button class="env-mask" data-idx="${idx}" title="Show / hide">👁</button>` +
+          `<button class="env-del" data-idx="${idx}" title="Delete row">🗑</button>`;
+        root.appendChild(row);
+      });
+    }
+
+    $("envRows").addEventListener("input", (e) => {
+      const t = e.target;
+      const idx = +t.dataset.idx;
+      if (Number.isNaN(idx) || !envEntries[idx]) return;
+      if (t.dataset.field === "key") envEntries[idx].key = t.value;
+      if (t.dataset.field === "value") envEntries[idx].value = t.value;
+    });
+
+    $("envRows").addEventListener("click", (e) => {
+      const mask = e.target.closest(".env-mask");
+      const del = e.target.closest(".env-del");
+      if (mask) {
+        const idx = +mask.dataset.idx;
+        const v = $("envRows").querySelector(`input.env-val[data-idx="${idx}"]`);
+        if (v) v.type = v.type === "password" ? "text" : "password";
+      }
+      if (del) {
+        const idx = +del.dataset.idx;
+        envEntries.splice(idx, 1);
+        envRender();
+      }
+    });
+
+    $("envAdd").onclick = () => {
+      envEntries.push({ key: "", value: "" });
+      envRender();
+      const inputs = $("envRows").querySelectorAll("input.env-key");
+      const last = inputs[inputs.length - 1];
+      if (last) last.focus();
+    };
+
+    $("envSave").onclick = async () => {
+      // Drop blank-key rows; trim keys; warn on duplicates.
+      const cleaned = envEntries.map((e) => ({ key: (e.key || "").trim(), value: e.value || "" }))
+                                .filter((e) => e.key);
+      const seen = new Set();
+      for (const e of cleaned) {
+        if (seen.has(e.key)) { envStatus(`Duplicate key: ${e.key}`, false); return; }
+        seen.add(e.key);
+      }
+      envStatus("Saving…", null);
+      try {
+        const r = await fetch("/settings/env", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ entries: cleaned }),
+        });
+        const data = await r.json();
+        if (!data.ok) throw new Error(data.error || "save failed");
+        envStatus(`Saved ${data.saved} variable${data.saved === 1 ? "" : "s"} ✓`, true);
+        envLoad();
+      } catch (e) {
+        envStatus("Save failed: " + e, false);
+      }
+    };
+
+    function envStatus(msg, ok) {
+      const s = $("envStatus");
+      if (!s) return;
+      s.textContent = msg || "";
+      s.className = "env-status" + (ok === true ? " ok" : ok === false ? " fail" : "");
+    }
+
+    // Load .env when Settings tab is opened
+    document.querySelector('.nav a[data-view="settings"]').addEventListener("click", envLoad);
+
+    resetIgState();
+    connect();
+  </script>
+</body>
+</html>

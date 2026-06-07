@@ -1,0 +1,1800 @@
+{
+  "w01_reels_viewer": {
+    "elements": [
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_media_component",
+        "content_desc": "Reel by mukewa_. Double-tap to play or pause.",
+        "clickable": false,
+        "bounds": "[0,90][1080,2138]",
+        "center": [
+          540,
+          1114
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_video_container",
+        "content_desc": "Reel by mukewa_. Double-tap to play or pause.",
+        "clickable": false,
+        "bounds": "[0,90][1080,2138]",
+        "center": [
+          540,
+          1114
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_mute_button",
+        "content_desc": "Turn sound off",
+        "clickable": true,
+        "bounds": "[491,960][590,1059]",
+        "center": [
+          540,
+          1009
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_pause_button",
+        "content_desc": "Play",
+        "clickable": false,
+        "bounds": "[452,1092][628,1268]",
+        "center": [
+          540,
+          1180
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_author_info_component",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[44,1856][377,2005]",
+        "center": [
+          210,
+          1930
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_author_profile_pic",
+        "content_desc": "Profile picture of mukewa_",
+        "clickable": true,
+        "bounds": "[55,1895][154,1994]",
+        "center": [
+          104,
+          1944
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[165,1920][377,1970]",
+        "center": [
+          271,
+          1945
+        ]
+      },
+      {
+        "text": "mukewa_",
+        "resource_id": "com.instagram.android:id/clips_author_username",
+        "content_desc": "mukewa_",
+        "clickable": true,
+        "bounds": "[165,1920][377,1970]",
+        "center": [
+          271,
+          1945
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[377,1885][619,2004]",
+        "center": [
+          498,
+          1944
+        ]
+      },
+      {
+        "text": "Follow",
+        "resource_id": "com.instagram.android:id/inline_follow_button",
+        "content_desc": "Follow 𝑴 𝑼 𝑲 𝑬 𝑾 𝑨_",
+        "clickable": true,
+        "bounds": "[394,1907][580,1987]",
+        "center": [
+          487,
+          1947
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "See more",
+        "clickable": true,
+        "bounds": "[44,2005][937,2071]",
+        "center": [
+          490,
+          2038
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/like_button",
+        "content_desc": "Like",
+        "clickable": true,
+        "bounds": "[937,915][1058,1036]",
+        "center": [
+          997,
+          975
+        ]
+      },
+      {
+        "text": "The like number is 42632. View likes.",
+        "resource_id": "com.instagram.android:id/like_count",
+        "content_desc": "The like number is 42632. View likes.",
+        "clickable": true,
+        "bounds": "[937,1036][1058,1100]",
+        "center": [
+          997,
+          1068
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/comment_button",
+        "content_desc": "Comment",
+        "clickable": true,
+        "bounds": "[937,1100][1058,1221]",
+        "center": [
+          997,
+          1160
+        ]
+      },
+      {
+        "text": "Comment number is221. View comments",
+        "resource_id": "com.instagram.android:id/comment_count",
+        "content_desc": "Comment number is221. View comments",
+        "clickable": true,
+        "bounds": "[937,1221][1058,1285]",
+        "center": [
+          997,
+          1253
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Repost",
+        "clickable": true,
+        "bounds": "[937,1285][1058,1406]",
+        "center": [
+          997,
+          1345
+        ]
+      },
+      {
+        "text": "Reposted 3128 times",
+        "resource_id": "com.instagram.android:id/repost_count",
+        "content_desc": "Reposted 3128 times",
+        "clickable": true,
+        "bounds": "[937,1406][1058,1470]",
+        "center": [
+          997,
+          1438
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/direct_share_button",
+        "content_desc": "Share",
+        "clickable": true,
+        "bounds": "[937,1470][1058,1591]",
+        "center": [
+          997,
+          1530
+        ]
+      },
+      {
+        "text": "Reshare number is 9721",
+        "resource_id": "com.instagram.android:id/ufi_text_component",
+        "content_desc": "Reshare number is 9721",
+        "clickable": true,
+        "bounds": "[937,1591][1058,1655]",
+        "center": [
+          997,
+          1623
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/save_button",
+        "content_desc": "Save",
+        "clickable": true,
+        "bounds": "[937,1655][1058,1776]",
+        "center": [
+          997,
+          1715
+        ]
+      },
+      {
+        "text": "Save number is 823",
+        "resource_id": "com.instagram.android:id/save_count",
+        "content_desc": "Save number is 823",
+        "clickable": true,
+        "bounds": "[937,1776][1058,1840]",
+        "center": [
+          997,
+          1808
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_ufi_more_button_component",
+        "content_desc": "More",
+        "clickable": true,
+        "bounds": "[937,1840][1058,1961]",
+        "center": [
+          997,
+          1900
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/media_album_art_button",
+        "content_desc": "Audio",
+        "clickable": true,
+        "bounds": "[956,1983][1039,2066]",
+        "center": [
+          997,
+          2024
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/scrubber",
+        "content_desc": "@2131979027",
+        "clickable": false,
+        "bounds": "[0,2111][1080,2138]",
+        "center": [
+          540,
+          2124
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Create a reel",
+        "clickable": true,
+        "bounds": "[0,114][132,244]",
+        "center": [
+          66,
+          179
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Reels",
+        "clickable": false,
+        "bounds": "[257,132][489,225]",
+        "center": [
+          373,
+          178
+        ]
+      },
+      {
+        "text": "Reels",
+        "resource_id": "android:id/text1",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[263,132][434,225]",
+        "center": [
+          348,
+          178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Friends",
+        "clickable": true,
+        "bounds": "[489,132][871,225]",
+        "center": [
+          680,
+          178
+        ]
+      },
+      {
+        "text": "Friends",
+        "resource_id": "android:id/text1",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[495,132][719,225]",
+        "center": [
+          607,
+          178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[926,114][1058,244]",
+        "center": [
+          992,
+          179
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/feed_tab",
+        "content_desc": "Home",
+        "clickable": true,
+        "bounds": "[0,2138][216,2180]",
+        "center": [
+          108,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_tab",
+        "content_desc": "Reels",
+        "clickable": true,
+        "bounds": "[216,2138][432,2180]",
+        "center": [
+          324,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/direct_tab",
+        "content_desc": "Message",
+        "clickable": true,
+        "bounds": "[432,2138][648,2180]",
+        "center": [
+          540,
+          2159
+        ]
+      },
+      {
+        "text": "3",
+        "resource_id": "com.instagram.android:id/notification",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[0,0][0,0]",
+        "center": [
+          0,
+          0
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/search_tab",
+        "content_desc": "Search and explore",
+        "clickable": true,
+        "bounds": "[648,2138][864,2180]",
+        "center": [
+          756,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/profile_tab",
+        "content_desc": "Profile",
+        "clickable": true,
+        "bounds": "[864,2138][1080,2180]",
+        "center": [
+          972,
+          2159
+        ]
+      }
+    ]
+  },
+  "w04_next_reel": {
+    "elements": [
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_media_component",
+        "content_desc": "Reel by mukewa_. Double-tap to play or pause.",
+        "clickable": false,
+        "bounds": "[0,90][1080,2138]",
+        "center": [
+          540,
+          1114
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_video_container",
+        "content_desc": "Reel by mukewa_. Double-tap to play or pause.",
+        "clickable": false,
+        "bounds": "[0,90][1080,2138]",
+        "center": [
+          540,
+          1114
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_mute_button",
+        "content_desc": "Turn sound off",
+        "clickable": true,
+        "bounds": "[491,960][590,1059]",
+        "center": [
+          540,
+          1009
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_pause_button",
+        "content_desc": "Play",
+        "clickable": false,
+        "bounds": "[452,1092][628,1268]",
+        "center": [
+          540,
+          1180
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_author_info_component",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[44,1856][377,2005]",
+        "center": [
+          210,
+          1930
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_author_profile_pic",
+        "content_desc": "Profile picture of mukewa_",
+        "clickable": true,
+        "bounds": "[55,1895][154,1994]",
+        "center": [
+          104,
+          1944
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[165,1920][377,1970]",
+        "center": [
+          271,
+          1945
+        ]
+      },
+      {
+        "text": "mukewa_",
+        "resource_id": "com.instagram.android:id/clips_author_username",
+        "content_desc": "mukewa_",
+        "clickable": true,
+        "bounds": "[165,1920][377,1970]",
+        "center": [
+          271,
+          1945
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[377,1885][619,2004]",
+        "center": [
+          498,
+          1944
+        ]
+      },
+      {
+        "text": "Follow",
+        "resource_id": "com.instagram.android:id/inline_follow_button",
+        "content_desc": "Follow 𝑴 𝑼 𝑲 𝑬 𝑾 𝑨_",
+        "clickable": true,
+        "bounds": "[394,1907][580,1987]",
+        "center": [
+          487,
+          1947
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "See more",
+        "clickable": true,
+        "bounds": "[44,2005][937,2071]",
+        "center": [
+          490,
+          2038
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/like_button",
+        "content_desc": "Like",
+        "clickable": true,
+        "bounds": "[937,915][1058,1036]",
+        "center": [
+          997,
+          975
+        ]
+      },
+      {
+        "text": "The like number is 42633. View likes.",
+        "resource_id": "com.instagram.android:id/like_count",
+        "content_desc": "The like number is 42633. View likes.",
+        "clickable": true,
+        "bounds": "[937,1036][1058,1100]",
+        "center": [
+          997,
+          1068
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/comment_button",
+        "content_desc": "Comment",
+        "clickable": true,
+        "bounds": "[937,1100][1058,1221]",
+        "center": [
+          997,
+          1160
+        ]
+      },
+      {
+        "text": "Comment number is221. View comments",
+        "resource_id": "com.instagram.android:id/comment_count",
+        "content_desc": "Comment number is221. View comments",
+        "clickable": true,
+        "bounds": "[937,1221][1058,1285]",
+        "center": [
+          997,
+          1253
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Repost",
+        "clickable": true,
+        "bounds": "[937,1285][1058,1406]",
+        "center": [
+          997,
+          1345
+        ]
+      },
+      {
+        "text": "Reposted 3128 times",
+        "resource_id": "com.instagram.android:id/repost_count",
+        "content_desc": "Reposted 3128 times",
+        "clickable": true,
+        "bounds": "[937,1406][1058,1470]",
+        "center": [
+          997,
+          1438
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/direct_share_button",
+        "content_desc": "Share",
+        "clickable": true,
+        "bounds": "[937,1470][1058,1591]",
+        "center": [
+          997,
+          1530
+        ]
+      },
+      {
+        "text": "Reshare number is 9721",
+        "resource_id": "com.instagram.android:id/ufi_text_component",
+        "content_desc": "Reshare number is 9721",
+        "clickable": true,
+        "bounds": "[937,1591][1058,1655]",
+        "center": [
+          997,
+          1623
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/save_button",
+        "content_desc": "Save",
+        "clickable": true,
+        "bounds": "[937,1655][1058,1776]",
+        "center": [
+          997,
+          1715
+        ]
+      },
+      {
+        "text": "Save number is 824",
+        "resource_id": "com.instagram.android:id/save_count",
+        "content_desc": "Save number is 824",
+        "clickable": true,
+        "bounds": "[937,1776][1058,1840]",
+        "center": [
+          997,
+          1808
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_ufi_more_button_component",
+        "content_desc": "More",
+        "clickable": true,
+        "bounds": "[937,1840][1058,1961]",
+        "center": [
+          997,
+          1900
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/media_album_art_button",
+        "content_desc": "Audio",
+        "clickable": true,
+        "bounds": "[956,1983][1039,2066]",
+        "center": [
+          997,
+          2024
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/scrubber",
+        "content_desc": "@2131979027",
+        "clickable": false,
+        "bounds": "[0,2111][1080,2138]",
+        "center": [
+          540,
+          2124
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Create a reel",
+        "clickable": true,
+        "bounds": "[0,114][132,244]",
+        "center": [
+          66,
+          179
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Reels",
+        "clickable": false,
+        "bounds": "[257,132][489,225]",
+        "center": [
+          373,
+          178
+        ]
+      },
+      {
+        "text": "Reels",
+        "resource_id": "android:id/text1",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[263,132][434,225]",
+        "center": [
+          348,
+          178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Friends",
+        "clickable": true,
+        "bounds": "[489,132][871,225]",
+        "center": [
+          680,
+          178
+        ]
+      },
+      {
+        "text": "Friends",
+        "resource_id": "android:id/text1",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[495,132][719,225]",
+        "center": [
+          607,
+          178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[926,114][1058,244]",
+        "center": [
+          992,
+          179
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/feed_tab",
+        "content_desc": "Home",
+        "clickable": true,
+        "bounds": "[0,2138][216,2180]",
+        "center": [
+          108,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_tab",
+        "content_desc": "Reels",
+        "clickable": true,
+        "bounds": "[216,2138][432,2180]",
+        "center": [
+          324,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/direct_tab",
+        "content_desc": "Message",
+        "clickable": true,
+        "bounds": "[432,2138][648,2180]",
+        "center": [
+          540,
+          2159
+        ]
+      },
+      {
+        "text": "3",
+        "resource_id": "com.instagram.android:id/notification",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[0,0][0,0]",
+        "center": [
+          0,
+          0
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/search_tab",
+        "content_desc": "Search and explore",
+        "clickable": true,
+        "bounds": "[648,2138][864,2180]",
+        "center": [
+          756,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/profile_tab",
+        "content_desc": "Profile",
+        "clickable": true,
+        "bounds": "[864,2138][1080,2180]",
+        "center": [
+          972,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/background_dimmer",
+        "content_desc": "@2131955319",
+        "clickable": true,
+        "bounds": "[0,90][1080,2180]",
+        "center": [
+          540,
+          1135
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/layout_container_bottom_sheet",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[0,739][1080,2180]",
+        "center": [
+          540,
+          1459
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/pinned_save_row",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[0,825][1080,1023]",
+        "center": [
+          540,
+          924
+        ]
+      },
+      {
+        "text": "Saved",
+        "resource_id": "com.instagram.android:id/title",
+        "content_desc": "Media is saved in current private collection. Tap this row to unsave media.",
+        "clickable": false,
+        "bounds": "[231,875][937,925]",
+        "center": [
+          584,
+          900
+        ]
+      },
+      {
+        "text": "Private",
+        "resource_id": "com.instagram.android:id/subtitle",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[231,925][926,974]",
+        "center": [
+          578,
+          949
+        ]
+      },
+      {
+        "text": "Collect the posts you love",
+        "resource_id": "com.instagram.android:id/empty_state_title",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[61,1354][1019,1533]",
+        "center": [
+          540,
+          1443
+        ]
+      },
+      {
+        "text": "Save posts in collections just for you or build a collection with others.",
+        "resource_id": "com.instagram.android:id/empty_state_body",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[44,1533][1036,1626]",
+        "center": [
+          540,
+          1579
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/primary_action_button",
+        "content_desc": "Start a collection",
+        "clickable": true,
+        "bounds": "[44,2017][1036,2138]",
+        "center": [
+          540,
+          2077
+        ]
+      },
+      {
+        "text": "Start a collection",
+        "resource_id": "",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[380,2052][700,2102]",
+        "center": [
+          540,
+          2077
+        ]
+      }
+    ]
+  },
+  "w02_after_like": {
+    "elements": [
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_media_component",
+        "content_desc": "Reel by mukewa_. Double-tap to play or pause.",
+        "clickable": false,
+        "bounds": "[0,90][1080,2138]",
+        "center": [
+          540,
+          1114
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_video_container",
+        "content_desc": "Reel by mukewa_. Double-tap to play or pause.",
+        "clickable": false,
+        "bounds": "[0,90][1080,2138]",
+        "center": [
+          540,
+          1114
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_mute_button",
+        "content_desc": "Turn sound off",
+        "clickable": true,
+        "bounds": "[491,960][590,1059]",
+        "center": [
+          540,
+          1009
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_pause_button",
+        "content_desc": "Play",
+        "clickable": false,
+        "bounds": "[452,1092][628,1268]",
+        "center": [
+          540,
+          1180
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_author_info_component",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[44,1856][377,2005]",
+        "center": [
+          210,
+          1930
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_author_profile_pic",
+        "content_desc": "Profile picture of mukewa_",
+        "clickable": true,
+        "bounds": "[55,1895][154,1994]",
+        "center": [
+          104,
+          1944
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[165,1920][377,1970]",
+        "center": [
+          271,
+          1945
+        ]
+      },
+      {
+        "text": "mukewa_",
+        "resource_id": "com.instagram.android:id/clips_author_username",
+        "content_desc": "mukewa_",
+        "clickable": true,
+        "bounds": "[165,1920][377,1970]",
+        "center": [
+          271,
+          1945
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[377,1885][619,2004]",
+        "center": [
+          498,
+          1944
+        ]
+      },
+      {
+        "text": "Follow",
+        "resource_id": "com.instagram.android:id/inline_follow_button",
+        "content_desc": "Follow 𝑴 𝑼 𝑲 𝑬 𝑾 𝑨_",
+        "clickable": true,
+        "bounds": "[394,1907][580,1987]",
+        "center": [
+          487,
+          1947
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "See more",
+        "clickable": true,
+        "bounds": "[44,2005][937,2071]",
+        "center": [
+          490,
+          2038
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/like_button",
+        "content_desc": "Like",
+        "clickable": true,
+        "bounds": "[937,915][1058,1036]",
+        "center": [
+          997,
+          975
+        ]
+      },
+      {
+        "text": "The like number is 42633. View likes.",
+        "resource_id": "com.instagram.android:id/like_count",
+        "content_desc": "The like number is 42633. View likes.",
+        "clickable": true,
+        "bounds": "[937,1036][1058,1100]",
+        "center": [
+          997,
+          1068
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/comment_button",
+        "content_desc": "Comment",
+        "clickable": true,
+        "bounds": "[937,1100][1058,1221]",
+        "center": [
+          997,
+          1160
+        ]
+      },
+      {
+        "text": "Comment number is221. View comments",
+        "resource_id": "com.instagram.android:id/comment_count",
+        "content_desc": "Comment number is221. View comments",
+        "clickable": true,
+        "bounds": "[937,1221][1058,1285]",
+        "center": [
+          997,
+          1253
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Repost",
+        "clickable": true,
+        "bounds": "[937,1285][1058,1406]",
+        "center": [
+          997,
+          1345
+        ]
+      },
+      {
+        "text": "Reposted 3128 times",
+        "resource_id": "com.instagram.android:id/repost_count",
+        "content_desc": "Reposted 3128 times",
+        "clickable": true,
+        "bounds": "[937,1406][1058,1470]",
+        "center": [
+          997,
+          1438
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/direct_share_button",
+        "content_desc": "Share",
+        "clickable": true,
+        "bounds": "[937,1470][1058,1591]",
+        "center": [
+          997,
+          1530
+        ]
+      },
+      {
+        "text": "Reshare number is 9721",
+        "resource_id": "com.instagram.android:id/ufi_text_component",
+        "content_desc": "Reshare number is 9721",
+        "clickable": true,
+        "bounds": "[937,1591][1058,1655]",
+        "center": [
+          997,
+          1623
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/save_button",
+        "content_desc": "Save",
+        "clickable": true,
+        "bounds": "[937,1655][1058,1776]",
+        "center": [
+          997,
+          1715
+        ]
+      },
+      {
+        "text": "Save number is 823",
+        "resource_id": "com.instagram.android:id/save_count",
+        "content_desc": "Save number is 823",
+        "clickable": true,
+        "bounds": "[937,1776][1058,1840]",
+        "center": [
+          997,
+          1808
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_ufi_more_button_component",
+        "content_desc": "More",
+        "clickable": true,
+        "bounds": "[937,1840][1058,1961]",
+        "center": [
+          997,
+          1900
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/media_album_art_button",
+        "content_desc": "Audio",
+        "clickable": true,
+        "bounds": "[956,1983][1039,2066]",
+        "center": [
+          997,
+          2024
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/scrubber",
+        "content_desc": "@2131979027",
+        "clickable": false,
+        "bounds": "[0,2111][1080,2138]",
+        "center": [
+          540,
+          2124
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Create a reel",
+        "clickable": true,
+        "bounds": "[0,114][132,244]",
+        "center": [
+          66,
+          179
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Reels",
+        "clickable": false,
+        "bounds": "[257,132][489,225]",
+        "center": [
+          373,
+          178
+        ]
+      },
+      {
+        "text": "Reels",
+        "resource_id": "android:id/text1",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[263,132][434,225]",
+        "center": [
+          348,
+          178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Friends",
+        "clickable": true,
+        "bounds": "[489,132][871,225]",
+        "center": [
+          680,
+          178
+        ]
+      },
+      {
+        "text": "Friends",
+        "resource_id": "android:id/text1",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[495,132][719,225]",
+        "center": [
+          607,
+          178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[926,114][1058,244]",
+        "center": [
+          992,
+          179
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/feed_tab",
+        "content_desc": "Home",
+        "clickable": true,
+        "bounds": "[0,2138][216,2180]",
+        "center": [
+          108,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_tab",
+        "content_desc": "Reels",
+        "clickable": true,
+        "bounds": "[216,2138][432,2180]",
+        "center": [
+          324,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/direct_tab",
+        "content_desc": "Message",
+        "clickable": true,
+        "bounds": "[432,2138][648,2180]",
+        "center": [
+          540,
+          2159
+        ]
+      },
+      {
+        "text": "3",
+        "resource_id": "com.instagram.android:id/notification",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[0,0][0,0]",
+        "center": [
+          0,
+          0
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/search_tab",
+        "content_desc": "Search and explore",
+        "clickable": true,
+        "bounds": "[648,2138][864,2180]",
+        "center": [
+          756,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/profile_tab",
+        "content_desc": "Profile",
+        "clickable": true,
+        "bounds": "[864,2138][1080,2180]",
+        "center": [
+          972,
+          2159
+        ]
+      }
+    ]
+  },
+  "w03_after_save": {
+    "elements": [
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_media_component",
+        "content_desc": "Reel by mukewa_. Double-tap to play or pause.",
+        "clickable": false,
+        "bounds": "[0,90][1080,2138]",
+        "center": [
+          540,
+          1114
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_video_container",
+        "content_desc": "Reel by mukewa_. Double-tap to play or pause.",
+        "clickable": false,
+        "bounds": "[0,90][1080,2138]",
+        "center": [
+          540,
+          1114
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_mute_button",
+        "content_desc": "Turn sound off",
+        "clickable": true,
+        "bounds": "[491,960][590,1059]",
+        "center": [
+          540,
+          1009
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_pause_button",
+        "content_desc": "Play",
+        "clickable": false,
+        "bounds": "[452,1092][628,1268]",
+        "center": [
+          540,
+          1180
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_author_info_component",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[44,1856][377,2005]",
+        "center": [
+          210,
+          1930
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_author_profile_pic",
+        "content_desc": "Profile picture of mukewa_",
+        "clickable": true,
+        "bounds": "[55,1895][154,1994]",
+        "center": [
+          104,
+          1944
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[165,1920][377,1970]",
+        "center": [
+          271,
+          1945
+        ]
+      },
+      {
+        "text": "mukewa_",
+        "resource_id": "com.instagram.android:id/clips_author_username",
+        "content_desc": "mukewa_",
+        "clickable": true,
+        "bounds": "[165,1920][377,1970]",
+        "center": [
+          271,
+          1945
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[377,1885][619,2004]",
+        "center": [
+          498,
+          1944
+        ]
+      },
+      {
+        "text": "Follow",
+        "resource_id": "com.instagram.android:id/inline_follow_button",
+        "content_desc": "Follow 𝑴 𝑼 𝑲 𝑬 𝑾 𝑨_",
+        "clickable": true,
+        "bounds": "[394,1907][580,1987]",
+        "center": [
+          487,
+          1947
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "See more",
+        "clickable": true,
+        "bounds": "[44,2005][937,2071]",
+        "center": [
+          490,
+          2038
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/like_button",
+        "content_desc": "Like",
+        "clickable": true,
+        "bounds": "[937,915][1058,1036]",
+        "center": [
+          997,
+          975
+        ]
+      },
+      {
+        "text": "The like number is 42633. View likes.",
+        "resource_id": "com.instagram.android:id/like_count",
+        "content_desc": "The like number is 42633. View likes.",
+        "clickable": true,
+        "bounds": "[937,1036][1058,1100]",
+        "center": [
+          997,
+          1068
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/comment_button",
+        "content_desc": "Comment",
+        "clickable": true,
+        "bounds": "[937,1100][1058,1221]",
+        "center": [
+          997,
+          1160
+        ]
+      },
+      {
+        "text": "Comment number is221. View comments",
+        "resource_id": "com.instagram.android:id/comment_count",
+        "content_desc": "Comment number is221. View comments",
+        "clickable": true,
+        "bounds": "[937,1221][1058,1285]",
+        "center": [
+          997,
+          1253
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Repost",
+        "clickable": true,
+        "bounds": "[937,1285][1058,1406]",
+        "center": [
+          997,
+          1345
+        ]
+      },
+      {
+        "text": "Reposted 3128 times",
+        "resource_id": "com.instagram.android:id/repost_count",
+        "content_desc": "Reposted 3128 times",
+        "clickable": true,
+        "bounds": "[937,1406][1058,1470]",
+        "center": [
+          997,
+          1438
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/direct_share_button",
+        "content_desc": "Share",
+        "clickable": true,
+        "bounds": "[937,1470][1058,1591]",
+        "center": [
+          997,
+          1530
+        ]
+      },
+      {
+        "text": "Reshare number is 9721",
+        "resource_id": "com.instagram.android:id/ufi_text_component",
+        "content_desc": "Reshare number is 9721",
+        "clickable": true,
+        "bounds": "[937,1591][1058,1655]",
+        "center": [
+          997,
+          1623
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/save_button",
+        "content_desc": "Save",
+        "clickable": true,
+        "bounds": "[937,1655][1058,1776]",
+        "center": [
+          997,
+          1715
+        ]
+      },
+      {
+        "text": "Save number is 824",
+        "resource_id": "com.instagram.android:id/save_count",
+        "content_desc": "Save number is 824",
+        "clickable": true,
+        "bounds": "[937,1776][1058,1840]",
+        "center": [
+          997,
+          1808
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_ufi_more_button_component",
+        "content_desc": "More",
+        "clickable": true,
+        "bounds": "[937,1840][1058,1961]",
+        "center": [
+          997,
+          1900
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/media_album_art_button",
+        "content_desc": "Audio",
+        "clickable": true,
+        "bounds": "[956,1983][1039,2066]",
+        "center": [
+          997,
+          2024
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/scrubber",
+        "content_desc": "@2131979027",
+        "clickable": false,
+        "bounds": "[0,2111][1080,2138]",
+        "center": [
+          540,
+          2124
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Create a reel",
+        "clickable": true,
+        "bounds": "[0,114][132,244]",
+        "center": [
+          66,
+          179
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Reels",
+        "clickable": false,
+        "bounds": "[257,132][489,225]",
+        "center": [
+          373,
+          178
+        ]
+      },
+      {
+        "text": "Reels",
+        "resource_id": "android:id/text1",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[263,132][434,225]",
+        "center": [
+          348,
+          178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "Friends",
+        "clickable": true,
+        "bounds": "[489,132][871,225]",
+        "center": [
+          680,
+          178
+        ]
+      },
+      {
+        "text": "Friends",
+        "resource_id": "android:id/text1",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[495,132][719,225]",
+        "center": [
+          607,
+          178
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[926,114][1058,244]",
+        "center": [
+          992,
+          179
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/feed_tab",
+        "content_desc": "Home",
+        "clickable": true,
+        "bounds": "[0,2138][216,2180]",
+        "center": [
+          108,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/clips_tab",
+        "content_desc": "Reels",
+        "clickable": true,
+        "bounds": "[216,2138][432,2180]",
+        "center": [
+          324,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/direct_tab",
+        "content_desc": "Message",
+        "clickable": true,
+        "bounds": "[432,2138][648,2180]",
+        "center": [
+          540,
+          2159
+        ]
+      },
+      {
+        "text": "3",
+        "resource_id": "com.instagram.android:id/notification",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[0,0][0,0]",
+        "center": [
+          0,
+          0
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/search_tab",
+        "content_desc": "Search and explore",
+        "clickable": true,
+        "bounds": "[648,2138][864,2180]",
+        "center": [
+          756,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/profile_tab",
+        "content_desc": "Profile",
+        "clickable": true,
+        "bounds": "[864,2138][1080,2180]",
+        "center": [
+          972,
+          2159
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/background_dimmer",
+        "content_desc": "@2131955319",
+        "clickable": true,
+        "bounds": "[0,90][1080,2180]",
+        "center": [
+          540,
+          1135
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/layout_container_bottom_sheet",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[0,739][1080,2180]",
+        "center": [
+          540,
+          1459
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/pinned_save_row",
+        "content_desc": "",
+        "clickable": true,
+        "bounds": "[0,825][1080,1023]",
+        "center": [
+          540,
+          924
+        ]
+      },
+      {
+        "text": "Saved",
+        "resource_id": "com.instagram.android:id/title",
+        "content_desc": "Media is saved in current private collection. Tap this row to unsave media.",
+        "clickable": false,
+        "bounds": "[231,875][937,925]",
+        "center": [
+          584,
+          900
+        ]
+      },
+      {
+        "text": "Private",
+        "resource_id": "com.instagram.android:id/subtitle",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[231,925][926,974]",
+        "center": [
+          578,
+          949
+        ]
+      },
+      {
+        "text": "Collect the posts you love",
+        "resource_id": "com.instagram.android:id/empty_state_title",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[61,1354][1019,1533]",
+        "center": [
+          540,
+          1443
+        ]
+      },
+      {
+        "text": "Save posts in collections just for you or build a collection with others.",
+        "resource_id": "com.instagram.android:id/empty_state_body",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[44,1533][1036,1626]",
+        "center": [
+          540,
+          1579
+        ]
+      },
+      {
+        "text": "",
+        "resource_id": "com.instagram.android:id/primary_action_button",
+        "content_desc": "Start a collection",
+        "clickable": true,
+        "bounds": "[44,2017][1036,2138]",
+        "center": [
+          540,
+          2077
+        ]
+      },
+      {
+        "text": "Start a collection",
+        "resource_id": "",
+        "content_desc": "",
+        "clickable": false,
+        "bounds": "[380,2052][700,2102]",
+        "center": [
+          540,
+          2077
+        ]
+      }
+    ]
+  }
+}
