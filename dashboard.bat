@@ -29,7 +29,7 @@ call :kill_existing
 echo.
 echo Starting FarmOps dashboard...
 REM Launch in a new console window so you can see live logs and Ctrl+C to stop.
-start "FarmOps Dashboard - python app.py" cmd /k "set PYTHONIOENCODING=utf-8 && python app.py"
+start "FarmOps Dashboard - py app.py" cmd /k "set PYTHONIOENCODING=utf-8 && py app.py"
 REM Wait a beat, then health-check by hitting index.html.
 powershell -NoProfile -Command "Start-Sleep -Milliseconds 1500; try { $r = Invoke-WebRequest -UseBasicParsing -Uri 'http://127.0.0.1:8000/index.html' -TimeoutSec 4; Write-Host ('Server responding (HTTP ' + $r.StatusCode + ')') -ForegroundColor Green } catch { Write-Host 'Server did not respond on port 8000 yet - check the new console window for errors.' -ForegroundColor Red }"
 call :urls
