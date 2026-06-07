@@ -15,12 +15,22 @@ echo === FarmOps setup ===
 echo.
 
 REM 1) Python
+REM    Strict check: on Windows the Microsoft Store "App execution alias" puts a
+REM    stub python.exe on PATH that just prints "Python was not found..." and
+REM    exits successfully from `where python`'s point of view. So we run actual
+REM    Python code -- if it errors, real Python isn't installed.
 echo Checking Python...
-where python >nul 2>&1
+python -c "import sys" >nul 2>&1
 if errorlevel 1 (
-    echo   [X] Python is not on PATH.
-    echo       Install Python 3.10 or newer from https://python.org
-    echo       During install, tick "Add python.exe to PATH".
+    echo   [X] Python is NOT installed.
+    echo       Windows may be showing the Microsoft Store alias on PATH instead.
+    echo.
+    echo   Install Python 3.10 or newer:
+    echo     - https://python.org/downloads/   ^(direct download, recommended^)
+    echo     - or:  winget install Python.Python.3.13
+    echo.
+    echo   During install, TICK "Add python.exe to PATH".
+    echo   After install: CLOSE this terminal, open a new one, then re-run setup.bat.
     echo.
     pause
     exit /b 1
