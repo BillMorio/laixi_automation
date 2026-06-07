@@ -1,0 +1,5 @@
+# Windows batch files MUST be CRLF on checkout — cmd.exe fails to parse LF-only
+# .bat files with "'M' is not recognized as an internal or external command".
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
