@@ -140,19 +140,43 @@ async def main(minutes):
         await asyncio.sleep(6)
         await dismiss(ws)
 
-        # Reels tab. PREFER uiautomator (the element has content-desc 'Reels' on
-        # every IG version we've seen), so the tap lands no matter the resolution.
-        # Only fall back to the scaled fixed coordinate if the dump doesn't find it.
+        # Reels tab. Order of preference, most specific first:
+        #   1) resource-id 'clips_tab' (IG's internal name for Reels). The ONLY
+        #      element with this rid is the real bottom-nav Reels button.
+        #   2) content-desc 'Reels' AND in the bottom 20% of the screen. The
+        #      desc 'Reels' also appears on in-content labels (story circles,
+        #      profile sections); the y-filter rules those out.
+        #   3) scaled fixed coordinate (last resort, may miss).
         els = parse(await uidump(ws))
-        reels = find_center(els, "Reels")
+        reels, src = None, None
+        for e in els:
+            if "clips_tab" in (e["rid"] or "") and e["center"]:
+                reels, src = e["center"], "rid clips_tab"; break
+        if not reels:
+            for e in els:
+                d = (e["desc"] or "").lower()
+                t = (e["text"] or "").lower()
+                if (d == "reels" or t == "reels") and e["center"] and e["center"][1] >= h * 0.8:
+                    reels, src = e["center"], "desc Reels (bottom nav)"; break
         if reels:
-            print(f"  Reels tab via selector @ {reels}", flush=True)
+            print(f"  Reels tab via {src} @ {reels}", flush=True)
         else:
             reels = [sx(324), sy(2159)]
             print(f"  Reels tab NOT found by selector; using scaled coords {reels}", flush=True)
         await tap(ws, *reels); await asyncio.sleep(4)
         await dismiss(ws)
         await asyncio.sleep(3)  # let the first reel settle
+
+        # Verify we actually landed on the Reels feed. like_button is the
+        # signature element of a reel; if it's not on screen, our tap missed
+        # and the script would otherwise scroll the wrong feed silently.
+        verify_els = parse(await uidump(ws))
+        on_reels = any("like_button" in (e["rid"] or "") for e in verify_els)
+        if on_reels:
+            print("  Reels feed confirmed (like_button present)", flush=True)
+        else:
+            print("  WARNING: Reels feed NOT confirmed (no like_button on screen)", flush=True)
+            print("           tap likely missed the Reels nav; script will continue but may scroll the wrong feed.", flush=True)
 
         watched = liked = saved = 0
         print(f"WARMING for {minutes} min — scrolling reels...", flush=True)
