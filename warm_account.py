@@ -106,18 +106,51 @@ async def dismiss(ws):
             break
 
 
+async def get_screen(ws):
+    """Read the phone's screen resolution via `wm size`. The original selectors
+    were calibrated on a 1080x2160 phone; on a 1440x2960 Samsung S8 the same
+    pixel coordinates miss the Reels tab and can land on Samsung's Recent-Apps
+    nav button (which lives at the bottom-LEFT, not bottom-right). Scaling fixes
+    that."""
+    res = await adb(ws, "wm size")
+    for line in res:
+        m = re.search(r"(\d+)x(\d+)", line)
+        if m:
+            return int(m.group(1)), int(m.group(2))
+    return 1080, 2160  # fallback to the original calibration size
+
+
 async def main(minutes):
     async with websockets.connect("ws://127.0.0.1:22221/") as ws:
         t_start = time.time()                               # wall clock, for real duration
         m_deadline = time.monotonic() + minutes * 60 - 8    # whole session (open+scroll+exit) fits in `minutes`
+
+        # Resolution-aware scaling. BASE_* is what every hard-coded coord in this
+        # file was originally calibrated against; sx/sy convert to the real device.
+        BASE_W, BASE_H = 1080, 2160
+        w, h = await get_screen(ws)
+        sx = lambda x: int(x * w / BASE_W)
+        sy = lambda y: int(y * h / BASE_H)
+        print(f"WARMING device {DEVICE} | screen {w}x{h} (scale {w/BASE_W:.2f}x)", flush=True)
+
         # Open IG -> Reels
         await adb(ws, "am force-stop com.instagram.android")
         await asyncio.sleep(1.5)
         await adb(ws, "monkey -p com.instagram.android -c android.intent.category.LAUNCHER 1")
         await asyncio.sleep(6)
         await dismiss(ws)
-        # Reels tab — known coordinate, no dump needed
-        await tap(ws, 324, 2159); await asyncio.sleep(4)
+
+        # Reels tab. PREFER uiautomator (the element has content-desc 'Reels' on
+        # every IG version we've seen), so the tap lands no matter the resolution.
+        # Only fall back to the scaled fixed coordinate if the dump doesn't find it.
+        els = parse(await uidump(ws))
+        reels = find_center(els, "Reels")
+        if reels:
+            print(f"  Reels tab via selector @ {reels}", flush=True)
+        else:
+            reels = [sx(324), sy(2159)]
+            print(f"  Reels tab NOT found by selector; using scaled coords {reels}", flush=True)
+        await tap(ws, *reels); await asyncio.sleep(4)
         await dismiss(ws)
         await asyncio.sleep(3)  # let the first reel settle
 
@@ -135,23 +168,26 @@ async def main(minutes):
 
             # LIKE (~P_LIKE): the only screen-read in the loop — one quick dump to
             # check the `selected` attribute so we never accidentally UN-like an
-            # already-liked reel. Not navigation (that's the swipe below).
+            # already-liked reel. The like button is found by rid, so the tap
+            # coordinate is the element's actual center on THIS device.
             if random.random() < P_LIKE:
                 lb = by_rid(parse(await uidump(ws)), "like_button")
                 if lb and lb["selected"] is False:
-                    await tap(ws, 997, 975); await asyncio.sleep(1.0)
+                    await tap(ws, *lb["center"]); await asyncio.sleep(1.0)
                     liked += 1; print("    -> liked", flush=True)
                 elif lb and lb["selected"]:
                     print("    (already liked, skip)", flush=True)
-            # SAVE (~P_SAVE): known coordinate, no dump
+            # SAVE (~P_SAVE): scaled coord (no dump, fewer reads per loop).
             if random.random() < P_SAVE:
-                await tap(ws, 997, 1715); await asyncio.sleep(0.8)
+                await tap(ws, sx(997), sy(1715)); await asyncio.sleep(0.8)
                 saved += 1; print("    -> saved", flush=True)
 
-            # SCROLL to the next reel (randomized distance + speed)
-            y1 = 1650 + random.randint(-40, 40)
-            y2 = 480 + random.randint(-60, 60)
-            await adb(ws, f"input swipe 540 {y1} 540 {y2} {random.randint(250, 430)}")
+            # SCROLL to the next reel (randomized distance + speed). All coords
+            # scaled so the swipe stays inside the content area (not the nav bar)
+            # regardless of phone resolution.
+            y1 = sy(1650) + random.randint(-40, 40)
+            y2 = sy(480)  + random.randint(-60, 60)
+            await adb(ws, f"input swipe {sx(540)} {y1} {sx(540)} {y2} {random.randint(250, 430)}")
             await asyncio.sleep(random.uniform(1.0, 2.0))  # let next reel load
 
         # Clean exit

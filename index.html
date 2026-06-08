@@ -171,6 +171,30 @@
     .env-status { font-size:12px; color:var(--muted); }
     .env-status.ok { color:var(--green); }
     .env-status.fail { color:var(--red); }
+    /* Activity view -> per-device status table */
+    .activity-summary { display:flex; gap:18px; align-items:center; margin-bottom:18px; flex-wrap:wrap; }
+    .activity-summary .act-stat { display:inline-flex; align-items:center; gap:8px; font-size:13px; color:var(--muted); }
+    .activity-summary .act-stat b { color:var(--text); font-weight:700; font-size:15px; font-family:var(--mono); }
+    .activity-summary .act-total { margin-left:auto; color:var(--faint); }
+    .activity-summary .act-dot { width:9px; height:9px; border-radius:50%; flex-shrink:0; background:var(--faint); }
+    .activity-summary .act-dot.running { background:#facc15; box-shadow:0 0 0 3px rgba(250,204,21,.16); }
+    .activity-summary .act-dot.done    { background:var(--green); }
+    .activity-summary .act-dot.failed  { background:var(--red); }
+    .activity-summary .act-dot.idle    { background:var(--faint); }
+    .activity-table { width:100%; border-collapse:collapse; font-size:13px; }
+    .activity-table th { text-align:left; padding:10px 12px; color:var(--muted); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.5px; border-bottom:1px solid var(--border); }
+    .activity-table td { padding:11px 12px; border-bottom:1px solid var(--border); }
+    .activity-table tr:hover td { background:var(--surface); }
+    .activity-table td.act-num { font-family:var(--mono); font-weight:700; color:#93c5fd; }
+    .activity-table td.act-did { font-family:var(--mono); color:var(--muted); font-size:12px; }
+    .activity-table td.act-empty { text-align:center; color:var(--faint); padding:24px; }
+    .activity-table .badge { font-size:11px; padding:3px 9px; border-radius:999px; display:inline-block; }
+    .activity-table tr.row-running td:first-child { box-shadow:inset 3px 0 0 #facc15; }
+    .activity-table tr.row-done    td:first-child { box-shadow:inset 3px 0 0 var(--green); }
+    .activity-table tr.row-failed  td:first-child { box-shadow:inset 3px 0 0 var(--red); }
+    .activity-debug { margin-top:24px; }
+    .activity-debug summary { cursor:pointer; color:var(--muted); font-size:12px; padding:6px 0; user-select:none; }
+    .activity-debug summary:hover { color:var(--text); }
   </style>
 </head>
 <body>
@@ -254,8 +278,30 @@
         </section>
 
         <section class="view" data-view="activity">
-          <label>Event Log</label>
-          <pre id="log" class="log-pre"></pre>
+          <div class="activity-summary">
+            <span class="act-stat"><span class="act-dot running"></span><b id="actRunning">0</b> running</span>
+            <span class="act-stat"><span class="act-dot done"></span><b id="actDone">0</b> done</span>
+            <span class="act-stat"><span class="act-dot failed"></span><b id="actFailed">0</b> failed</span>
+            <span class="act-stat"><span class="act-dot idle"></span><b id="actIdle">0</b> idle</span>
+            <span class="act-stat act-total"><b id="actTotal">0</b> devices</span>
+          </div>
+          <table class="activity-table">
+            <thead>
+              <tr>
+                <th style="width:54px;">#</th>
+                <th>Device ID</th>
+                <th style="width:140px;">Model</th>
+                <th style="width:140px;">Status</th>
+              </tr>
+            </thead>
+            <tbody id="activityRows">
+              <tr><td colspan="4" class="act-empty">No devices yet.</td></tr>
+            </tbody>
+          </table>
+          <details class="activity-debug">
+            <summary>Raw event log (debug)</summary>
+            <pre id="log" class="log-pre"></pre>
+          </details>
         </section>
 
         <section class="view" data-view="settings">
@@ -357,6 +403,7 @@
     let ws;
     let activeDevice = null;       // most-recently-clicked card; used by single-shot actions (console, hw buttons, IG post)
     const selectedDevices = new Set(); // every card the user has toggled on; fan-out actions (Warm, Comment) target the whole set
+    let lastDeviceList = [];       // last snapshot of Laixi's List response; used by the Activity table renderer
     let lastAction = null;
     const deviceStatus = {}; // deviceId -> { state: idle|running|done|failed, label }
 
@@ -450,6 +497,7 @@
     }
 
     function renderDevices(list) {
+      lastDeviceList = list || [];
       const container = $("devices");
       $("deviceCount").textContent = list.length;
       const sd = $("statDevices"); if (sd) sd.textContent = list.length;
@@ -497,6 +545,40 @@
         }
       });
       updateSelectionCount();
+      renderActivity();
+    }
+
+    function renderActivity() {
+      const tbody = $("activityRows");
+      if (!tbody) return;
+      const order = { running: 0, failed: 1, done: 2, idle: 3 };
+      const rows = (lastDeviceList || []).map((d, i) => {
+        const st = deviceStatus[d.deviceId] || { state: "idle", label: "Idle" };
+        return { i, d, st };
+      });
+      rows.sort((a, b) => (order[a.st.state] ?? 9) - (order[b.st.state] ?? 9) || a.i - b.i);
+      const counts = { running: 0, done: 0, failed: 0, idle: 0 };
+      rows.forEach(r => { counts[r.st.state] = (counts[r.st.state] || 0) + 1; });
+      const total = rows.length;
+      const set = (id, n) => { const el = $(id); if (el) el.textContent = n; };
+      set("actRunning", counts.running || 0);
+      set("actDone", counts.done || 0);
+      set("actFailed", counts.failed || 0);
+      set("actIdle", counts.idle || 0);
+      set("actTotal", total);
+      if (!total) {
+        tbody.innerHTML = '<tr><td colspan="4" class="act-empty">No devices yet.</td></tr>';
+        return;
+      }
+      tbody.innerHTML = rows.map(({ i, d, st }) => {
+        const num = String(i + 1).padStart(2, "0");
+        return `<tr class="row-${st.state}">
+          <td class="act-num">${num}</td>
+          <td class="act-did">${d.deviceId}</td>
+          <td>${d.name || ""}</td>
+          <td><span class="badge ${st.state}">${st.label}</span></td>
+        </tr>`;
+      }).join("");
     }
 
     function updateSelectionCount() {
@@ -516,6 +598,7 @@
       const badge = document.querySelector(`.device-card[data-id="${deviceId}"] .badge`);
       if (badge) { badge.className = "badge " + state; badge.textContent = label; }
       updateStats();
+      renderActivity();
     }
 
     // Hardware buttons (ADB keyevents)
