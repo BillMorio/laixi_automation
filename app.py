@@ -113,6 +113,36 @@ def _rewrite_env(path, incoming_kv):
     tmp.replace(path)
 
 
+def _adb_diag():
+    """Probe whether `adb` is reachable from the host and which devices it sees.
+    Used to decide whether we can bypass Laixi's WS for file transfer with
+    direct `adb push` (5-10x faster on local USB). Safe to call repeatedly -
+    just runs `adb devices`, no side effects beyond starting the ADB server."""
+    out = {"available": False, "path": None, "devices": [], "raw_output": "", "error": None}
+    adb = shutil.which("adb")
+    if not adb:
+        out["error"] = "adb not on PATH"
+        return out
+    out["path"] = adb
+    try:
+        r = subprocess.run([adb, "devices"], capture_output=True, text=True, timeout=10)
+        out["raw_output"] = (r.stdout or "") + (r.stderr or "")
+        out["available"] = r.returncode == 0
+        # Parse "List of devices attached\n<serial>\tdevice\n..."
+        for line in (r.stdout or "").splitlines():
+            line = line.strip()
+            if not line or line.startswith("List of devices"):
+                continue
+            parts = line.split()
+            if len(parts) >= 2 and parts[1] in ("device", "offline", "unauthorized"):
+                out["devices"].append({"serial": parts[0], "state": parts[1]})
+    except subprocess.TimeoutExpired:
+        out["error"] = "adb devices timed out"
+    except Exception as e:  # any OSError / permission / etc.
+        out["error"] = f"{type(e).__name__}: {e}"
+    return out
+
+
 def normalize_video(raw, out):
     """Make a video safe for Android/Instagram: rewrite the MP4 header so the
     duration field is correct (the #1 cause of 0:00 / rejected uploads), ensure
@@ -165,6 +195,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             return
         if self.path == "/settings/env":
             self._send_json({"ok": True, "entries": _kv_only(_parse_env(ENV_PATH))})
+            return
+        if self.path == "/diag/adb":
+            self._send_json(_adb_diag())
             return
         if self.path.startswith("/runlog"):
             job = JOBS.get(parse_qs(urlparse(self.path).query).get("job", [""])[0])

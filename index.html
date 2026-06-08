@@ -714,46 +714,90 @@
       return Number.isNaN(n) ? null : n;
     }
 
+    // ADB query targeting a SPECIFIC device (the original adbQuery hardcodes
+    // activeDevice). Used by the multi-device push to poll each phone's file
+    // size independently. The global queryResolver still only handles ONE
+    // in-flight call at a time, so the multi-device polling loop awaits these
+    // sequentially per cycle — fine at our scale (2-10 devices).
+    function adbQueryFor(device, command, timeout = 6000) {
+      return new Promise((resolve) => {
+        queryResolver = resolve;
+        send({ action: "adb", comm: { deviceIds: device, command }});
+        setTimeout(() => {
+          if (queryResolver) { const r = queryResolver; queryResolver = null; r(null); }
+        }, timeout);
+      });
+    }
+
     $("pushBtn").onclick = async () => {
-      if (!activeDevice) return alert("Pick a device first");
+      const devs = [...selectedDevices];
+      if (!devs.length) return alert("Pick at least one device");
       if (!uploadedVideoPath) return alert("Upload a video first");
       pushedFilename = uploadedVideoPath.split(/[\\/]/).pop();
       const phonePath = `/storage/emulated/0/DCIM/Camera/${pushedFilename}`;
-      send({ action: "beginfilesend", comm: {
-        deviceIds: activeDevice,
-        filePaths: uploadedVideoPath,
-        isAutoInstall: "0"
-      }});
-      $("postIgBtn").disabled = true;
-      setStep("stPush", "active", "Transferring...");
 
-      // beginfilesend is async + slow. CRITICAL: do not media-scan until the file is
-      // FULLY written, or Android records 0:00 duration and Instagram rejects it.
-      // Poll the file size and only scan once it reaches the full upload size.
-      let waited = 0, lastSize = -1;
+      // Per-device state — each phone tracks its own transfer progress
+      const states = devs.map((d) => ({
+        device: d, size: 0, lastSize: -1, complete: false, failed: false,
+      }));
+
+      // Fan-out: fire beginfilesend for every selected device in parallel.
+      // Laixi's WS handles the actual byte transfers concurrently.
+      states.forEach((s) => {
+        send({ action: "beginfilesend", comm: {
+          deviceIds: s.device,
+          filePaths: uploadedVideoPath,
+          isAutoInstall: "0",
+        }});
+      });
+      $("postIgBtn").disabled = true;
+
+      const render = () => {
+        const done = states.filter((s) => s.complete).length;
+        const failed = states.filter((s) => s.failed).length;
+        const inflight = devs.length - done - failed;
+        const allOk = done === devs.length;
+        const allFailed = failed === devs.length;
+        const summary = `${done}/${devs.length} done` +
+          (inflight ? `, ${inflight} pushing` : "") +
+          (failed ? `, ${failed} failed` : "");
+        setStep("stPush", allOk ? "done" : (allFailed ? "fail" : "active"), summary);
+      };
+      render();
+
+      // Polling loop: cycle through every still-pending device, ls -l its file,
+      // mark complete when size matches the upload. CRITICAL: do not media-scan
+      // until the size has stabilized, or Android records 0:00 duration and IG
+      // rejects the video.
+      let waited = 0;
       while (waited < 300) {
-        await sleep(3000);
-        waited += 3;
-        const size = parseLsSize(await adbQuery(`ls -l ${phonePath}`));
-        if (size === null) {
-          setStep("stPush", "active", `Waiting for transfer to start... ${waited}s`);
-          continue;
+        await sleep(2500);
+        waited += 2.5;
+        for (const s of states) {
+          if (s.complete || s.failed) continue;
+          const size = parseLsSize(await adbQueryFor(s.device, `ls -l ${phonePath}`));
+          if (size === null) continue;
+          s.size = size;
+          const isComplete = uploadedSize ? (size >= uploadedSize)
+                                          : (size > 0 && size === s.lastSize);
+          s.lastSize = size;
+          if (isComplete) {
+            await sleep(800);  // let the final write flush
+            await adbQueryFor(s.device,
+              `am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d file://${phonePath}`);
+            s.complete = true;
+          }
         }
-        const mb = (size / 1048576).toFixed(1);
-        setStep("stPush", "active", `Transferring... ${mb} MB (${waited}s)`);
-        // Complete when size reaches the expected upload size (or, if unknown, stops growing)
-        const complete = uploadedSize ? (size >= uploadedSize) : (size > 0 && size === lastSize);
-        lastSize = size;
-        if (complete) {
-          await sleep(1500); // let the final write flush to disk
-          await adbQuery(`am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d file://${phonePath}`);
-          setStep("stPush", "done", `On phone: ${pushedFilename} (${mb} MB)`);
-          setStep("stReady", "done", "Ready (verified before posting)");
+        render();
+        if (states.every((s) => s.complete)) {
+          setStep("stReady", "done", `${devs.length} device${devs.length === 1 ? "" : "s"} ready`);
           $("postIgBtn").disabled = false;
           return;
         }
       }
-      setStep("stPush", "fail", `Timed out (last size ${(lastSize / 1048576).toFixed(1)} MB)`);
+      // Timeout — anyone still in-flight is marked failed
+      states.forEach((s) => { if (!s.complete) s.failed = true; });
+      render();
     };
 
     // Promise-based ADB query (resolves with the command's stdout) for verification.
